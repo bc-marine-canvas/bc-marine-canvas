@@ -1,4 +1,4 @@
-FROM xzito/xz_base:latest
+FROM jbboynton/wp_docker_base:latest
 
 COPY app /var/www/app
 COPY config /var/www/config
