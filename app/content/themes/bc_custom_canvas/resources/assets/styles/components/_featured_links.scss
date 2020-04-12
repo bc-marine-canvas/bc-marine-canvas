@@ -1,0 +1,42 @@
+.featured-links {
+  h2 {
+    color: $white;
+    font-size: 2rem;
+    letter-spacing: -0.7px;
+    text-align: center;
+
+    @include media-breakpoint-up(xl) {
+      text-align: left;
+    }
+  }
+
+  p {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    color: $white;
+    font-size: 1.25rem;
+    text-align: center;
+
+    &.subheading {
+      text-align: center;
+
+      @include media-breakpoint-up(xl) {
+        text-align: left;
+      }
+    }
+  }
+}
+
+.featured-links-bg {
+  height: 100%;
+  background-color: $blue;
+  background-image: url("../images/backgrounds/boats-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+}
+
+.featured-links-opacity {
+  @include row-opacity($primary);
+}

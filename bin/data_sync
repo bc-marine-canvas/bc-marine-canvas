@@ -1,0 +1,129 @@
+#!/bin/bash
+# Synchronizes the local database with production.
+
+id='bc_custom_canvas'
+root="$(git rev-parse --show-toplevel)"
+
+# Options
+seed=''
+quiet=''
+
+print_usage() {
+cat <<EOM
+Usage: data_sync [OPTION]
+
+Options:
+  -h    display this help message
+  -i    import the database without prompting
+  -q    minimal output
+
+EOM
+}
+
+get_options() {
+  while getopts 'hiq' flag; do
+    case "${flag}" in
+      h) print_usage; exit ;;
+      i) seed='true' ;;
+      q) quiet='true' ;;
+      *) print_usage; exit 1 ;;
+    esac
+  done
+}
+
+info() {
+  [ -n "$quiet" ] || echo -e "$1"
+}
+
+error() {
+  echo -e >&2 "Error: $1"
+  exit 1
+}
+
+test_connection() {
+  ssh -q -o BatchMode=yes -o ConnectTimeout=10 "$id" exit >/dev/null
+}
+
+check_ssh_connection() {
+  info "Checking SSH connection..."
+  test_connection || error "couldn't connect to the production server"
+}
+
+backup_dump_dir() {
+  info "Existing dump found, creating a backup..."
+  [ -d "$root/dump/backups" ] || mkdir "$root/dump/backups"
+
+  backup="$root/dump/backups/$(date +%s)_$id.sql"
+  mv "$root/dump/$id.sql" "$backup"
+  info "Existing dump moved to $backup"
+}
+
+check_for_dump() {
+  [ -f "$root/dump/$id.sql" ] && backup_dump_dir; true
+}
+
+create_dump() {
+  ssh -t "$id" "cd /ops && make mysql-dump" >/dev/null 2>&1
+}
+
+sync_dump() {
+  rsync -z "$id:/dump/$id.sql" "$root/dump/" >/dev/null
+}
+
+fetch_new_dump() {
+  info "Getting dump of production data..."
+  create_dump || error "couldn't create dump on the production server"
+  sync_dump || error "couldn't download the dump"
+}
+
+vagrant_is_running() {
+  vagrant ssh -c "exit" >/dev/null 2>&1
+}
+
+start_vagrant() {
+  info "Starting the VM..."
+  vagrant up >/dev/null || error "failed to start up the VM"
+}
+
+run_import() {
+  info "Importing..."
+  vagrant ssh -c "cd /ops && make mysql-restore" >/dev/null 2>&1
+}
+
+import_data() {
+  cd "$root/ops" || error "ops directory not found"
+
+  vagrant_is_running || start_vagrant
+  run_import || error "failed to complete the import"
+
+  cd - >/dev/null || true
+
+  info "Local database updated"
+}
+
+prompt_to_seed() {
+  echo -e "\nCaution! This will wipe out your local database!\n"
+  read -r -n 1 -p "Proceed? [y|n] "; echo
+
+  if [[ $REPLY =~ ^[Yy]$ ]]; then
+    import_data
+  else
+    info "Import cancelled by user"
+  fi
+}
+
+seed_database() {
+  info "Importing the production data..."
+
+  if [ -n "$seed" ]; then
+    import_data
+  else
+    prompt_to_seed
+  fi
+}
+
+get_options "$@"
+check_ssh_connection
+check_for_dump
+fetch_new_dump
+seed_database

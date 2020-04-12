@@ -1,0 +1,73 @@
+#!/bin/bash
+# Sets up the project. Run this script immediately after cloning the repo.
+
+# Path to the project root directory
+root="$(git rev-parse --show-toplevel)"
+
+error() {
+  echo -e >&2 "Error: $1"
+  exit 1
+}
+
+composer_installed() {
+  command -v composer >/dev/null 2>&1
+}
+
+verify_composer_signature() {
+  expected_signature="$(wget -q -O - https://composer.github.io/installer.sig)"
+  php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+  actual_signature="$(php -r "echo hash_file('sha384', 'composer-setup.php');")"
+
+  if [ "$expected_signature" != "$actual_signature" ]; then
+    rm composer-setup.php
+    error "Composer installer signature is invalid"
+  fi
+}
+
+install_composer() {
+  verify_composer_signature
+
+  php composer-setup.php \
+    --quiet \
+    --filename=composer \
+    --install-dir=/usr/local/bin
+
+  rm composer-setup.php
+}
+
+yarn_installed() {
+  command -v yarn >/dev/null 2>&1
+}
+
+install_yarn() {
+  curl -o- -L https://yarnpkg.com/install.sh | bash
+}
+
+plugin_installed() {
+  vagrant plugin list | cat | grep -q "$1"
+}
+
+install_vagrant_plugin() {
+  plugin_installed "$1" || vagrant plugin install "$1"
+}
+
+env_file_present() {
+  [ -f "$root/ops/$1" ] || error "couldn't find environment file: $1"
+}
+
+install_dependencies() {
+  composer install --working-dir="$root"
+}
+
+seed_database() {
+  sh "$root/bin/data_sync" "-i"
+}
+
+composer_installed || install_composer
+yarn_installed || install_yarn
+install_vagrant_plugin 'vagrant-hostsupdater'
+install_vagrant_plugin 'vagrant-timezone'
+env_file_present '.env'
+env_file_present '.env_app'
+install_dependencies
+seed_database

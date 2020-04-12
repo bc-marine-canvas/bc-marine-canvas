@@ -1,0 +1,109 @@
+{
+  "name": "jbboynton/bc_custom_canvas",
+  "type": "project",
+  "description": "BC Custom Canvas project repo.",
+  "homepage": "https://github.com/jbboynton/bc-custom-canvas",
+  "authors": [
+    {
+      "name": "James Boynton",
+      "email": "james.boynton0@gmail.com",
+      "homepage": "https://github.com/jbboynton"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/jbboynton/bc-custom-canvas/issues"
+  },
+  "config": {
+    "preferred-install": "dist"
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/hube2/acf-post2post"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/dannyvanholten/acf-gravityforms-add-on"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/humanmade/s3-uploads"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/jbboynton/acf-input-counter"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/jbboynton/acf-phone"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/jbboynton/advanced-custom-fields-pro"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/jbboynton/bc-canvas"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/jbboynton/bc-posts"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/jbboynton/bc-upholstery"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/wp-premium/gravityforms"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/xzito/acf-json-manager"
+    }
+  ],
+  "require": {
+    "php": "^7.4",
+    "composer/installers": "^1.5",
+    "dannyvanholten/acf-gravityforms-add-on": "dev-master",
+    "hube2/acf-post2post": "^1.3.2",
+    "humanmade/s3-uploads": "^2.2.0",
+    "jbboynton/acf-input-counter": "dev-master",
+    "jbboynton/acf-phone": "dev-master",
+    "jbboynton/advanced-custom-fields-pro": "^5.8.7",
+    "jbboynton/bc-canvas": "0.1.1",
+    "jbboynton/bc-posts": "0.1",
+    "jbboynton/bc-upholstery": "0.1",
+    "johnpbloch/wordpress": "5.3.2",
+    "roots/wp-password-bcrypt": "^1.0",
+    "roots/soil": "^3.7.3",
+    "vlucas/phpdotenv": "^4.0.1",
+    "wp-premium/gravityforms": "^2.4.12",
+    "wpackagist-plugin/acf-better-search": "^3.1.2",
+    "wpackagist-plugin/acf-quickedit-fields": "^3.0.4",
+    "wpackagist-plugin/autodescription":"^3.1.1",
+    "wpackagist-plugin/google-tag-manager": "^1.0.2",
+    "wpackagist-plugin/gravityformscli": "^1.1",
+    "wpackagist-plugin/password-protected": "^2.2.5",
+    "wpackagist-plugin/safe-svg": "^1.9.0",
+    "wpackagist-plugin/simple-page-ordering": "^2.3.2",
+    "wpackagist-plugin/sucuri-scanner": "^1.8.18",
+    "wpackagist-plugin/wp-mail-smtp": "^1.4.1",
+    "xzito/acf-json-manager": "dev-master"
+  },
+  "require-dev": {
+    "wpackagist-plugin/query-monitor": ">=3.0.0"
+  },
+  "extra": {
+    "installer-paths": {
+      "app/content/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
+      "app/content/plugins/{$name}/": ["type:wordpress-plugin"],
+      "app/content/themes/{$name}/": ["type:wordpress-theme"]
+    },
+    "wordpress-install-dir": "app/wp"
+  }
+}

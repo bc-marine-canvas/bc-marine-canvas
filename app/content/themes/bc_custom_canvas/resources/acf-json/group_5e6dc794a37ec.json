@@ -1,0 +1,63 @@
+{
+    "key": "group_5e6dc794a37ec",
+    "title": "Gallery",
+    "fields": [
+        {
+            "key": "field_5e6dc7d1bb27e",
+            "label": "Intro",
+            "name": "gallery_page_intro",
+            "type": "group",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "layout": "row",
+            "sub_fields": [
+                {
+                    "key": "field_5e6dc81cbb27f",
+                    "label": "Text",
+                    "name": "text",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "default_value": "",
+                    "placeholder": "",
+                    "maxlength": 280,
+                    "rows": 4,
+                    "new_lines": ""
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page",
+                "operator": "==",
+                "value": "357"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "page_attributes",
+        "featured_image"
+    ],
+    "active": 1,
+    "description": "",
+    "modified": 1586320820
+}

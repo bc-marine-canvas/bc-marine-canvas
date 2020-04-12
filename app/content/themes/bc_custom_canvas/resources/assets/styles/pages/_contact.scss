@@ -1,0 +1,11 @@
+.contact .contact-form {
+  input.gform_button {
+    @extend .btn-secondary;
+  }
+
+  .field_sublabel_above label {
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: unset !important;
+  }
+}

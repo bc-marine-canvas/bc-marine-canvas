@@ -1,0 +1,11 @@
+*.log
+dump
+.git
+
+# Nonessential parts of the theme directory can be ignored
+app/content/themes/bc_custom_canvas/resources/assets
+app/content/themes/bc_custom_canvas/node_modules
+app/content/themes/bc_custom_canvas/.cache-loader
+app/content/themes/bc_custom_canvas/composer.*
+app/content/themes/bc_custom_canvas/package.*
+app/content/themes/bc_custom_canvas/yarn.*

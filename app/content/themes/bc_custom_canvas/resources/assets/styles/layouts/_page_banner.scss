@@ -1,0 +1,28 @@
+h1.page-banner {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  color: $white;
+  font-size: 1.75rem;
+  font-weight: 800;
+  text-shadow: -5.4px 4.5px 21px rgba(6, 21, 52, 0.89);
+  text-transform: uppercase;
+
+  @include media-breakpoint-up(sm) {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    font-size: 2.8125rem;
+  }
+}
+
+.page-banner-image {
+  height: 100%;
+  background-color: $blue;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+}
+
+.map-banner {
+  height: 350px;
+}

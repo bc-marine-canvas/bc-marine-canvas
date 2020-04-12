@@ -1,0 +1,26 @@
+.search {
+  button {
+    & svg {
+      fill: currentColor;
+      height: 0.875rem;
+      vertical-align: -0.15rem;
+    }
+  }
+
+  .search-result {
+    .card-body {
+      h2 {
+        font-size: 1rem;
+
+        @include media-breakpoint-up(md) {
+          font-size: 1.5rem;
+        }
+      }
+
+      .badge {
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+      }
+    }
+  }
+}

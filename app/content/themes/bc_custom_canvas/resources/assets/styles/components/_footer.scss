@@ -1,0 +1,180 @@
+footer {
+  color: rgba($white, 0.9);
+  font-size: 0.875rem;
+  font-weight: 300;
+  text-align: center;
+
+  svg {
+    max-height: 1.125rem;
+    max-width: 1.125rem;
+    fill: currentcolor;
+  }
+
+  @include media-breakpoint-up(md) {
+    text-align: initial;
+  }
+}
+
+.footer-heading {
+  margin-bottom: ($spacer * 1.5);
+  font-size: 1rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.footer-bg {
+  background-color: $blue;
+  background-image: url("../images/backgrounds/boats-bg.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+}
+
+.footer-opacity {
+  @include row-opacity($primary, 0.9);
+}
+
+.footer-quick-links {
+  ul {
+    list-style: none;
+    padding-left: 0;
+
+    @include media-breakpoint-up(md) {
+      list-style: initial;
+      padding-left: revert;
+    }
+  }
+}
+
+.footer-social-links {
+  justify-content: center;
+
+  @include media-breakpoint-up(md) {
+    justify-content: start;
+  }
+}
+
+.footer-cta {
+  background-color: $primary;
+  text-align: center;
+
+  & p {
+    font-size: 1.5rem;
+    font-weight: 300;
+    font-variant: small-caps;
+    text-transform: uppercase;
+
+    @include media-breakpoint-up(lg) {
+      margin: 0;
+      text-align: left;
+    }
+
+    @include media-breakpoint-down(md) {
+      font-size: 20px;
+    }
+  }
+
+  & a {
+    @include media-breakpoint-up(md) {
+      text-align: center;
+    }
+  }
+
+  & .bold {
+    font-weight: 700;
+  }
+}
+
+.footer-divider {
+  display: none;
+
+  @include media-breakpoint-up(sm) {
+    display: block;
+  }
+}
+
+.footer-logo {
+  justify-content: start;
+
+  img {
+    max-height: 200px;
+    max-width: 200px;
+    object-fit: contain;
+  }
+
+  @include media-breakpoint-up(lg) {
+    justify-content: center;
+  }
+}
+
+.footer-copyright,
+.footer-copyright a {
+  color: rgba($white, 0.6);
+}
+
+.footer-copyright a {
+  &:focus,
+  &:hover {
+    color: darken($white, 15%);
+    text-decoration: underline;
+  }
+}
+
+/* stylelint-disable no-descending-specificity */
+ul.footer-contact {
+  list-style: none;
+  margin-left: 0;
+  padding-left: 1.75rem;
+  text-indent: -1.75rem;
+
+  li {
+    &.address {
+      &::before {
+        content: "";
+        display: inline-block;
+        height: 1rem;
+        width: 1rem;
+        background-image: url("../images/icons/map-marker.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-right: 0.5rem;
+        vertical-align: bottom;
+      }
+    }
+
+    &.phone {
+      &::before {
+        content: "";
+        display: inline-block;
+        height: 1rem;
+        width: 1rem;
+        background-image: url("../images/icons/phone.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-right: 0.5rem;
+        vertical-align: bottom;
+      }
+    }
+
+    &.email {
+      &::before {
+        content: "";
+        display: inline-block;
+        height: 1rem;
+        width: 1rem;
+        background-image: url("../images/icons/envelope.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin-right: 0.5rem;
+        vertical-align: bottom;
+      }
+    }
+
+    a {
+      @extend .text-light;
+    }
+  }
+}
+/* stylelint-enable */
+

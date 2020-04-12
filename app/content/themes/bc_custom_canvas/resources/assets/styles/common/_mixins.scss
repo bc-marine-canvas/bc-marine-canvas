@@ -1,0 +1,4 @@
+@mixin row-opacity($theme-color, $opacity: 0.9) {
+  height: 100%;
+  background-color: rgba($theme-color, $opacity);
+}
