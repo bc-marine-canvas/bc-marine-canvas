@@ -2,6 +2,8 @@
 
 namespace App;
 
+use function \Sober\Intervention\intervention;
+
 // Admin assets
 add_action('admin_enqueue_scripts', function () {
   wp_enqueue_style(
@@ -154,6 +156,7 @@ add_filter(
 add_action('admin_head', function() {
   global $post;
   global $pagenow;
+  global $typenow;
 
   if (!($pagenow == 'post.php')) {
     return;
@@ -166,6 +169,10 @@ add_action('admin_head', function() {
     if (in_array($post_id, $pages_with_editor_hidden)) {
       remove_post_type_support('page', 'editor');
     }
+  }
+
+  if ($typenow == 'product') {
+    remove_post_type_support('product', 'editor');
   }
 });
 

@@ -1,0 +1,79 @@
+form.checkout {
+  @extend .row;
+
+  .col2-set {
+    @extend .col-12, .col-sm-6;
+
+    .col-1,
+    .col-2 {
+      width: 100%;
+      padding-left: 0;
+      padding-right: 0;
+      max-width: none;
+
+      .form-row {
+        @extend .form-group;
+
+        display: block;
+
+        input,
+        textarea {
+          @extend .form-control;
+        }
+      }
+
+      .form-row-first,
+      .form-row-last {
+        width: 50%;
+        float: left;
+      }
+
+      .form-row-first {
+        padding-right: 15px;
+      }
+
+      .form-row-last {
+        padding-left: 15px;
+      }
+    }
+  }
+
+  .order_review_wrapper {
+    @extend .col-12, .col-sm-6;
+  }
+
+  .woocommerce-NoticeGroup-checkout {
+    @extend .col-12;
+  }
+}
+
+.woocommerce-checkout-review-order {
+  table {
+    @extend .table;
+
+    th {
+      &.product-total {
+        text-align: right;
+      }
+    }
+
+    td {
+      text-align: right;
+
+      &.product-name {
+        text-align: left;
+      }
+    }
+  }
+
+  .payment_methods {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  .place-order {
+    .button {
+      @extend .btn-primary;
+    }
+  }
+}

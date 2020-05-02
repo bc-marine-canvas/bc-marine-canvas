@@ -129,23 +129,10 @@ add_filter('comments_template', function ($comments_template) {
   return $comments_template;
 }, 100);
 
-// Customize ACF path
-add_filter('acf/settings/path', function ($path) {
-  return content_url('/plugins/advanced-custom-fields-pro/');
-});
-
-// Customize ACF dir
-add_filter('acf/settings/dir', function ($dir) {
-  return content_url('/plugins/advanced-custom-fields-pro/');
-});
-
 // Hide ACF field group menu item in production
 if (WP_ENV === 'production') {
   add_filter('acf/settings/show_admin', '__return_false');
 }
-
-// include ACF
-include_once WP_PLUGIN_DIR . '/advanced-custom-fields-pro/acf.php';
 
 add_filter('acf/fields/wysiwyg/toolbars', function($toolbars) {
   $toolbars['Minimal'] = [];

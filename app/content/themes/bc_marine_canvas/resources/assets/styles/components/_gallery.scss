@@ -1,0 +1,10 @@
+$lg-path-fonts: "~lightgallery.js/dist/fonts";
+$lg-path-images: "~lightgallery.js/dist/img";
+
+@import "~lightgallery.js/src/sass/lightgallery.scss";
+
+.gallery-item {
+  img {
+    cursor: pointer;
+  }
+}

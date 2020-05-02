@@ -14,7 +14,7 @@
   },
   "publicPath": "/content/themes/bc_marine_canvas",
   "open": false,
-  "devUrl": "https://www.bcmarinecanvas.local",
+  "devUrl": "https://www.bcmarinecanvasri.local",
   "proxyUrl": "https://localhost:3456",
   "cacheBusting": "[name]_[hash:8]",
   "watch": [

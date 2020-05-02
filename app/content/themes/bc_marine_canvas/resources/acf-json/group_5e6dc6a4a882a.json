@@ -43,6 +43,13 @@
                 "operator": "!=",
                 "value": "366"
             }
+        ],
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "product"
+            }
         ]
     ],
     "menu_order": 0,
@@ -55,5 +62,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1586321376
+    "modified": 1588481769
 }

@@ -1,5 +1,5 @@
 <nav class="navbar navbar-expand-lg navbar-{!! App::color_variant() !!} bg-transparent">
-  <div class="container py-2">
+  <div class="container">
     <a class="navbar-brand" href="{{ home_url('/') }}">
       <img class="mw-100" src="{!! $brand_logo !!}" alt="{{ $company_name['trade'] }} logo">
       <span class="sr-only">{{ $company_name['trade'] }} logo</span>

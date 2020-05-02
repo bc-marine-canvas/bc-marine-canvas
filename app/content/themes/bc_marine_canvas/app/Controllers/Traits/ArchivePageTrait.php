@@ -6,6 +6,7 @@ use App\Models\AboutPage;
 use App\Models\ContactPage;
 use App\Models\GalleryPage;
 use App\Models\MasksPage;
+use App\Models\ProductsPage;
 use BC\Canvas\ServicesPage as CanvasServicesPage;
 use BC\Posts\PostsPage;
 use BC\Upholstery\ServicesPage as UpholsteryServicesPage;
@@ -33,6 +34,10 @@ trait ArchivePageTrait {
 
   public function posts_page() {
     return new PostsPage();
+  }
+
+  public function products_page() {
+    return new ProductsPage();
   }
 
   public function upholstery_page() {

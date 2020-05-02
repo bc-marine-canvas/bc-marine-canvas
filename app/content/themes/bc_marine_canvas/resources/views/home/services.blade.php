@@ -1,4 +1,4 @@
-<div class="container py-6">
+<div class="container py-6 home-services">
   <div class="row d-flex align-items-center justify-content-center text-center">
     <h2>{{ $home_page->services_copy()['heading'] }}</h2>
     <div class="w-100"></div>

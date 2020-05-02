@@ -41,7 +41,7 @@
       @endif
       @if ($top_bar_cta['show'])
         <li class="nav-item py-0">
-          <a class="btn btn-secondary rounded-0 mr-0 px-3 top-bar-cta" href="{!! $top_bar_cta['link'] !!}" target="_blank">
+          <a class="btn btn-primary rounded-0 mr-0 px-3 top-bar-cta" href="{!! $top_bar_cta['link'] !!}" target="_blank">
             {{ $top_bar_cta['button_text'] }}
           </a>
         </li>

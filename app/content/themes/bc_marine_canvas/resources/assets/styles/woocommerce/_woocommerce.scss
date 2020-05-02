@@ -1,0 +1,58 @@
+.woocommerce {
+  .content-area {
+    @extend .container;
+  }
+
+  table.shop_attributes {
+    border-top: none;
+  }
+}
+
+// Archive Pages
+.woocommerce-result-count,
+.woocommerce-ordering {
+  @extend .col-sm-6;
+}
+
+.woocommerce-ordering {
+  text-align: right;
+}
+
+// Woocommerce Global Styles
+.summary.entry-summary {
+  @extend .col-sm-6;
+}
+
+.comment-reply-title {
+  @extend h4;
+}
+
+.product {
+  .summary {
+    .product_meta {
+      display: none;
+    }
+  }
+}
+
+// My Account
+.woocommerce-Addresses {
+  @extend .row;
+
+  .col-1,
+  .col-2 {
+    @extend .col-6;
+  }
+}
+
+a.reset_variations {
+  display: none !important;
+}
+
+.woocommerce-info,
+.woocomerce-error,
+.woocommerce-message {
+  &::before {
+    display: none;
+  }
+}

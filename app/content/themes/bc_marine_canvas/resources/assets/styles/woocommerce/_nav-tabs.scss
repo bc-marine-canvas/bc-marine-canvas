@@ -1,0 +1,50 @@
+.tabs.wc-tabs {
+  @extend .nav-tabs, .nav;
+
+  margin: 0 !important;
+  border-bottom: none;
+
+  li {
+    @extend .nav-item;
+
+    a {
+      @extend .nav-link;
+
+      border: none;
+    }
+
+    &.active {
+      a {
+        @extend .active;
+      }
+    }
+  }
+}
+
+.woocommerce-Tabs-panel--additional_information {
+  h2 {
+    display: none;
+  }
+}
+
+/* stylelint-disable no-descending-specificity */
+.woocommerce-MyAccount-navigation {
+  ul {
+    @extend .nav-tabs, .nav;
+
+    li {
+      @extend .nav-item;
+
+      a {
+        @extend .nav-link;
+      }
+
+      &.is-active {
+        a {
+          @extend .active;
+        }
+      }
+    }
+  }
+}
+/* stylelint-enable */

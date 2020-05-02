@@ -8,7 +8,7 @@
 <div id="gallery" class="row no-gutters my-3 d-flex align-items-center justify-content-center">
   @foreach ($home_page->gallery() as $image)
     <div class="h-100 col-md-6 col-xl-3 d-flex align-items-center justify-content-center gallery-item" data-src="{!! $image['full'] !!}">
-      <img class="mw-100 m-3" src="{!! $image['thumbnail'] !!}">
+      <img class="mw-100 m-2" src="{!! $image['thumbnail'] !!}">
     </div>
   @endforeach
 </div>

@@ -6,6 +6,8 @@
 use Roots\Sage\Config;
 use Roots\Sage\Container;
 
+use function \Sober\Intervention\intervention;
+
 /**
  * Helper function for prettying up errors.
  *
@@ -69,6 +71,7 @@ const REQUIRED_FILES = [
   'helpers',
   'nav_walker',
   'setup',
+  'woocommerce',
 ];
 
 array_map(function ($file) use ($sage_error) {
@@ -125,3 +128,17 @@ Container::getInstance()
       'view' => require dirname(__DIR__) . '/config/view.php',
     ]);
   }, true);
+
+function intervene() {
+  if ((wp_get_current_user())->user_login == 'james') {
+    return;
+  }
+
+  $items = ['comments', 'plugins', 'posts', 'themes', 'tools'];
+  $roles = ['all'];
+
+  intervention('remove-menu-items', $items, $roles);
+  intervention('remove-howdy');
+  intervention('update-pagination', 50);
+}
+intervene();

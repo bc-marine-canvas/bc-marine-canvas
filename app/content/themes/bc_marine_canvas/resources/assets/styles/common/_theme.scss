@@ -124,8 +124,8 @@ $spacer: 1rem;
 $spacers: ();
 $spacers: map-merge((
   0: 0,
-  1: ($spacer * .25),
-  2: ($spacer * .5),
+  1: ($spacer * 0.25),
+  2: ($spacer * 0.5),
   3: $spacer,
   4: ($spacer * 1.5),
   5: ($spacer * 3),
@@ -215,7 +215,7 @@ $container-max-widths: (
  */
 
 $grid-columns:      12;
-$grid-gutter-width: 30px;
+$grid-gutter-width: 15px;
 
 /**
  * Components

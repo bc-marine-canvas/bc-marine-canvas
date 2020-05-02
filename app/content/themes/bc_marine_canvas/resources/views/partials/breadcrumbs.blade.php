@@ -1,4 +1,4 @@
-<div class="breadcrumbs-wrapper py-2 border-bottom border-light">
+<div class="breadcrumbs-wrapper p-0 border-bottom border-light">
   <div class="container">
     <div class="d-flex align-items-center">
       @if ($has_breadcrumbs)
