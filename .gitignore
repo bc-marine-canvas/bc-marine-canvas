@@ -29,17 +29,17 @@ app/content/plugins/*
 !app/content/plugins/.keep
 
 app/content/themes/*
-!app/content/themes/bc_custom_canvas/
+!app/content/themes/bc_marine_canvas/
 !app/content/themes/.keep
 
-app/content/themes/bc_custom_canvas/resources/assets/config-local.json
-app/content/themes/bc_custom_canvas/.cache-loader/
-app/content/themes/bc_custom_canvas/dist/
-app/content/themes/bc_custom_canvas/node_modules/
-app/content/themes/bc_custom_canvas/vendor/
+app/content/themes/bc_marine_canvas/resources/assets/config-local.json
+app/content/themes/bc_marine_canvas/.cache-loader/
+app/content/themes/bc_marine_canvas/dist/
+app/content/themes/bc_marine_canvas/node_modules/
+app/content/themes/bc_marine_canvas/vendor/
 
-app/content/themes/bc_custom_canvas/resources/views/cache/*
-!app/content/themes/bc_custom_canvas/resources/views/cache/.keep
+app/content/themes/bc_marine_canvas/resources/views/cache/*
+!app/content/themes/bc_marine_canvas/resources/views/cache/.keep
 
 app/content/uploads/*
 !app/content/uploads/.keep

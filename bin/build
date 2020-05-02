@@ -4,7 +4,7 @@ set -e
 
 # Generate theme assets. The `yarn` command must be run from the theme
 # directory, so change diretory before envoking, and change back afterwards.
-theme_path="$2/app/content/themes/bc_custom_canvas"
+theme_path="$2/app/content/themes/bc_marine_canvas"
 pushd "$theme_path" >/dev/null 2>&1 || exit
 yarn build:production
 popd >/dev/null 2>&1 || exit

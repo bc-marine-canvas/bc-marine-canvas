@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2ff49c6c68d87d37d796d85904f1f96e",
+    "content-hash": "f82795ce6cd7b54c9a913acf6cc52744",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
@@ -619,16 +619,16 @@
         },
         {
             "name": "jbboynton/bc-canvas",
-            "version": "0.1.1",
+            "version": "0.1.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jbboynton/bc-canvas.git",
-                "reference": "092178f237829ca42fc84d8a346c40b196d5f2a9"
+                "reference": "848d4f1f58c54db898c1fedc3343e6714387ca52"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jbboynton/bc-canvas/zipball/092178f237829ca42fc84d8a346c40b196d5f2a9",
-                "reference": "092178f237829ca42fc84d8a346c40b196d5f2a9",
+                "url": "https://api.github.com/repos/jbboynton/bc-canvas/zipball/848d4f1f58c54db898c1fedc3343e6714387ca52",
+                "reference": "848d4f1f58c54db898c1fedc3343e6714387ca52",
                 "shasum": ""
             },
             "require": {
@@ -649,26 +649,26 @@
                     "homepage": "https://github.com/jbboynton"
                 }
             ],
-            "description": "WordPress CPT for BC Custom Canvas' canvas services.",
+            "description": "WordPress CPT for BC Marine Canvas' canvas services.",
             "homepage": "https://github.com/jbboynton/bc-canvas",
             "support": {
                 "issues": "https://github.com/jbboynton/bc-canvas/issues",
-                "source": "https://github.com/jbboynton/bc-canvas/tree/0.1.1"
+                "source": "https://github.com/jbboynton/bc-canvas/tree/0.1.3"
             },
-            "time": "2020-04-12T07:50:41+00:00"
+            "time": "2020-05-02T20:26:12+00:00"
         },
         {
             "name": "jbboynton/bc-posts",
-            "version": "0.1",
+            "version": "0.1.1",
             "source": {
                 "type": "git",
                 "url": "git@github.com:jbboynton/bc-posts.git",
-                "reference": "9266f7d996514c8fc84627a70edd83e223d0aa1f"
+                "reference": "7db6d95341a2654d896ecddcee895430c3be1af1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jbboynton/bc-posts/zipball/9266f7d996514c8fc84627a70edd83e223d0aa1f",
-                "reference": "9266f7d996514c8fc84627a70edd83e223d0aa1f",
+                "url": "https://api.github.com/repos/jbboynton/bc-posts/zipball/7db6d95341a2654d896ecddcee895430c3be1af1",
+                "reference": "7db6d95341a2654d896ecddcee895430c3be1af1",
                 "shasum": ""
             },
             "require": {
@@ -692,22 +692,22 @@
             "homepage": "https://github.com/jbboynton/bc-posts",
             "support": {
                 "issues": "https://github.com/jbboynton/bc-posts/issues",
-                "source": "https://github.com/jbboynton/bc-posts/tree/0.1"
+                "source": "https://github.com/jbboynton/bc-posts/tree/0.1.1"
             },
-            "time": "2020-04-12T05:43:24+00:00"
+            "time": "2020-05-02T20:31:05+00:00"
         },
         {
             "name": "jbboynton/bc-upholstery",
-            "version": "0.1",
+            "version": "0.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jbboynton/bc-upholstery.git",
-                "reference": "15ab56c2c31882c827289bc92e819bf2b15db4b6"
+                "reference": "04672160ace92684ce8ea84441516666ed6170d2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jbboynton/bc-upholstery/zipball/15ab56c2c31882c827289bc92e819bf2b15db4b6",
-                "reference": "15ab56c2c31882c827289bc92e819bf2b15db4b6",
+                "url": "https://api.github.com/repos/jbboynton/bc-upholstery/zipball/04672160ace92684ce8ea84441516666ed6170d2",
+                "reference": "04672160ace92684ce8ea84441516666ed6170d2",
                 "shasum": ""
             },
             "require": {
@@ -728,13 +728,13 @@
                     "homepage": "https://github.com/jbboynton"
                 }
             ],
-            "description": "WordPress CPT for BC Custom Canvas' upholstery services.",
+            "description": "WordPress CPT for BC Marine Canvas' upholstery services.",
             "homepage": "https://github.com/jbboynton/bc-upholstery",
             "support": {
                 "issues": "https://github.com/jbboynton/bc-upholstery/issues",
-                "source": "https://github.com/jbboynton/bc-upholstery/tree/0.1"
+                "source": "https://github.com/jbboynton/bc-upholstery/tree/0.1.1"
             },
-            "time": "2020-04-12T07:21:03+00:00"
+            "time": "2020-05-02T20:27:29+00:00"
         },
         {
             "name": "jjgrainger/posttypes",

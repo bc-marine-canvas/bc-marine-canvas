@@ -225,7 +225,7 @@ add_filter('acf/fields/page_link/query',
 10, 3);
 
 /**
- * Use relative page links when the URL contains "bccustomcanvas".
+ * Use relative page links when the URL contains "bcmarinecanvas".
  */
 add_filter('acf/format_value/type=link',
   function($value, $post_id, $field) {
@@ -233,7 +233,7 @@ add_filter('acf/format_value/type=link',
       return $value;
     }
 
-    if (stripos($value['url'], 'bccustomcanvas') === false) {
+    if (stripos($value['url'], 'bcmarinecanvas') === false) {
       return $value;
     }
 

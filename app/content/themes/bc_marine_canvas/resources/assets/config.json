@@ -12,9 +12,9 @@
       "./styles/admin.scss"
     ]
   },
-  "publicPath": "/content/themes/bc_custom_canvas",
+  "publicPath": "/content/themes/bc_marine_canvas",
   "open": false,
-  "devUrl": "https://www.bccustomcanvas.local",
+  "devUrl": "https://www.bcmarinecanvas.local",
   "proxyUrl": "https://localhost:3456",
   "cacheBusting": "[name]_[hash:8]",
   "watch": [

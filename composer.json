@@ -1,8 +1,8 @@
 {
-  "name": "jbboynton/bc_custom_canvas",
+  "name": "jbboynton/bc_marine_canvas",
   "type": "project",
-  "description": "BC Custom Canvas project repo.",
-  "homepage": "https://github.com/jbboynton/bc-custom-canvas",
+  "description": "BC Marine Canvas project repo.",
+  "homepage": "https://github.com/jbboynton/bc-marine-canvas",
   "authors": [
     {
       "name": "James Boynton",
@@ -11,7 +11,7 @@
     }
   ],
   "support": {
-    "issues": "https://github.com/jbboynton/bc-custom-canvas/issues"
+    "issues": "https://github.com/jbboynton/bc-marine-canvas/issues"
   },
   "config": {
     "preferred-install": "dist"
@@ -75,9 +75,9 @@
     "jbboynton/acf-input-counter": "dev-master",
     "jbboynton/acf-phone": "dev-master",
     "jbboynton/advanced-custom-fields-pro": "^5.8.7",
-    "jbboynton/bc-canvas": "0.1.1",
-    "jbboynton/bc-posts": "0.1",
-    "jbboynton/bc-upholstery": "0.1",
+    "jbboynton/bc-canvas": "^0.1",
+    "jbboynton/bc-posts": "^0.1",
+    "jbboynton/bc-upholstery": "^0.1",
     "johnpbloch/wordpress": "^5.4.1",
     "roots/wp-password-bcrypt": "^1.0",
     "roots/soil": "^3.7.3",

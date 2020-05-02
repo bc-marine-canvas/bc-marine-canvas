@@ -1,2 +1,2 @@
-# BC Custom Canvas
+# BC Marine Canvas
 
