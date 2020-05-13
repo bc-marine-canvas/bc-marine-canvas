@@ -9,4 +9,5 @@
   <div role="document">
     @include('about.main_copy')
   </div>
+  @include('partials.expandable_space')
 @endsection

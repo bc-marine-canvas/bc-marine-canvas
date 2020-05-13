@@ -3,35 +3,35 @@
     <ul class="navbar-nav ml-auto top-bar-menu">
       @if ($company_social_media['facebook'])
         <li class="nav-item py-0 social-icon">
-          <a class="nav-link btn-gray border-right rounded-0 mx-0 px-3 py-0" href="{!! $company_social_media['facebook'] !!}" target="_blank">
+          <a class="nav-link btn-gray rounded-0 mx-0 px-3 py-0" href="{!! $company_social_media['facebook'] !!}" target="_blank">
             @svg('images/icons/facebook.svg')
           </a>
         </li>
       @endif
       @if ($company_social_media['instagram'])
         <li class="nav-item py-0 social-icon">
-          <a class="nav-link btn-gray border-right rounded-0 mx-0 px-3 py-0" href="{!! $company_social_media['instagram'] !!}" target="_blank">
+          <a class="nav-link btn-gray rounded-0 mx-0 px-3 py-0" href="{!! $company_social_media['instagram'] !!}" target="_blank">
             @svg('images/icons/instagram.svg')
           </a>
         </li>
       @endif
       @if ($company_social_media['twitter'])
         <li class="nav-item py-0 social-icon">
-          <a class="nav-link btn-gray border-right rounded-0 mx-0 px-3 py-0" href="{!! $company_social_media['twitter'] !!}" target="_blank">
+          <a class="nav-link btn-gray rounded-0 mx-0 px-3 py-0" href="{!! $company_social_media['twitter'] !!}" target="_blank">
             @svg('images/icons/twitter.svg')
           </a>
         </li>
       @endif
       @if ($company_social_media['linkedin'])
         <li class="nav-item py-0 social-icon">
-          <a class="nav-link btn-gray border-right rounded-0 mx-0 px-3 py-0" href="{!! $company_social_media['linkedin'] !!}" target="_blank">
+          <a class="nav-link btn-gray rounded-0 mx-0 px-3 py-0" href="{!! $company_social_media['linkedin'] !!}" target="_blank">
             @svg('images/icons/linkedin.svg')
           </a>
         </li>
       @endif
       @if ($company_social_media['youtube'])
         <li class="nav-item py-0 social-icon">
-          <a class="nav-link btn-gray border-right rounded-0 mx-0 px-3 py-0" href="{!! $company_social_media['youtube'] !!}" target="_blank">
+          <a class="nav-link btn-gray rounded-0 mx-0 px-3 py-0" href="{!! $company_social_media['youtube'] !!}" target="_blank">
             @svg('images/icons/youtube.svg')
           </a>
         </li>

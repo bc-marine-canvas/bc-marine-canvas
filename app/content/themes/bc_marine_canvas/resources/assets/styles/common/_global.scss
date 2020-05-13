@@ -1,3 +1,14 @@
+html {
+  height: 100vh;
+}
+
+body {
+  @extend .d-flex;
+  @extend .flex-column;
+
+  min-height: 100vh;
+}
+
 .btn {
   text-transform: uppercase;
 }

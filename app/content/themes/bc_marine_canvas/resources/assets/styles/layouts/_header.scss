@@ -55,10 +55,6 @@
       vertical-align: -0.15rem;
     }
   }
-
-  & .nav-item.social-icon:first-child a {
-    @extend .border-left;
-  }
 }
 
 .navbar-brand {
@@ -83,6 +79,16 @@ button.navbar-toggler {
   border-radius: $border-radius;
   background-color: $gray-100;
   overflow: hidden;
+
+  & li.nav-item.menu-cart {
+    &.cart-empty {
+      display: none;
+    }
+
+    &.cart-with-items {
+      display: initial;
+    }
+  }
 
   & a.nav-link {
     @extend .btn;

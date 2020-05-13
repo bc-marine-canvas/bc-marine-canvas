@@ -193,6 +193,15 @@ class NavWalker extends \Walker_Nav_Menu {
     // Add `menu-<slug>` class
     $classes[] = 'menu-' . $slug;
 
+    // Add class to WooCommerce cart menu item based on items in cart
+    if (in_array('menu-cart', $classes)) {
+      if (WC()->cart->is_empty()) {
+        $classes[] = 'cart-empty';
+      } else {
+        $classes[] = 'cart-with-items';
+      }
+    }
+
     $classes = array_unique($classes);
     $classes = array_map('trim', $classes);
 

@@ -2,7 +2,8 @@ form.checkout {
   @extend .row;
 
   .col2-set {
-    @extend .col-12, .col-sm-6;
+    @extend .col-12;
+    @extend .col-lg-6;
 
     .col-1,
     .col-2 {
@@ -36,6 +37,23 @@ form.checkout {
         padding-left: 15px;
       }
     }
+
+    .select2-container--default {
+      height: calc(2.9rem + 2px);
+
+      .select2-selection--single {
+        height: unset;
+        padding: 0.7rem 1.25rem;
+        border: 1px solid #c9c9c9;
+
+        .select2-selection__arrow {
+          height: unset;
+          width: unset;
+          top: 56%;
+          right: 24px;
+        }
+      }
+    }
   }
 
   .order_review_wrapper {
@@ -55,6 +73,10 @@ form.checkout {
       &.product-total {
         text-align: right;
       }
+    }
+
+    thead th {
+      border: none !important;
     }
 
     td {
