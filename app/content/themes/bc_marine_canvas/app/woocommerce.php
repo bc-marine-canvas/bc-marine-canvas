@@ -61,3 +61,9 @@ add_filter('wc_get_template', function ($template, $template_name, $args) {
   // return empty file, output already rendered by 'woocommerce_before_template_part' hook
   return $theme_template ? get_stylesheet_directory() . '/index.php' : $template;
 }, 100, 3);
+
+add_filter('woocommerce_enqueue_styles', function ($styles) {
+  $styles['woocommerce-general']['src'] = asset_path('styles/woocommerce.css');
+
+  return $styles;
+});

@@ -59,6 +59,10 @@
     },
     {
       "type": "vcs",
+      "url": "https://github.com/jbboynton/woocommerce-table-rate-shipping"
+    },
+    {
+      "type": "vcs",
       "url": "https://github.com/wp-premium/gravityforms"
     },
     {
@@ -78,6 +82,7 @@
     "jbboynton/bc-canvas": "^0.1",
     "jbboynton/bc-posts": "^0.1",
     "jbboynton/bc-upholstery": "^0.1",
+    "jbboynton/woocommerce-table-rate-shipping": "^3.0.21.1",
     "johnpbloch/wordpress": "^5.4.1",
     "roots/soil": "^3.7.3",
     "roots/wp-password-bcrypt": "^1.0",

@@ -1,9 +1,17 @@
+.shop_table {
+  border-collapse: collapse !important;
+}
+
 .woocommerce-cart-form {
   .shop_table {
     @extend .table;
 
     // margin-bottom: $spacing-bottom;
     width: 100%;
+
+    th {
+      border: none !important;
+    }
 
     td {
       &.product-quantity {
@@ -63,6 +71,12 @@
 
       td {
         text-align: right;
+      }
+
+      .tax-rate {
+        small {
+          display: none;
+        }
       }
     }
 

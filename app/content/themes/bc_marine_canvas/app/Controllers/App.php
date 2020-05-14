@@ -49,6 +49,13 @@ class App extends Controller {
     return $background_image->data_attribute();
   }
 
+  public static function default_banner() {
+    $banner = 'images/backgrounds/boats-bg.jpg';
+    $options = ['asset' => true];
+
+    return App::background_image($banner, $options);
+  }
+
   public static function svg($path, $options = []) {
     $defaults = ['asset' => true];
     $options = $options + $defaults;

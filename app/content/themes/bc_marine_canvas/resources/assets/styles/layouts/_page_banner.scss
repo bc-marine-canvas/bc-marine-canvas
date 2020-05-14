@@ -23,6 +23,10 @@ h1.page-banner {
   background-position: center center;
 }
 
+.page-banner-opacity {
+  @include row-opacity($black, 0.5);
+}
+
 .map-banner {
   height: 350px;
 }

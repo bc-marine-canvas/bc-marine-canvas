@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "ef8e9e308fab57b344dd6ee2dc62ce93",
+    "content-hash": "7bab7d22305d472667fd12f210ad0844",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.137.8",
+            "version": "3.138.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "0116efff39048d9bc163d3c287a85cce30b9aa20"
+                "reference": "32a4fa88dffc4328d415b922ef74819dfe060696"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/0116efff39048d9bc163d3c287a85cce30b9aa20",
-                "reference": "0116efff39048d9bc163d3c287a85cce30b9aa20",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/32a4fa88dffc4328d415b922ef74819dfe060696",
+                "reference": "32a4fa88dffc4328d415b922ef74819dfe060696",
                 "shasum": ""
             },
             "require": {
@@ -88,7 +88,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2020-05-12T18:14:22+00:00"
+            "time": "2020-05-13T18:11:31+00:00"
         },
         {
             "name": "composer/installers",
@@ -735,6 +735,34 @@
                 "source": "https://github.com/jbboynton/bc-upholstery/tree/0.1.1"
             },
             "time": "2020-05-02T20:27:29+00:00"
+        },
+        {
+            "name": "jbboynton/woocommerce-table-rate-shipping",
+            "version": "3.0.21.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/jbboynton/woocommerce-table-rate-shipping.git",
+                "reference": "e652c2b966ea0a994c3340085510173c5a5bdba7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/jbboynton/woocommerce-table-rate-shipping/zipball/e652c2b966ea0a994c3340085510173c5a5bdba7",
+                "reference": "e652c2b966ea0a994c3340085510173c5a5bdba7",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "^1.5.0"
+            },
+            "type": "wordpress-plugin",
+            "license": [
+                "GNU General Public License v3.0"
+            ],
+            "description": "Table rate shipping lets you define rates depending on location vs shipping class, price, weight, or item count.",
+            "homepage": "https://woocommerce.com/products/table-rate-shipping/",
+            "support": {
+                "source": "https://github.com/jbboynton/woocommerce-table-rate-shipping/tree/3.0.21.1"
+            },
+            "time": "2020-05-14T00:42:37+00:00"
         },
         {
             "name": "jjgrainger/posttypes",

@@ -56,3 +56,31 @@ a.reset_variations {
     display: none;
   }
 }
+
+.woocommerce-shipping-methods {
+  li {
+    margin: 0 !important;
+  }
+
+  label {
+    color: transparent;
+    font-size: unset;
+
+    span {
+      color: initial;
+    }
+
+    &,
+    & > * {
+      font-weight: 400 !important;
+
+      .checkout & {
+        font-weight: unset !important;
+      }
+    }
+  }
+}
+
+.woocommerce-shipping-destination {
+  display: none;
+}
