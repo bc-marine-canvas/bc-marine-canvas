@@ -8,7 +8,8 @@
               <h1 class="hero">{{ $home_page->hero()['heading'] }}</h1>
               <div class="w-100"></div>
               <p class="mt-4 text-center">
-                <a class="btn btn-secondary hero-link" href="{!! $home_page->hero()['link'] !!}">{{ $home_page->hero()['button_text'] }}</a>
+                <a class="btn btn-secondary hero-link" href="{!!
+                $home_page->hero()['link']['url'] !!}">{{ $home_page->hero()['link']['title'] }}</a>
               </p>
             </div>
           </div>

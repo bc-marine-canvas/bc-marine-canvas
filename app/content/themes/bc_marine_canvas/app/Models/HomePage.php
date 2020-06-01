@@ -92,7 +92,6 @@ class HomePage {
 
     $this->gallery_copy = [
       'heading' => $gallery_copy['heading'],
-      'button_text' => $gallery_copy['button_text'],
       'link' => $gallery_copy['link'],
     ];
   }

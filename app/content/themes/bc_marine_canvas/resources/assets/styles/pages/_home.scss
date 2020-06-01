@@ -76,6 +76,17 @@ h1.hero {
   textarea,
   select {
     background-color: rgba($white, 0.75) !important;
+    text-align: center;
+  }
+
+  .gform_wrapper {
+    & li {
+      padding-right: unset !important;
+    }
+
+    & input[type="submit"] {
+      margin-right: unset !important;
+    }
   }
 
   .gform_footer {

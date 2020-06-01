@@ -137,7 +137,6 @@ if (WP_ENV === 'production') {
 add_filter('acf/fields/wysiwyg/toolbars', function($toolbars) {
   $toolbars['Minimal'] = [];
   $toolbars['Minimal'][1] = [
-    'formatselect',
     'bold',
     'italic',
     'underline',

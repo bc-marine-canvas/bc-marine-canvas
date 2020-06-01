@@ -127,6 +127,7 @@ function create_child_options_pages($parent) {
 }
 
 function disable_gutenberg_editor($can_edit, $post_type) {
+  // Disable Gutenberg for all posts as indicated in the theme options
   $post_id = ($_GET['post'] ?? '');
   $pages_with_editor_hidden = (get_field('opt_hide_editor', 'options') ?? []);
 
@@ -134,6 +135,11 @@ function disable_gutenberg_editor($can_edit, $post_type) {
     if (in_array($post_id, $pages_with_editor_hidden)) {
       $can_edit = false;
     }
+  }
+
+  // Disable Gutenberg for all posts of type 'page'
+  if ($post_type == 'page') {
+    $can_edit = false;
   }
 
   return $can_edit;

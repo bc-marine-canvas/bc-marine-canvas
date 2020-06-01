@@ -1,3 +1,33 @@
+/* stylelint-disable */
+.checkout {
+  .woocommerce {
+    p.woocommerce-notice {
+      @extend .mb-4;
+    }
+
+    .col2-set .col-1,
+    .col2-set .col-2 {
+      @extend .mb-4;
+
+      max-width: unset !important;
+      float: unset !important;
+      width: unset !important;
+    }
+  }
+
+  ul.woocommerce-order-overview.order_details {
+    @extend .my-4;
+
+    padding-left: 0 !important;
+
+    li {
+      @extend .mb-2;
+
+      float: none !important;
+    }
+  }
+}
+
 form.checkout {
   @extend .row;
 

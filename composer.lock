@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7bab7d22305d472667fd12f210ad0844",
+    "content-hash": "6680e53b94520bacfe9f01b07ad7372a",
     "packages": [
         {
             "name": "aws/aws-sdk-php",
-            "version": "3.138.0",
+            "version": "3.138.10",
             "source": {
                 "type": "git",
                 "url": "https://github.com/aws/aws-sdk-php.git",
-                "reference": "32a4fa88dffc4328d415b922ef74819dfe060696"
+                "reference": "cf197a033ad75cd9e3a90a207cf5ec8935aafa48"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/32a4fa88dffc4328d415b922ef74819dfe060696",
-                "reference": "32a4fa88dffc4328d415b922ef74819dfe060696",
+                "url": "https://api.github.com/repos/aws/aws-sdk-php/zipball/cf197a033ad75cd9e3a90a207cf5ec8935aafa48",
+                "reference": "cf197a033ad75cd9e3a90a207cf5ec8935aafa48",
                 "shasum": ""
             },
             "require": {
@@ -88,7 +88,7 @@
                 "s3",
                 "sdk"
             ],
-            "time": "2020-05-13T18:11:31+00:00"
+            "time": "2020-05-28T18:12:07+00:00"
         },
         {
             "name": "composer/installers",
@@ -270,16 +270,16 @@
         },
         {
             "name": "guzzlehttp/guzzle",
-            "version": "6.5.3",
+            "version": "6.5.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/guzzle/guzzle.git",
-                "reference": "aab4ebd862aa7d04f01a4b51849d657db56d882e"
+                "reference": "a4a1b6930528a8f7ee03518e6442ec7a44155d9d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/aab4ebd862aa7d04f01a4b51849d657db56d882e",
-                "reference": "aab4ebd862aa7d04f01a4b51849d657db56d882e",
+                "url": "https://api.github.com/repos/guzzle/guzzle/zipball/a4a1b6930528a8f7ee03518e6442ec7a44155d9d",
+                "reference": "a4a1b6930528a8f7ee03518e6442ec7a44155d9d",
                 "shasum": ""
             },
             "require": {
@@ -287,7 +287,7 @@
                 "guzzlehttp/promises": "^1.0",
                 "guzzlehttp/psr7": "^1.6.1",
                 "php": ">=5.5",
-                "symfony/polyfill-intl-idn": "^1.11"
+                "symfony/polyfill-intl-idn": "1.17.0"
             },
             "require-dev": {
                 "ext-curl": "*",
@@ -333,7 +333,7 @@
                 "rest",
                 "web service"
             ],
-            "time": "2020-04-18T10:38:46+00:00"
+            "time": "2020-05-25T19:35:05+00:00"
         },
         {
             "name": "guzzlehttp/promises",
@@ -619,16 +619,16 @@
         },
         {
             "name": "jbboynton/bc-canvas",
-            "version": "0.1.3",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jbboynton/bc-canvas.git",
-                "reference": "848d4f1f58c54db898c1fedc3343e6714387ca52"
+                "reference": "4159ffd6be312c33776cd2f25a2d9eabdb5c8d6d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jbboynton/bc-canvas/zipball/848d4f1f58c54db898c1fedc3343e6714387ca52",
-                "reference": "848d4f1f58c54db898c1fedc3343e6714387ca52",
+                "url": "https://api.github.com/repos/jbboynton/bc-canvas/zipball/4159ffd6be312c33776cd2f25a2d9eabdb5c8d6d",
+                "reference": "4159ffd6be312c33776cd2f25a2d9eabdb5c8d6d",
                 "shasum": ""
             },
             "require": {
@@ -653,9 +653,9 @@
             "homepage": "https://github.com/jbboynton/bc-canvas",
             "support": {
                 "issues": "https://github.com/jbboynton/bc-canvas/issues",
-                "source": "https://github.com/jbboynton/bc-canvas/tree/0.1.3"
+                "source": "https://github.com/jbboynton/bc-canvas/tree/master"
             },
-            "time": "2020-05-02T20:26:12+00:00"
+            "time": "2020-06-01T07:09:02+00:00"
         },
         {
             "name": "jbboynton/bc-posts",
@@ -698,16 +698,16 @@
         },
         {
             "name": "jbboynton/bc-upholstery",
-            "version": "0.1.1",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/jbboynton/bc-upholstery.git",
-                "reference": "04672160ace92684ce8ea84441516666ed6170d2"
+                "reference": "deb29ecccc78493a4a772b7252d305ad1b8cbb21"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/jbboynton/bc-upholstery/zipball/04672160ace92684ce8ea84441516666ed6170d2",
-                "reference": "04672160ace92684ce8ea84441516666ed6170d2",
+                "url": "https://api.github.com/repos/jbboynton/bc-upholstery/zipball/deb29ecccc78493a4a772b7252d305ad1b8cbb21",
+                "reference": "deb29ecccc78493a4a772b7252d305ad1b8cbb21",
                 "shasum": ""
             },
             "require": {
@@ -732,9 +732,9 @@
             "homepage": "https://github.com/jbboynton/bc-upholstery",
             "support": {
                 "issues": "https://github.com/jbboynton/bc-upholstery/issues",
-                "source": "https://github.com/jbboynton/bc-upholstery/tree/0.1.1"
+                "source": "https://github.com/jbboynton/bc-upholstery/tree/master"
             },
-            "time": "2020-05-02T20:27:29+00:00"
+            "time": "2020-06-01T07:11:37+00:00"
         },
         {
             "name": "jbboynton/woocommerce-table-rate-shipping",
@@ -1579,16 +1579,16 @@
         },
         {
             "name": "vlucas/phpdotenv",
-            "version": "v4.1.5",
+            "version": "v4.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "539bb6927c101a5605d31d11a2d17185a2ce2bf1"
+                "reference": "0b32505d67c1abbfa829283c86bfc0642a661bf6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/539bb6927c101a5605d31d11a2d17185a2ce2bf1",
-                "reference": "539bb6927c101a5605d31d11a2d17185a2ce2bf1",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/0b32505d67c1abbfa829283c86bfc0642a661bf6",
+                "reference": "0b32505d67c1abbfa829283c86bfc0642a661bf6",
                 "shasum": ""
             },
             "require": {
@@ -1649,7 +1649,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2020-05-02T14:08:57+00:00"
+            "time": "2020-05-23T09:43:32+00:00"
         },
         {
             "name": "wp-premium/gravityforms",
@@ -1768,15 +1768,15 @@
         },
         {
             "name": "wpackagist-plugin/password-protected",
-            "version": "2.2.5",
+            "version": "2.3",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/password-protected/",
-                "reference": "tags/2.2.5"
+                "reference": "tags/2.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/password-protected.2.2.5.zip"
+                "url": "https://downloads.wordpress.org/plugin/password-protected.2.3.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -1840,15 +1840,15 @@
         },
         {
             "name": "wpackagist-plugin/woocommerce",
-            "version": "4.1.0",
+            "version": "4.1.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/woocommerce/",
-                "reference": "tags/4.1.0"
+                "reference": "tags/4.1.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/woocommerce.4.1.0.zip"
+                "url": "https://downloads.wordpress.org/plugin/woocommerce.4.1.1.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -1858,15 +1858,15 @@
         },
         {
             "name": "wpackagist-plugin/woocommerce-square",
-            "version": "2.1.4",
+            "version": "2.1.5",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/woocommerce-square/",
-                "reference": "tags/2.1.4"
+                "reference": "tags/2.1.5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/woocommerce-square.2.1.4.zip"
+                "url": "https://downloads.wordpress.org/plugin/woocommerce-square.2.1.5.zip"
             },
             "require": {
                 "composer/installers": "~1.0"
@@ -1957,6 +1957,8 @@
     "stability-flags": {
         "jbboynton/acf-input-counter": 20,
         "jbboynton/acf-phone": 20,
+        "jbboynton/bc-canvas": 20,
+        "jbboynton/bc-upholstery": 20,
         "xzito/acf-json-manager": 20
     },
     "prefer-stable": false,

@@ -10,9 +10,6 @@
     "admin": [
       "./scripts/admin.js",
       "./styles/admin.scss"
-    ],
-    "woocommerce": [
-      "./styles/woocommerce.scss"
     ]
   },
   "publicPath": "/content/themes/bc_marine_canvas",

@@ -39,8 +39,6 @@ select {
 
 .gform_wrapper li {
   @extend .form-group;
-
-  padding-right: unset !important;
 }
 
 .gform_wrapper .ginput_container_fileupload {

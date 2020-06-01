@@ -43,6 +43,10 @@ class App extends Controller {
   }
 
   public static function background_image($path, $options = []) {
+    if (empty($path)) {
+      return;
+    }
+
     $background_image = new BackgroundImage($path, $options);
     $background_image->embed_css();
 

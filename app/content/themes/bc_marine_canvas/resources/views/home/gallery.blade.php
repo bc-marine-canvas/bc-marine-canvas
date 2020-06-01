@@ -15,7 +15,8 @@
 <div class="container pb-5">
   <div class="row">
     <div class="my-4 col d-flex justify-content-center align-items-center">
-      <a class="btn btn-secondary" href="{!! $home_page->gallery_copy()['link'] !!}">{{ $home_page->gallery_copy()['button_text'] }}</a>
+      <a class="btn btn-secondary" href="{!!
+      $home_page->gallery_copy()['link']['url'] !!}">{{ $home_page->gallery_copy()['link']['title'] }}</a>
     </div>
   </div>
 </div>

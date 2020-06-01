@@ -9,7 +9,7 @@
   <div role="document">
     <div class="container mt-4">
       @include('gallery.intro')
-      {{-- @include('gallery.filters') --}}
+      @include('gallery.filters')
     </div>
 
     @if ($gallery)

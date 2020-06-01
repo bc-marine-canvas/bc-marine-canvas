@@ -73,6 +73,21 @@
                     "new_lines": "wpautop"
                 },
                 {
+                    "key": "field_5ed3b6c0e1fea",
+                    "label": "Shop Link",
+                    "name": "link",
+                    "type": "link",
+                    "instructions": "",
+                    "required": 1,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "return_format": "array"
+                },
+                {
                     "key": "field_5df23a8b00e3f",
                     "label": "Content Image",
                     "name": "image",
@@ -667,10 +682,11 @@
     "instruction_placement": "label",
     "hide_on_screen": [
         "discussion",
-        "page_attributes",
+        "slug",
+        "author",
         "featured_image"
     ],
     "active": 1,
     "description": "",
-    "modified": 1586669101
+    "modified": 1590937112
 }

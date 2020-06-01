@@ -10,6 +10,5 @@
     @include('masks.intro')
     @include('masks.checklist')
     @include('masks.tabs')
-    @include('masks.cta')
   </div>
 @endsection

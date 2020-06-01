@@ -1,5 +1,5 @@
 <div class="container py-5">
-  <div class="row d-flex align-items-start">
+  <div class="row d-flex align-items-center">
     <div class="col-lg-6">
       <h2>{{ $about_page->main_copy()['heading'] }}</h2>
       <p>{{ $about_page->main_copy()['text'] }}</p>

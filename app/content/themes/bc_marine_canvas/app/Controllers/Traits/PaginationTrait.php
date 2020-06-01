@@ -19,7 +19,11 @@ trait PaginationTrait {
       'next_text' => 'Next',
     ];
 
-    return self::bootstrapify(paginate_links($args));
+    $pagination = self::bootstrapify(paginate_links($args));
+
+    wp_reset_query();
+
+    return $pagination;
   }
 
   private static function bootstrapify($paginated_links) {

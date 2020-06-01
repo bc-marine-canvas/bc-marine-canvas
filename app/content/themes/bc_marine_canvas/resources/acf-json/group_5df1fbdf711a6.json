@@ -97,10 +97,12 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": [
-        "discussion",
+        "slug",
+        "author",
+        "page_attributes",
         "featured_image"
     ],
     "active": 1,
     "description": "",
-    "modified": 1586319476
+    "modified": 1590938108
 }

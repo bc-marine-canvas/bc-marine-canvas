@@ -8,7 +8,7 @@
             "name": "page_banner",
             "type": "image",
             "instructions": "",
-            "required": 1,
+            "required": 0,
             "conditional_logic": 0,
             "wrapper": {
                 "width": "",
@@ -42,6 +42,16 @@
                 "param": "page",
                 "operator": "!=",
                 "value": "366"
+            },
+            {
+                "param": "page",
+                "operator": "!=",
+                "value": "645"
+            },
+            {
+                "param": "page",
+                "operator": "!=",
+                "value": "647"
             }
         ],
         [
@@ -52,15 +62,13 @@
             }
         ]
     ],
-    "menu_order": 0,
+    "menu_order": 1,
     "position": "acf_after_title",
     "style": "default",
     "label_placement": "top",
     "instruction_placement": "label",
-    "hide_on_screen": [
-        "featured_image"
-    ],
+    "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1588481769
+    "modified": 1590937149
 }

@@ -13,7 +13,7 @@
           'info' => $contact_page->address_card(),
         ])
       </div>
-      <div class="col-lg-8 contact-form">
+      <div class="col-lg-8 pl-lg-4 contact-form">
         @include('contact.form', [
           'intro' => $contact_page->intro()['text'],
           'form' => $contact_page->form(),

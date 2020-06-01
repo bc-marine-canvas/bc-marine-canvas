@@ -97,7 +97,7 @@ class Filter {
 
   private static function filter_query_args() {
     return array_map(function ($filterable_class) {
-      return $filterable_class::ID . "-id";
+      return $filterable_class::SLUG . "-id";
     }, self::FILTERABLE_POST_TYPES);
   }
 

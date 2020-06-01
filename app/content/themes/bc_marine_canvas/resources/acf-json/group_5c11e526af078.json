@@ -123,30 +123,6 @@
                     "allow_bulkedit": 0
                 },
                 {
-                    "key": "field_5e208b136abb1",
-                    "label": "Button Text",
-                    "name": "button_text",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 1,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": "",
-                    "show_column": 0,
-                    "show_column_sortable": 0,
-                    "show_column_weight": 1000,
-                    "allow_quickedit": 0,
-                    "allow_bulkedit": 0
-                },
-                {
                     "key": "field_5e208b1f6abb2",
                     "label": "Link",
                     "name": "link",
@@ -159,7 +135,11 @@
                         "class": "",
                         "id": ""
                     },
-                    "return_format": "url"
+                    "return_format": "array",
+                    "show_column": 0,
+                    "show_column_weight": 1000,
+                    "allow_quickedit": 0,
+                    "allow_bulkedit": 0
                 }
             ]
         },
@@ -304,30 +284,6 @@
                     "esc_html": 0
                 },
                 {
-                    "key": "field_5c81f3db0696d",
-                    "label": "Button Text",
-                    "name": "button_text",
-                    "type": "text",
-                    "instructions": "",
-                    "required": 1,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "default_value": "",
-                    "placeholder": "",
-                    "prepend": "",
-                    "append": "",
-                    "maxlength": "",
-                    "show_column": 0,
-                    "show_column_sortable": 0,
-                    "show_column_weight": 1000,
-                    "allow_quickedit": 0,
-                    "allow_bulkedit": 0
-                },
-                {
                     "key": "field_5c81f4170696e",
                     "label": "Link",
                     "name": "link",
@@ -340,7 +296,11 @@
                         "class": "",
                         "id": ""
                     },
-                    "return_format": "url"
+                    "return_format": "array",
+                    "show_column": 0,
+                    "show_column_weight": 1000,
+                    "allow_quickedit": 0,
+                    "allow_bulkedit": 0
                 }
             ]
         },
@@ -411,12 +371,12 @@
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": [
-        "discussion",
-        "comments",
+        "slug",
+        "author",
         "page_attributes",
         "featured_image"
     ],
     "active": 1,
     "description": "",
-    "modified": 1586668300
+    "modified": 1590938171
 }

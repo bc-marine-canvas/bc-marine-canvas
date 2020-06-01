@@ -6,7 +6,7 @@
           <p>{!! $footer_cta['text'] !!}</p>
         </div>
         <div class="col-lg-4 col-xl-3">
-          <a class="btn btn-secondary m-0" href="{!! $footer_cta['link'] !!}">{{ $footer_cta['button_text'] }}</a>
+          <a class="btn btn-secondary m-0" href="{!! $footer_cta['link']['url'] !!}">{{ $footer_cta['link']['title'] }}</a>
         </div>
       </div>
     </div>
@@ -18,7 +18,7 @@
           <div class="col-lg-6">
             <div class="row no-gutters">
               <div class="col-md my-3 d-flex align-items-center footer-logo px-3">
-                <img class="px-3 mx-auto" src="{!! $footer_logo['url'] !!}" height="{{ $footer_logo['height'] }}" width="{{ $footer_logo['width'] }}" alt="{!! $footer_logo['alt'] !!}">
+                <img class="px-3 mx-auto" src="{!! $footer_logo['url'] !!}" alt="{!! $footer_logo['alt'] !!}">
               </div>
               <div class="col-1 footer-divider invisible"></div>
               <div class="col-md my-3 footer-quick-links">
@@ -43,7 +43,8 @@
                 </p>
                 <p class="mb-2">Phone: <a class="text-light" href="{{ $company_contact['phone']['href'] }}">{!! $company_contact['phone']['display'] !!}</a></p>
                 <p class="mb-4">Email: <a class="text-light" href="mailto:{!! $company_contact['email'] !!}">{!! $company_contact['email'] !!}</a></p>
-                <p><a class="btn btn-outline-light text-uppercase font-weight-light" href="{!! $footer_contact['link'] !!}">{{ $footer_contact['button_text'] }}</a></p>
+                <p><a class="btn btn-outline-light text-uppercase
+                    font-weight-light" href="{!! $footer_contact['link']['url'] !!}">{{ $footer_contact['link']['title'] }}</a></p>
               </div>
               <div class="col-1 footer-divider invisible"></div>
               <div class="col-md my-3">

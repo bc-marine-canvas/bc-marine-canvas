@@ -1,0 +1,11 @@
+.section-with-products {
+  h3 {
+    font-size: 1.375rem;
+  }
+
+  img {
+    max-height: 125px;
+    object-fit: contain;
+    background-color: $light;
+  }
+}
