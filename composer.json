@@ -94,7 +94,6 @@
     "wpackagist-plugin/autodescription":"^4.0.7",
     "wpackagist-plugin/google-tag-manager": "^1.0.2",
     "wpackagist-plugin/gravityformscli": "^1.1",
-    "wpackagist-plugin/password-protected": "^2.2.5",
     "wpackagist-plugin/safe-svg": "^1.9.0",
     "wpackagist-plugin/simple-page-ordering": "^2.3.2",
     "wpackagist-plugin/sucuri-scanner": "^1.8.18",

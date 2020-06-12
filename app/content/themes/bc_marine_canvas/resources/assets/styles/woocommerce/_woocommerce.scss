@@ -28,6 +28,13 @@
 }
 
 .product {
+  &.product-type-simple {
+    .woocommerce-tabs,
+    .related.products {
+      display: none;
+    }
+  }
+
   .summary {
     .product_meta {
       display: none;

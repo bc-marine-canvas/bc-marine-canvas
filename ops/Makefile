@@ -3,6 +3,7 @@
 
 run:
 	docker-compose up -d --build
+	docker exec -it app /bin/bash -c "wp plugin deactivate sucuri-scanner; wp plugin activate query-monitor"
 
 stop:
 	docker-compose stop
@@ -14,6 +15,7 @@ clean:
 restart:
 	docker-compose stop
 	docker-compose up -d --build
+	docker exec -it app /bin/bash -c "wp plugin deactivate sucuri-scanner; wp plugin activate query-monitor"
 
 reset:
 	@docker ps -a -q | xargs docker rm -f

@@ -98,10 +98,3 @@ h1.hero {
     }
   }
 }
-
-.home-cta-form-wrapper {
-  @include media-breakpoint-up(lg) {
-    padding-left: 8rem;
-    padding-right: 8rem;
-  }
-}

@@ -1,7 +1,7 @@
 <div class="container mt-5">
   <div class="row">
     <div class="col d-flex align-items-center justify-content-center">
-      <h2>{{ $home_page->gallery_copy()['heading'] }}</h2>
+      <h2 class="mw-575 text-center">{{ $home_page->gallery_copy()['heading'] }}</h2>
     </div>
   </div>
 </div>
