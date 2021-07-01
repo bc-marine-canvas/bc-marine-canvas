@@ -3,7 +3,7 @@
 
 run:
 	docker-compose up -d --build
-	docker exec -it app /bin/bash -c "wp plugin deactivate sucuri-scanner; wp plugin activate query-monitor"
+	docker exec app /bin/bash -c "wp plugin deactivate sucuri-scanner; wp plugin activate query-monitor"
 
 stop:
 	docker-compose stop
@@ -12,10 +12,17 @@ clean:
 	docker-compose stop
 	docker-compose rm -v --force
 
+boot:
+	docker-compose stop
+	docker-compose rm -v --force
+	docker-compose up -d --build
+	sleep 5
+	docker exec app /bin/bash -c "wp plugin deactivate sucuri-scanner; wp plugin activate query-monitor"
+	docker logs -f --tail 50 --timestamps https_proxy
+
 restart:
 	docker-compose stop
 	docker-compose up -d --build
-	docker exec -it app /bin/bash -c "wp plugin deactivate sucuri-scanner; wp plugin activate query-monitor"
 
 reset:
 	@docker ps -a -q | xargs docker rm -f
@@ -59,6 +66,8 @@ https_bash:
 
 mysql-restore:
 	docker run -i -v /dump:/dump --link mysql:db --net ops_default --rm mariadb:latest sh -c 'exec mysql -hdb -ubc_marine_canvas_user -pPC70XoPbxi9SSWkDH4qPTlk9BPugPtPr -f bc_marine_canvas_db < /dump/bc_marine_canvas.sql'
+	sleep 5
+	docker exec -t app /bin/bash -c "wp plugin deactivate sucuri-scanner; wp plugin activate query-monitor"
 
 mysql-dump:
 	docker exec mysql sh -c 'exec mysqldump bc_marine_canvas_db -ubc_marine_canvas_user -pPC70XoPbxi9SSWkDH4qPTlk9BPugPtPr' > /dump/bc_marine_canvas.sql

@@ -1,12 +1,13 @@
 #!/bin/bash
 # Synchronizes the local database with production.
 
-id='bc_marine_canvas'
+id="bc_marine_canvas"
 root="$(git rev-parse --show-toplevel)"
 
 # Options
-seed=''
-quiet=''
+seed=""
+handle_errors=""
+quiet=""
 
 print_usage() {
 cat <<EOM
@@ -15,17 +16,21 @@ Usage: data_sync [OPTION]
 Options:
   -h    display this help message
   -i    import the database without prompting
+  -s    handle server-side errors, and allow the script to complete
+          successfully, even if there are SSH connection issues, problems
+          dumping the database, or issues downloading the dump file
   -q    minimal output
 
 EOM
 }
 
 get_options() {
-  while getopts 'hiq' flag; do
+  while getopts "hisq" flag; do
     case "${flag}" in
       h) print_usage; exit ;;
-      i) seed='true' ;;
-      q) quiet='true' ;;
+      i) seed="true" ;;
+      s) handle_errors="true" ;;
+      q) quiet="true" ;;
       *) print_usage; exit 1 ;;
     esac
   done
@@ -40,13 +45,25 @@ error() {
   exit 1
 }
 
+warn() {
+  echo -e "Warning: $1"
+  exit
+}
+
+gracefully_exit() {
+  [ -n "$handle_errors" ] && warn "$1"
+}
+
 test_connection() {
   ssh -q -o BatchMode=yes -o ConnectTimeout=10 "$id" exit >/dev/null
 }
 
 check_ssh_connection() {
+  local error_message="couldn't connect to the production server"
+
   info "Checking SSH connection..."
-  test_connection || error "couldn't connect to the production server"
+
+  test_connection || gracefully_exit "$error_message" || error "$error_message"
 }
 
 backup_dump_dir() {
@@ -71,9 +88,13 @@ sync_dump() {
 }
 
 fetch_new_dump() {
+  local create_error="couldn't create dump on the production server"
+  local download_error="couldn't download the dump"
+
   info "Getting dump of production data..."
-  create_dump || error "couldn't create dump on the production server"
-  sync_dump || error "couldn't download the dump"
+
+  create_dump || gracefully_exit "$create_error" || error "$create_error"
+  sync_dump || gracefully_exit "$download_error" || error "$download_error"
 }
 
 vagrant_is_running() {

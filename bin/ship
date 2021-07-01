@@ -1,15 +1,16 @@
 #!/bin/bash
 # Builds a Docker image and runs it on production.
 
-id='bc_marine_canvas'
+id="bc_marine_canvas"
 root="$(git rev-parse --show-toplevel)"
 old_version="$(cat "$root/VERSION")"
 branch="$(git symbolic-ref --short -q HEAD)"
 
 # Options
-bump='minor'
-quiet=''
-prune=''
+bump="minor"
+noninteractive=""
+quiet=""
+prune=""
 
 print_usage() {
 cat <<EOM
@@ -18,6 +19,7 @@ Usage: ship [OPTION]
 Options:
   -b [ARG]    type of version bump (major, minor, or patch)
   -h          display this help message
+  -n          noninteractive, do not prompt for user input
   -p          prune merged branches
   -q          minimal output
 
@@ -25,12 +27,13 @@ EOM
 }
 
 get_options() {
-  while getopts 'b:hpq' flag; do
+  while getopts "b:hnpq" flag; do
     case "${flag}" in
       b) bump="${OPTARG}" ;;
       h) print_usage exit ;;
-      p) prune='true' ;;
-      q) quiet='true' ;;
+      n) noninteractive="true" ;;
+      p) prune="true" ;;
+      q) quiet="true" ;;
       *) print_usage; exit 1 ;;
     esac
   done
@@ -83,10 +86,10 @@ commit() {
   git commit -m "$(version)"
   git tag -a "$(version)" -m "v$(version)"
 
-  docker tag "jbboynton/$id:latest" "jbboynton/$id:$(version)"
+  docker tag "xzito/$id:latest" "xzito/$id:$(version)"
 
-  docker push "jbboynton/$id:latest"
-  docker push "jbboynton/$id:$(version)"
+  docker push "xzito/$id:latest"
+  docker push "xzito/$id:$(version)"
 
   git push origin "$branch"
   git push origin --tags
@@ -180,12 +183,12 @@ merged_branch_check() {
   git fetch -p
 
   if merged_branches >/dev/null; then
-    prune_merged_branches
+    [ -n "$noninteractive" ] || prune_merged_branches
   fi
 }
 
 finish() {
-read -r -d '' toot_toot <<\EOM
+read -r -d "" toot_toot <<\EOM
 Shipped.     .  o ..
              o . o o.o
                   ...oo

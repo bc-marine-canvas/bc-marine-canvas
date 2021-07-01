@@ -35,6 +35,7 @@ services:
       - /config:/var/www/config
       - /vendor:/var/www/vendor
       - /ops/.env_app:/var/www/config/.env
+      - log:/var/www/log/sucuri
     environment:
       - SITE_NAME
       - WP_ENV
@@ -53,3 +54,4 @@ services:
 
 volumes:
   data:
+  log:

@@ -17,6 +17,8 @@ Vagrant.configure("2") do |config|
 
   config.timezone.value = "America/New_York"
 
+  config.vbguest.auto_update = true
+
   config.vm.synced_folder "../app", "/app",
     owner: "www-data",
     group: "www-data",
@@ -52,7 +54,10 @@ Vagrant.configure("2") do |config|
   config.vm.provision "shell",
     privileged: false,
     run: "always",
-    inline: "cd /ops && make clean && make run"
+    inline: <<~EOBASH
+      cd /ops
+      make boot
+    EOBASH
 end
 
 # vim:ft=ruby
