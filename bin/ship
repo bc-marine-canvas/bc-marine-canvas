@@ -48,8 +48,8 @@ error() {
   exit 1
 }
 
-on_master() {
-  [ "$branch" == "master" ]
+on_main() {
+  [ "$branch" == "main" ]
 }
 
 up_to_date() {
@@ -102,7 +102,7 @@ pull_new_image() {
 }
 
 merged_branches() {
-  git branch --merged | grep -Ev "(^\*|master)"
+  git branch --merged | grep -Ev "(^\*|main)"
 }
 
 merged_branches_exist() {
@@ -202,8 +202,8 @@ info "\n$toot_toot\n"
 }
 
 get_options "$@"
-on_master || error "trying to ship from a branch other than master"
-up_to_date || error "master and origin/master have diverged"
+on_main || error "trying to ship from a branch other than main"
+up_to_date || error "main and origin/main have diverged"
 working_dir_clean || error "working directory isn't clean"
 bump_version
 build_image || error "couldn't build new image"
