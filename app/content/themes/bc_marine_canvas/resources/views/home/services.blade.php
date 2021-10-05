@@ -6,7 +6,7 @@
   </div>
   <div class="row">
     @foreach ($home_page->services() as $key => $service)
-      <div class="col-md-4 my-3 my-lg-0">
+      <div class="col-md-6 my-3 my-lg-0">
         <a class="h-100 p-0 btn card-title archive-card-link" href="{!! $service['link'] !!}">
           <div class="h-100 mx-auto card rounded-0 bg-transparent">
             <div class="d-block card-img-top archive-card-img" @background("{$service['image']}")></div>

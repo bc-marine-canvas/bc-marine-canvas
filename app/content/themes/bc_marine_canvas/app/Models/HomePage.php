@@ -36,7 +36,6 @@ class HomePage {
   public function services() {
     $canvas_page = new CanvasServicesPage();
     $upholstery_page = new UpholsteryServicesPage();
-    $masks_page = new MasksPage();
 
     return [
       'canvas' => [
@@ -48,11 +47,6 @@ class HomePage {
         'name' => $upholstery_page->name(),
         'image' => $upholstery_page->intro_copy()['image'],
         'link' => $upholstery_page->link(),
-      ],
-      'masks' => [
-        'name' => $masks_page->name(),
-        'image' => $masks_page->intro_copy()['image']['url'],
-        'link' => $masks_page->link(),
       ],
     ];
   }

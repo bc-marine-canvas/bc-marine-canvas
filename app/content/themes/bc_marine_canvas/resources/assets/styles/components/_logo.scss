@@ -1,0 +1,9 @@
+svg {
+  &.cool {
+    fill: $blue;
+  }
+
+  &.warm {
+    fill: $orange;
+  }
+}

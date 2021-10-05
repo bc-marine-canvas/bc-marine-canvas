@@ -34,10 +34,10 @@ $grays: map-merge((
 ), $grays);
 
 // Colors
-$blue:   #2a7cbb;
+$blue:   #1c75bc;
 $indigo: #234269;
 $red:    #f23131;
-$orange: #f29131;
+$orange: #f7941e;
 $yellow: #ffe02b;
 $teal:   #257298;
 $cyan:   #21d7d7;
@@ -149,7 +149,7 @@ $sizes: map-merge((
  */
 
 $body-bg:    $white;
-$body-color: $gray-700;
+$body-color: $gray-800;
 
 /**
  * Links

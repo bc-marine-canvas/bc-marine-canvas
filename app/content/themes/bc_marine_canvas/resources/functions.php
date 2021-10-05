@@ -71,7 +71,6 @@ const REQUIRED_FILES = [
   'helpers',
   'nav_walker',
   'setup',
-  'woocommerce',
 ];
 
 array_map(function ($file) use ($sage_error) {

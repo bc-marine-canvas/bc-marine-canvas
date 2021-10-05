@@ -59,10 +59,6 @@
     },
     {
       "type": "vcs",
-      "url": "https://github.com/jbboynton/woocommerce-table-rate-shipping"
-    },
-    {
-      "type": "vcs",
       "url": "https://github.com/wp-premium/gravityforms"
     },
     {
@@ -82,7 +78,6 @@
     "jbboynton/bc-canvas": "dev-master",
     "jbboynton/bc-posts": "^0.1",
     "jbboynton/bc-upholstery": "dev-master",
-    "jbboynton/woocommerce-table-rate-shipping": "^3.0.21.1",
     "johnpbloch/wordpress": "^5.4.1",
     "roots/soil": "^3.7.3",
     "roots/wp-password-bcrypt": "^1.0",
@@ -97,8 +92,6 @@
     "wpackagist-plugin/safe-svg": "^1.9.0",
     "wpackagist-plugin/simple-page-ordering": "^2.3.2",
     "wpackagist-plugin/sucuri-scanner": "^1.8.18",
-    "wpackagist-plugin/woocommerce": "^5.4.1",
-    "wpackagist-plugin/woocommerce-square": "^2.1.3",
     "wpackagist-plugin/wp-mail-smtp": "^2.0.0",
     "xzito/acf-json-manager": "dev-master"
   },
