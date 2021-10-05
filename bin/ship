@@ -86,10 +86,10 @@ commit() {
   git commit -m "$(version)"
   git tag -a "$(version)" -m "v$(version)"
 
-  docker tag "xzito/$id:latest" "xzito/$id:$(version)"
+  docker tag "jbboynton/$id:latest" "jbboynton/$id:$(version)"
 
-  docker push "xzito/$id:latest"
-  docker push "xzito/$id:$(version)"
+  docker push "jbboynton/$id:latest"
+  docker push "jbboynton/$id:$(version)"
 
   git push origin "$branch"
   git push origin --tags
