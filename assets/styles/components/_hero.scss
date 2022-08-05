@@ -1,0 +1,151 @@
+.hero {
+  // .overlay {
+  //   font-family: Marcellus, sans-serif;
+  //   font-size: 2rem;
+  //   position: absolute;
+  //   color: $secondary;
+
+  //   @include media-breakpoint-up(xl) {
+  //     font-size: 2.75rem;
+  //   }
+  // }
+
+  .overlay {
+    font-family: Marcellus, sans-serif;
+    font-size: 1rem;
+    position: absolute;
+    text-transform: none;
+
+    @include media-breakpoint-up(xl) {
+      font-size: 1.25rem;
+    }
+  }
+
+  .img-link {
+    filter: grayscale(100%);
+    transition: filter 0.05s linear;
+
+    &:hover,
+    &.touched {
+      filter: grayscale(0);
+    }
+  }
+
+  // .left .img-link .overlay {
+  //   top: 43%;
+  //   left: 50%;
+  //   transform: translate(-50%, -50%);
+
+  //   @include media-breakpoint-up(lg) {
+  //     top: 50%;
+  //     left: 45%;
+  //   }
+  // }
+
+  // .right .img-link .overlay {
+  //   top: 57%;
+  //   left: 50%;
+  //   transform: translate(-50%, -50%);
+
+  //   @include media-breakpoint-up(lg) {
+  //     top: 50%;
+  //     left: 55%;
+  //   }
+  // }
+
+  .left .overlay {
+    top: 43%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @include media-breakpoint-up(lg) {
+      top: 50%;
+      left: 45%;
+    }
+  }
+
+  .right .overlay {
+    top: 57%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    @include media-breakpoint-up(lg) {
+      top: 50%;
+      left: 55%;
+    }
+  }
+
+  img {
+    max-height: 38vh;
+    object-fit: cover;
+    width: 100%;
+    padding: 0.5rem 0;
+    opacity: 0.73;
+
+    @include media-breakpoint-up(md) {
+      max-height: 350px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      max-height: 666px;
+    }
+  }
+
+  .left {
+    padding-top: 0.5rem;
+
+    @include media-breakpoint-up(md) {
+      padding-top: unset;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+
+      img {
+        padding-top: 1rem;
+      }
+    }
+
+    @include media-breakpoint-up(lg) {
+      img {
+        padding: 1rem 0;
+      }
+    }
+  }
+
+  .right {
+    padding-bottom: 0.5rem;
+
+    @include media-breakpoint-up(md) {
+      padding-bottom: unset;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+
+      img {
+        padding-bottom: 1rem;
+      }
+    }
+
+    @include media-breakpoint-up(lg) {
+      img {
+        padding: 1rem 0;
+      }
+    }
+  }
+
+  svg {
+    height: 5rem;
+
+    .blue {
+      fill: $blue;
+    }
+
+    .orange {
+      fill: $orange;
+    }
+  }
+
+  .circle {
+    width: 200px;
+    height: 200px;
+    display: flex;
+  }
+}

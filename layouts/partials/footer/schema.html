@@ -1,0 +1,53 @@
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "{{ .Site.Title }}",
+    "url": {{ .Site.BaseURL }},
+    "logo": {{ partial "logo-url.html" . }},
+    "sameAs": [
+      {{ .Site.Data.socialMedia.facebook.url }},
+      {{ .Site.Data.socialMedia.instagram.url }}
+    ]
+  }
+</script>
+
+{{ if .IsHome }}
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "{{ .Site.Title }}",
+      "url": {{ .Site.BaseURL }},
+      "description": "{{ .Params.description }}",
+      "thumbnailUrl": {{ partial "logo-url.html" . }}
+    }
+  </script>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": {{ .Site.Title }},
+      "url": {{ .Site.BaseURL }}
+    }
+  </script>
+{{ end }}
+
+{{ if .Params.breadcrumbsInSchema }}
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "item": {
+            "@id": {{ .Permalink }},
+            "name": {{ partial "page-title.html" . }}
+          }
+        }
+      ]
+    }
+  </script>
+{{ end }}

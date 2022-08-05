@@ -1,0 +1,20 @@
+{{ $options := dict
+  "transpiler" "dartsass"
+  "outputStyle" "compressed"
+  "enableSourceMap" (not hugo.IsProduction)
+}}
+
+{{ $style :=
+  resources.Get "styles/main.scss"
+  | resources.ToCSS $options
+  | resources.PostCSS
+}}
+
+{{ if hugo.IsProduction }}
+  {{ $style = $style | fingerprint "sha512" | resources.PostProcess }}
+{{ end }}
+
+{{ $href := $style.RelPermalink }}
+{{ $integrity := $style.Data.Integrity }}
+
+<link rel="stylesheet" href="{{ $href }}" integrity="{{ $integrity }}">

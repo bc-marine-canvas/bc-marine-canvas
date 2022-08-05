@@ -1,0 +1,6 @@
+{{ $defaults := .Site.Params.defaults.ctas.default }}
+
+{{ if (not .Params.hideCTA) }}
+  {{ $path := .Params.cta.path | default $defaults.path }}
+  {{ partial (printf `ctas/%s` $path) . }}
+{{ end }}

@@ -1,0 +1,16 @@
+/canvas/biminis  /enclosures
+/canvas/covers  /covers
+/canvas/enclosures  /enclosures
+/canvas/*  /enclosures
+/canvas  /enclosures
+/gallery/*  /
+/gallery  /
+/masks/*  /
+/masks  /
+/product/*  /care-and-upkeep/products
+/product  /
+/upholstery/coaming-pads  /upholsters/bolsters
+/upholstery/cushions  /upholstery
+/upholstery/sunpads  /upholstery/bow-cushions
+/upholstery/*  /upholstery
+/*  /

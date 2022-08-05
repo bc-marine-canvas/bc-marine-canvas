@@ -1,0 +1,30 @@
+{{ define "template" }}
+  {{ $template := dict
+    "path" "layouts/contact/single.html"
+    "kind" .Kind
+    "type" .Type
+  }}
+  {{ partial "debug/template.html" $template }}
+{{ end }}
+{{ define "main" }}
+  <section class="contact">
+    <div class="page container py-4">
+      <div class="row">
+        <div class="col-lg-8 pl-lg-4 order-lg-1">
+          <div class="p-3">
+            {{ partial "page-heading.html" . }}
+            {{ .Content }}
+            <div class="pt-3">
+              {{ partial "contact-form.html" . }}
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <aside class="pt-5 pt-lg-0">
+            {{ partial "contact-card.html" . }}
+          </aside>
+        </div>
+      </div>
+    </div>
+  </section>
+{{ end }}

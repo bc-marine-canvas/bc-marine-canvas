@@ -1,0 +1,17 @@
+{{ $street := .Site.Data.company.address.street }}
+{{ $city := .Site.Data.company.address.city }}
+{{ $state := .Site.Data.company.address.state }}
+{{ $zip := .Site.Data.company.address.zip }}
+
+{{ $full := printf `%s, %s, %s %s` $street $city $state $zip }}
+{{ $query := querify (slice "api" "1" "destination" $full) }}
+{{ $googleMaps := printf "https://www.google.com/maps/dir?%s" $query }}
+
+{{ return dict
+  "street" $street
+  "city" $city
+  "state" $state
+  "zip" $zip
+  "full" $full
+  "href" $googleMaps
+}}

@@ -1,0 +1,20 @@
+{{ $title := partial "page-title.html" . | safeHTML }}
+{{ $featuredImage := partial "featured-image-url.html" . }}
+{{ $description := .Description | safeHTML }}
+
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, shrink-to-fit=no">
+
+{{ if $description }}
+  <meta name="description" content="{{ $description }}">
+{{ end }}
+
+<meta property="og:type" content="{{ or .Params.ogType "website" }}">
+<meta property="og:title" content="{{ $title }}">
+<meta property="og:description" content="{{ or $description .Site.Params.slogan }}">
+<meta property="og:image" content="{{ $featuredImage }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:site_name" content="{{ .Site.Title }}">
+
+<link rel="canonical" href="{{ .Permalink }}">

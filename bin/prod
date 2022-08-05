@@ -1,0 +1,38 @@
+#!/bin/bash
+# Production build script for Netlify deployments
+
+set -eo pipefail
+
+echo
+echo "────────────────────────────────────────────────────────────────"
+echo "  ☞ Running bin/prod..."
+echo "────────────────────────────────────────────────────────────────"
+echo
+
+echo "☞ Installing dart-sass-embedded..."
+
+BIN_DIR=/opt/build/repo/node_modules/.bin
+DARTSASS_VERSION=1.55.0
+DARTSASS_TARBALL="sass_embedded-${DARTSASS_VERSION}-linux-x64.tar.gz"
+DARTSASS_RELEASE_URL="https://github.com/sass/dart-sass-embedded/releases/download/${DARTSASS_VERSION}/${DARTSASS_TARBALL}";
+
+echo
+echo "  ☞ BIN_DIR: $BIN_DIR"
+echo "  ☞ DARTSASS_VERSION: $DARTSASS_VERSION"
+echo
+
+echo "☞ Creating bin directory..."
+mkdir -p "$BIN_DIR"
+
+echo "☞ Downloading dart-sass-embedded..."
+curl -LJO "$DARTSASS_RELEASE_URL"
+
+echo "☞ Uncompressing dart-sass-embedded..."
+tar -xvf "$DARTSASS_TARBALL"
+
+echo "☞ Moving dart-sass-embedded into bin directory..."
+mv sass_embedded/dart-sass-embedded "$BIN_DIR"
+rm -rf sass_embedded*;
+
+echo "☞ Verify dart-sass-embedded exists and is callable..."
+dart-sass-embedded --version

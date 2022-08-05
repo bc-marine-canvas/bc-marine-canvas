@@ -1,0 +1,65 @@
+<div class="container hero">
+  <div class="row position-relative">
+    <div class="container hero">
+      <div class="row position-relative">
+        <div class="col-lg-6 left">
+          {{ $enclosure := dict
+            "path" "home/enclosure.jpg"
+            "alt" "Enclosure built by BC Marine Canvas"
+          }}
+          <a class="d-block h-100 p-0 img-link position-relative overflow-hidden touchable" href="/enclosures">
+            {{ partial "image.html" $enclosure }}
+            <!-- <span class="overlay ps-6 pe-4 pt-3 pb-2 rounded-start rounded-5 bg-white text-dark">Enclosures <span class="text-primary">→</span></span> -->
+            <span class="overlay ps-6 pe-4 pt-3 pb-2 text-dark text-shadow">Enclosures <span class="text-primary">→</span></span>
+          </a>
+        </div>
+        <div class="col-lg-6 right">
+          {{ $dodger := dict
+            "path" "home/dodger.jpg"
+            "alt" "Dodger built by BC Marine Canvas"
+          }}
+          <a class="d-block h-100 p-0 img-link position-relative overflow-hidden touchable" href="/dodgers">
+            {{ partial "image.html" $dodger }}
+            <!-- <span class="overlay ps-6 pe-4 pb-3 pb-lg-2 pt-2 pt-lg-3 rounded-start rounded-5 bg-white text-dark">Dodgers <span class="text-primary">→</span></span> -->
+            <span class="overlay ps-6 pe-4 pb-3 pb-lg-2 pt-2 pt-lg-3 text-dark text-shadow">Dodgers <span class="text-primary">→</span></span>
+          </a>
+        </div>
+        <div class="circle position-absolute top-50 start-50 translate-middle">
+          <div class="inner py-4">
+            {{ partial "svg.html" "logo" }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{{/*
+<div class="col-lg-6 left position-relative">
+  {{ $enclosure := dict
+    "path" "home/enclosure.jpg"
+    "alt" "Enclosure built by BC Marine Canvas"
+  }}
+  {{ partial "image.html" $enclosure }}
+  <div class="position-absolute top-50 start-50 translate-middle">
+    <a class="btn btn-white" href="/enclosures">Enclosures</a>
+  </div>
+</div>
+<div class="col-lg-6 right position-relative">
+  {{ $dodger := dict
+    "path" "home/dodger.jpg"
+    "alt" "Dodger built by BC Marine Canvas"
+  }}
+  {{ partial "image.html" $dodger }}
+  <div class="position-absolute top-50 start-50 translate-middle">
+    <a class="btn btn-white" href="/dodgers">Dodgers</a>
+  </div>
+  */}}{{/*
+</div>
+<div class="circle position-absolute top-50 start-50 translate-middle">
+  <div class="inner py-4">
+    {{ partial "svg.html" "logo" }}
+    <!-- <a class="btn btn-sm btn-secondary">Get a quote</a> -->
+  </div>
+</div>
+*/}}

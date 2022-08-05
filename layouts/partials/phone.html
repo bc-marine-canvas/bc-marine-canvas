@@ -1,0 +1,9 @@
+{{ $display := .Site.Data.company.phone.display }}
+{{ $plain := .Site.Data.company.phone.plain }}
+
+{{ $href := printf "tel:%s" $plain }}
+
+{{ return dict
+  "display" $display
+  "href" $href
+}}

@@ -1,51 +1,14 @@
 # Files
 # -----
-.DS_Store
-.env*
-.htaccess
-.log
-.sql
+*.bak
+*.env
+*.log
+.hugo_build.lock
+hugo_stats.json
 
 # Directories
 # -----------
-app/wp/
-ops/.vagrant/
-unformatted/
-vendor/
-ignore/
-
-# Keep
-# ----
-app/content/*
-!app/content/mu-plugins/
-!app/content/plugins/
-!app/content/themes/
-!app/content/uploads/
-
-app/content/mu-plugins/*
-!app/content/mu-plugins/bedrock-autoloader.php
-
-app/content/plugins/*
-!app/content/plugins/.keep
-
-app/content/themes/*
-!app/content/themes/bc_marine_canvas/
-!app/content/themes/.keep
-
-app/content/themes/bc_marine_canvas/resources/assets/config-local.json
-app/content/themes/bc_marine_canvas/.cache-loader/
-app/content/themes/bc_marine_canvas/dist/
-app/content/themes/bc_marine_canvas/node_modules/
-app/content/themes/bc_marine_canvas/vendor/
-
-app/content/themes/bc_marine_canvas/resources/views/cache/*
-!app/content/themes/bc_marine_canvas/resources/views/cache/.keep
-
-app/content/uploads/*
-!app/content/uploads/.keep
-
-dump/*
-!dump/.keep
-
-log/*
-!log/.keep
+.ignored/
+node_modules/
+public/
+resources/

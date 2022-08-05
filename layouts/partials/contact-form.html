@@ -1,0 +1,48 @@
+<form id="form" class="contact-form row g-3" autocomplete="off" novalidate>
+  <div class="col-12" style="height: 0 !important; width: 0 !important; color: transparent !important; background-color: transparent !important; border-color: transparent !important; border-width: 0 !important; margin: 0 !important; padding: 0 !important;" tabindex="-1" aria-hidden="true">
+    <input type="text" name="specialRequest" style="height: 0 !important; width: 0 !important; color: transparent !important; background-color: transparent !important; border-color: transparent !important; border-width: 0 !important; margin: 0 !important; padding: 0 !important;" tabindex="-1" aria-hidden="true">
+  </div>
+  <div class="col-md-6">
+    <label class="form-label" for="firstName">First name<span class="text-danger">*</span></label>
+    <input class="form-control" type="text" id="firstName" name="firstName" required>
+    <div class="invalid-feedback">
+      Please provide your first name.
+    </div>
+  </div>
+  <div class="col-md-6">
+    <label class="form-label" for="lastName">Last name</label>
+    <input class="form-control" type="text" id="lastName" name="lastName">
+  </div>
+  <div class="col-md-8">
+    <label class="form-label" for="email">Email<span class="text-danger">*</span></label>
+    <input class="form-control" type="email" id="email" name="email" pattern=".+@.+\..+" required>
+    <div class="invalid-feedback">
+      Please provide an email address.
+    </div>
+  </div>
+  <div class="col-md-4">
+    <label class="form-label" for="phone">Phone</label>
+    <input class="form-control" type="tel" id="phone" name="phone">
+  </div>
+  <div class="col-12">
+    <label class="form-label" for="message">Message<span class="text-danger">*</span></label>
+    <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+    <div class="invalid-feedback">
+      Please provide a short message.
+    </div>
+  </div>
+  <div class="col-12">
+    <div class="d-grid d-md-flex align-items-center">
+      <button class="btn btn-secondary border border-2 border-light my-2" type="button" id="form-submit-button">
+        <span id="form-submit-button-label">Submit</span>
+        <span id="form-spinner" class="ms-1 text-dark form-spinner spinner-border spinner-border-sm d-none" role="status" aria-hidden="true"></span>
+      </button>
+      <div id="form-submit-success" class="my-2 my-md-0 ms-md-2 d-none">
+        <p class="mb-0 text-center text-md-start"><span class="fw-bold text-success">Success!</span> We'll be in touch ASAP!</p>
+      </div>
+      <div id="form-submit-failure"class="my-2 my-md-0 ms-md-2 d-none">
+        <p class="text-center text-md-start mb-0"><span class="fw-bold text-danger">Something went wrong...</span> Please try again.</p>
+      </div>
+    </div>
+  </div>
+</form>

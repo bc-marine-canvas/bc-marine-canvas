@@ -1,0 +1,15 @@
+{{ $options := dict
+  "params" (partial "footer/params.html" .)
+  "minify" hugo.IsProduction
+}}
+
+{{ $script :=
+  resources.Get "scripts/main.js"
+  | js.Build $options
+  | fingerprint "sha512"
+}}
+
+{{ $src := $script.RelPermalink }}
+{{ $integrity := $script.Data.Integrity }}
+
+<script src="{{ $src }}" type="module" integrity="{{ $integrity }}" defer></script>

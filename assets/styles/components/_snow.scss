@@ -1,0 +1,42 @@
+/* stylelint-disable */
+@use "sass:math";
+
+.snowflake {
+  --size: 1px;
+
+  width: var(--size);
+  height: var(--size);
+  background: $gray-100;
+  border-radius: 50%;
+  position: absolute;
+  top: -5vh;
+}
+
+@keyframes snowfall {
+  0% {
+    transform: translate3d(var(--left-start-position), 0, 0);
+  }
+
+  100% {
+    transform: translate3d(var(--left-end-position), 110vh, 0);
+  }
+}
+
+@for $i from 1 through 200 {
+  .snowflake:nth-child(#{$i}) {
+    --size: #{random(5) * 0.5}px;
+    --left-start-position: #{random(20) - 10}vw;
+    --left-end-position: #{random(20) - 10}vw;
+
+    left: #{random(100)}vw;
+    animation: snowfall #{10 + random(10)}s linear infinite;
+    animation-delay: -#{random(10)}s;
+    filter: blur(0.5px);
+
+    @include media-breakpoint-up(md) {
+      --size: #{random(5) * 1}px;
+
+      filter: blur(1px);
+    }
+  }
+}

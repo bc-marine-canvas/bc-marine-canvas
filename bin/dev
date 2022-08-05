@@ -1,0 +1,25 @@
+#!/bin/bash
+
+if [ -z $DEV ]; then
+  echo >&2 "☞ Not starting the Hugo server because \$DEV is not set"
+  exit 1
+fi
+
+root="$(git rev-parse --show-toplevel)"
+dotenv="$root/.env"
+
+export $(cat "$dotenv" | xargs)
+
+bindToIP="$(networksetup -getinfo Wi-Fi | grep "IP address: 1" | cut -d' ' -f3)"
+
+hugo server \
+  --disableFastRender \
+  --noHTTPCache \
+  --printMemoryUsage \
+  --printPathWarnings \
+  --printUnusedTemplates \
+  --templateMetrics \
+  --templateMetricsHints \
+  --verbose \
+  --bind "$bindToIP" \
+  --baseURL "http://${bindToIP}"

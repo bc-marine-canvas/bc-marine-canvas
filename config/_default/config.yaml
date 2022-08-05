@@ -1,0 +1,41 @@
+build:
+  noJSConfigInAssets: true
+copyright: 2022
+disableKinds:
+  - RSS
+  - taxonomy
+  - term
+enableEmoji: true
+enableRobotsTXT: true
+languageCode: en-us
+paginate: 20
+params:
+  logo: logo.svg
+  slogan: Custom marine canvas and upholstery
+  defaults:
+    ctas:
+      default:
+        path: simple.html
+      simple:
+        text: Get in touch to start a project!
+        subText:
+        label: Contact
+        link: /contact
+      winter:
+        text: Booking winter projects!
+        subText:
+        label: Reserve
+        link: /contact
+        snowflakeCount: 250
+    featuredImage:
+      default:
+        path: default-featured-image.png
+      linkToOriginal:
+        list: true
+        section: true
+        single: true
+pluralizeListTitles: true
+relativeURLs: true
+sitemap:
+  changefreq: weekly
+timeZone: America/New_York

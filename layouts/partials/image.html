@@ -1,0 +1,16 @@
+{{ $image := resources.Get (printf "images/%s" .path) }}
+{{ $id := .id }}
+{{ $class := .class }}
+{{ $alt := .alt }}
+{{ $includeDimensions := .includeDimensions | default true }}
+{{ $linkToOriginal := .linkToOriginal | default false }}
+
+{{- with $image -}}
+  {{ if $linkToOriginal }}
+    <a href="{{ .RelPermalink }}" target="_blank" title="Open original image">
+      <img {{ with $id }} id="{{ $id }}" {{ end }} {{ with $class }} class="{{ $class }}" {{ end }} src="{{ .RelPermalink }}" {{ with $alt }} alt="{{ $alt }}" {{ end }} {{ if $includeDimensions }} width="{{ .Width }}" height="{{ .Height }}" {{ end }}>
+    </a>
+  {{ else }}
+    <img {{ with $id }} id="{{ $id }}" {{ end }} {{ with $class }} class="{{ $class }}" {{ end }} src="{{ .RelPermalink }}" {{ with $alt }} alt="{{ $alt }}" {{ end }} {{ if $includeDimensions }} width="{{ .Width }}" height="{{ .Height }}" {{ end }}>
+  {{ end }}
+{{ end }}

@@ -1,0 +1,6 @@
+{{ $defaults := .Site.Params.defaults.featuredImage.default }}
+{{ $path := .Params.featuredImage.path | default $defaults.path }}
+
+{{ $image := resources.Get (printf "images/%s" $path) }}
+
+{{ return $image.Permalink }}

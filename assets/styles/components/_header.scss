@@ -1,0 +1,53 @@
+header {
+  font-family: Marcellus, sans-serif;
+
+  .nav-link {
+    font-size: 1.5rem;
+
+    &.active {
+      &:hover {
+        color: tint-color($navbar-light-active-color, 30%);
+      }
+    }
+
+    @include media-breakpoint-up(lg) {
+      font-size: 1rem;
+    }
+  }
+
+  .navbar-brand {
+    svg {
+      fill: $white;
+      height: 2rem;
+
+      .blue {
+        fill: $blue;
+      }
+
+      .orange {
+        fill: $orange;
+      }
+
+      .blue,
+      .orange {
+        transition: fill 0.1s ease-in-out;
+      }
+
+      &:hover {
+        .blue {
+          fill: tint-color($blue, 20%);
+        }
+
+        .orange {
+          fill: tint-color($orange, 20%);
+        }
+      }
+    }
+  }
+
+  .navbar-flex-group {
+    display: flex;
+    flex-shrink: 1;
+    flex-basis: 0;
+  }
+}

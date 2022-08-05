@@ -1,0 +1,20 @@
+footer {
+  color: $navbar-light-color;
+
+  a {
+    color: $navbar-light-color;
+
+    &:hover {
+      color: shade-color($navbar-light-color, 30%);
+    }
+  }
+
+  .social-media {
+    line-height: 1.5;
+    fill: currentcolor;
+  }
+
+  svg {
+    height: 1.25rem;
+  }
+}

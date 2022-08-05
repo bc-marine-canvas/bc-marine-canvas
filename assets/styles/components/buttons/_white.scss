@@ -1,0 +1,11 @@
+.btn-white {
+  --bs-btn-color: #{$black};
+  --bs-btn-bg: #{$white};
+  --bs-btn-border-color: #{$black};
+  --bs-btn-hover-color: #{$white};
+  --bs-btn-hover-bg: #{shade-color($secondary, 10%)};
+  --bs-btn-hover-border-color: #{$white};
+  --bs-btn-active-color: var(--bs-btn-hover-color);
+  --bs-btn-active-bg: #{shade-color($secondary, 20%)};
+  --bs-btn-active-border-color: #{$white};
+}

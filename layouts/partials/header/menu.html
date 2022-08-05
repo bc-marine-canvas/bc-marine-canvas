@@ -1,0 +1,50 @@
+<nav class="navbar navbar-expand-lg">
+  <div class="container justify-content-lg-center">
+    <a class="navbar-brand d-lg-none mx-0" href="{{ .Site.BaseURL }}" aria-label="Home">
+      {{ partial "svg.html" "logo" }}
+    </a>
+    <button class="float-end navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav" aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center" id="main-nav">
+      <div class="pt-4 pt-lg-0"></div>
+      <div class="navbar-flex-group flex-grow-1 justify-content-end text-end text-lg-start">
+        <ul class="navbar-nav mr-auto">
+          {{ $currentPage := . }}
+          {{ $menu := print "left" }}
+
+          {{ range $menuItem := .Site.Menus.left }}
+            {{ $options := dict
+              "page" $currentPage
+              "menuItem" $menuItem
+              "menu" $menu
+            }}
+
+            {{ partial "header/menu-item.html" $options }}
+          {{ end }}
+        </ul>
+      </div>
+      <div class="navbar-flex-group flex-grow-0 justify-content-center mx-2 d-none d-lg-flex">
+        <a class="navbar-brand d-flex mx-lg-2" href="/" aria-label="Home" {{- if .IsHome -}} aria-current="page" {{ end }}>
+          {{ partial "svg.html" "logo" }}
+        </a>
+      </div>
+      <div class="navbar-flex-group flex-grow-1 justify-content-end justify-content-lg-start text-end text-lg-start">
+        <ul class="navbar-nav mr-auto">
+          {{ $currentPage := . }}
+          {{ $menu := print "right" }}
+
+          {{ range $menuItem := .Site.Menus.right }}
+            {{ $options := dict
+              "page" $currentPage
+              "menuItem" $menuItem
+              "menu" $menu
+            }}
+
+            {{ partial "header/menu-item.html" $options }}
+          {{ end }}
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>

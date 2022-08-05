@@ -1,0 +1,34 @@
+{
+  "name": "bc-marine-canvas",
+  "version": "0.1.0",
+  "description": "BC Marine Canvas website",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jbboynton/bc-marine-canvas.git"
+  },
+  "private": true,
+  "browserslist": "defaults",
+  "scripts": {
+    "lint": "npm run lint:scripts && npm run lint:styles",
+    "lint:scripts": "eslint assets/scripts --ext .js",
+    "lint:styles": "stylelint assets/styles/**/*.scss",
+    "start": "npm run lint && DEV=true bin/dev",
+    "build:prod": "npm run lint && bin/prod"
+  },
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^5.0.0",
+    "autoprefixer": "^10.4.8",
+    "eslint": "^8.26.0",
+    "postcss": "^8.4.18",
+    "postcss-cli": "^10.0.0",
+    "sass": "^1.55.0",
+    "stylelint": "^14.14.0",
+    "stylelint-config-standard-scss": "^5.0.0",
+    "stylelint-scss": "^4.3.0"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.5",
+    "bootstrap": "^5.2.2",
+    "sanitize-html": "^2.7.2"
+  }
+}

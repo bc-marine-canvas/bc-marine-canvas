@@ -1,0 +1,161 @@
+// stylelint-disable
+
+// Color system
+$white:    #fff;
+$gray-100: #e7e7e7;
+$gray-200: #bababa;
+$gray-300: #8e8d8c;
+$gray-400: #7c7c7d;
+$gray-500: #c9c9c9;
+$gray-600: #5e5e5f;
+$gray-700: #1d1c1b;
+$gray-800: #17140f;
+$gray-900: #161a1e;
+$black:    #070606;
+
+$blue:   #1c75bc;
+$indigo: #234269;
+$red:    #ec0b0b;
+$orange: #f7941e;
+$yellow: #ffe02b;
+$teal:   #257298;
+$cyan:   #21d7d7;
+$purple: #6530c2;
+$pink:   #f92a7a;
+$green:  #39c43c;
+
+$colors: (
+  "blue":       $blue,
+  "indigo":     $indigo,
+  "purple":     $purple,
+  "pink":       $pink,
+  "red":        $red,
+  "orange":     $orange,
+  "yellow":     $yellow,
+  "green":      $green,
+  "teal":       $teal,
+  "cyan":       $cyan,
+  "black":      $black,
+  "white":      $white,
+  "gray":       $gray-300,
+  "gray-dark":  $gray-800
+);
+
+$primary:   $blue;
+$secondary: $orange;
+$success:   $green;
+$info:      $cyan;
+$warning:   $yellow;
+$danger:    $red;
+$light:     $gray-100;
+$dark:      $gray-800;
+
+$theme-colors: (
+  "primary":    $primary,
+  "secondary":  $secondary,
+  "success":    $success,
+  "info":       $info,
+  "warning":    $warning,
+  "danger":     $danger,
+  "light":      $light,
+  "dark":       $dark
+);
+
+// Add white to theme colors
+$theme-colors: map-merge($theme-colors, ("white": $white));
+
+// Options
+$enable-rounded:              false;
+$enable-cssgrid:              true;
+$enable-validation-icons:     false;
+
+// Spacing
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: ($spacer * 0.1),
+  2: ($spacer * 0.75),
+  3: $spacer,
+  4: ($spacer * 1.5),
+  5: ($spacer * 2.25),
+  6: ($spacer * 4)
+);
+
+// Links
+$link-decoration:                         none;
+$link-shade-percentage:                   20% !default;
+
+// Grid columns
+$grid-gutter-width: 2rem;
+
+// Components
+$border-color-translucent:    $gray-100;
+
+$component-active-color:      $orange;
+
+// Typography
+$font-family-sans-serif:      "Red Hat Display", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+$font-size-base:              1rem; // Assumes the browser default, typically `16px`
+
+$h1-font-size:                $font-size-base * 1.6;
+$h2-font-size:                $font-size-base * 1.3;
+$h3-font-size:                $font-size-base * 1.2;
+$h4-font-size:                $font-size-base * 1.1;
+$h5-font-size:                $font-size-base * 1.1;
+$h6-font-size:                $font-size-base;
+
+$headings-margin-bottom:      $spacer * 1.125;
+$headings-font-family:        Marcellus, sans-serif;
+$headings-font-weight:        normal;
+
+$small-font-size:             0.875em;
+
+// Buttons
+$input-btn-padding-y:         0.4rem;
+$input-btn-font-family:       Marcellus, sans-serif;
+
+$input-btn-padding-y-sm:      0.4rem;
+$input-btn-padding-x-sm:      0.75rem;
+
+$btn-transition:              color 0.1s ease-in-out, background-color 0.1s ease-in-out, border-color 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
+
+$btn-hover-bg-shade-amount:       30%;
+$btn-hover-bg-tint-amount:        30%;
+$btn-hover-border-shade-amount:   30%;
+$btn-hover-border-tint-amount:    30%;
+
+// Forms
+$form-label-font-size:                  $small-font-size;
+
+$input-border-color:                    $gray-100;
+
+$form-feedback-valid-color:         $gray-100;
+
+// Navbar
+$navbar-nav-link-padding-x:         0.9rem;
+
+$navbar-light-color:                rgba($black, 0.58);
+$navbar-light-hover-color:          rgba($black, 0.83);
+$navbar-light-active-color:         shade-color($secondary, 8%);
+
+$navbar-dark-color:                 rgba($white, 0.58);
+$navbar-dark-hover-color:           rgba($white, 0.83);
+$navbar-dark-active-color:          $secondary;
+
+// List group
+$list-group-item-padding-y:         $spacer * 0.75;
+$list-group-item-padding-x:         $spacer * 1.5;
+
+// Breadcrumbs
+
+$breadcrumb-font-size:              0.875rem;
+$breadcrumb-item-padding-x:         0.2rem;
+$breadcrumb-divider-color:          $gray-200;
+$breadcrumb-divider:                "▸";
+
+// Spinners
+
+$spinner-animation-speed: 0.6s;
+
+$spinner-border-width-sm: 2px;

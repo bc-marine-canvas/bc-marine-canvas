@@ -1,0 +1,11 @@
+{{ $title := .Site.Title }}
+
+{{ if .IsHome }}
+  {{ $title = print .Site.Title }}
+{{ else if (eq .RelPermalink "/404.html") }}
+  {{ $title = print "404" }}
+{{ else }}
+  {{ $title = print .Title }}
+{{ end }}
+
+{{ return $title }}

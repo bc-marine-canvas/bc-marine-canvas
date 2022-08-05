@@ -1,0 +1,9 @@
+{{ $title := partial "page-title.html" . }}
+
+{{ if .IsHome }}
+  {{ $title = print $title " | " .Site.Params.slogan }}
+{{ else }}
+  {{ $title = print $title " | " .Site.Title }}
+{{ end }}
+
+<title>{{ $title | safeHTML }}</title>

@@ -1,0 +1,18 @@
+.page {
+  .page-content {
+    h2 {
+      @extend .mt-5;
+    }
+
+    li {
+      @extend .lh-sm;
+
+      padding-left: 0.7rem;
+      margin-bottom: 0.6rem;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

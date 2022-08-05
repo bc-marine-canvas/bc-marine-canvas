@@ -1,0 +1,9 @@
+.breadcrumb-item {
+  &:not(.active) {
+    a {
+      &:hover {
+        color: tint-color($link-color, 30%);
+      }
+    }
+  }
+}

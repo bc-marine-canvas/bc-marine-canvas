@@ -1,0 +1,23 @@
+.covers {
+  .page-content {
+    ol,
+    ul {
+      list-style-type: "✔︎";
+    }
+
+    li {
+      @extend .lh-sm;
+
+      padding-left: 0.7rem;
+      margin-bottom: 0.6rem;
+
+      &::marker {
+        color: $green;
+      }
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

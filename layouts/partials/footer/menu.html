@@ -1,0 +1,16 @@
+<nav style="--bs-breadcrumb-divider: '・';">
+  <ol class="breadcrumb justify-content-center mb-0">
+  {{ $currentPage := . }}
+  {{ $menu := print "footer" }}
+
+  {{ range $menuItem := .Site.Menus.footer }}
+    {{ $options := dict
+      "page" $currentPage
+      "menuItem" $menuItem
+      "menu" $menu
+    }}
+
+    {{ partial "footer/menu-item.html" $options }}
+  {{ end }}
+  </ol>
+</nav>

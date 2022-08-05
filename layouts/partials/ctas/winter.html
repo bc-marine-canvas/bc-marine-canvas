@@ -1,0 +1,55 @@
+{{ $defaults := .Site.Params.defaults.ctas.winter }}
+{{ $snowflakeCount :=
+  (cond (eq .Params.cta.snowflakeCount "default") "" .Params.cta.snowflakeCount)
+  | default $defaults.snowflakeCount
+}}
+{{ $text :=
+  (cond (eq .Params.cta.text "default") "" .Params.cta.text)
+  | default $defaults.text
+}}
+{{ $subText :=
+  (cond (eq .Params.cta.subText "default") "" .Params.cta.subText)
+  | default $defaults.subText
+}}
+{{ $label :=
+  (cond (eq .Params.cta.label "default") "" .Params.cta.label)
+  | default $defaults.label
+}}
+{{ $link :=
+  (cond (eq .Params.cta.link "default") "" .Params.cta.link)
+  | default $defaults.link
+}}
+<div class="container-fluid bg-primary text-white">
+  <div class="row py-4 position-relative overflow-hidden">
+    <div class="col d-flex flex-column align-items-center">
+      {{ range seq $snowflakeCount }}
+        <div class="snowflake"></div>
+      {{ end }}
+      {{ if $subText }}
+        <div class="d-block d-sm-none">
+          <h3 class="mb-2 fs-3 fs-sm-2">{{ $text }}</h3>
+          <div class="d-flex align-items-center justify-content-center w-100">
+            <div class="me-3">
+              <p class="mb-0 mw-325 lh-sm"><small>{{ $subText }}</small></p>
+            </div>
+            <a class="btn btn-cta btn-secondary border border-2 border-light ms-3 text-nowrap" href="{{ $link }}">{{ $label }}</a>
+          </div>
+        </div>
+        <div class="d-none d-sm-block">
+          <div class="d-flex align-items-center justify-content-center w-100">
+            <div class="me-3">
+              <h3 class="mb-2 fs-3 fs-sm-2">{{ $text }}</h3>
+              <p class="mb-0 mw-325 lh-sm"><small>{{ $subText }}</small></p>
+            </div>
+            <a class="btn btn-cta btn-secondary border border-2 border-light ms-3 text-nowrap" href="{{ $link }}">{{ $label }}</a>
+          </div>
+        </div>
+      {{ else }}
+        <div class="d-flex align-items-center justify-content-center w-100">
+          <h3 class="me-3 mb-0 fs-3 fs-sm-2">{{ $text }}</h3>
+          <a class="btn btn-cta btn-secondary border border-2 border-light ms-3 text-nowrap" href="{{ $link }}">{{ $label }}</a>
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</div>

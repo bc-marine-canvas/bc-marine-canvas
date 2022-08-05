@@ -1,0 +1,9 @@
+@mixin bg-cover($url, $size: "cover", $bg-color: $gray-300) {
+  height: 100%;
+  background-color: $bg-color;
+  background-image: url("#{$url}");
+  background-size: $size;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+}

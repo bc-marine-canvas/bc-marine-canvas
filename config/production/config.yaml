@@ -1,0 +1,6 @@
+baseURL: https://www.bcmarinecanvasri.com
+title: BC Marine Canvas
+
+build:
+  useResourceCacheWhen: fallback
+  writeStats: true

@@ -1,0 +1,22 @@
+<div class="card">
+  <div class="card-body">
+    <h2 class="card-title fs-3 mt-0">Our shop</h2>
+    <p class="card-text">We're located on Greenwich Bay in the Safe Harbor Cowessett marina.</p>
+    <dl>
+      <dt>Address:</dt>
+      {{ $address := partial "address.html" . }}
+      <dd>
+        <a class="text-decoration-none" href="{{ $address.href }}" target="_blank">
+          {{ $address.street }}<br>
+          {{ $address.city }}, {{ $address.state }} {{ $address.zip }}
+        </a>
+      </dd>
+      <dt>Phone:</dt>
+      {{ $phone := partial "phone.html" . }}
+      <dd><a class="text-decoration-none" href="{{ $phone.href }}">{{ $phone.display }}</a></dd>
+      <dt>Email:</dt>
+      {{ $email := .Site.Data.company.email }}
+      <dd><a class="text-decoration-none" href="mailto:{{ $email }}">{{ $email }}</a></dd>
+    </dl>
+  </div>
+</div>

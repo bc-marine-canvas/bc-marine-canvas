@@ -1,0 +1,16 @@
+{{ define "template" }}
+  {{ $template := dict
+    "path" "layouts/index.html"
+    "kind" .Kind
+    "type" .Type
+  }}
+  {{ partial "debug/template.html" $template }}
+{{ end }}
+{{ define "main" }}
+  <section class="home">
+    <h1 class="visually-hidden">{{ .Site.Data.company.name }}</h1>
+    {{ partial "home/hero.html" . }}
+    {{ partial "home/headline.html" . }}
+    {{ partial "home/form.html" . }}
+  </section>
+{{ end }}
