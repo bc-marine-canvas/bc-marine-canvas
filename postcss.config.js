@@ -16,13 +16,13 @@ const plugins = [
     },
     safelist: [
       "active",
-      "show",
       "collapse",
-      "collapsing",
-      "collapsed",
       "collapse-horizontal",
-      "was-validated",
+      "collapsed",
+      "collapsing",
       "fade",
+      "show",
+      "was-validated",
     ],
   }),
 ];
