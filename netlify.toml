@@ -26,11 +26,11 @@ command = "yarn build:prod && hugo --gc --buildDrafts --buildExpired --buildFutu
     Content-Security-Policy = '''
       default-src 'none';
       base-uri 'self';
-      connect-src 'self';
+      connect-src 'self' https://api.monday.com;
       font-src 'self';
       frame-ancestors 'none';
       img-src 'self' data:;
-      prefetch-src 'self';
+      manifest-src 'self';
       script-src 'self' 'unsafe-inline';
       style-src 'self' 'unsafe-inline';
     '''
