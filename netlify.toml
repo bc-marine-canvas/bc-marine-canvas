@@ -19,7 +19,7 @@ command = "yarn build:prod && hugo --gc --buildDrafts --buildExpired --buildFutu
   [headers.values]
     Access-Control-Allow-Origin = "*"
     Cache-Control = '''
-      max-age=60,
+      max-age=86400,
       must-revalidate
     '''
     X-Content-Type-Options = "nosniff"
@@ -35,4 +35,4 @@ command = "yarn build:prod && hugo --gc --buildDrafts --buildExpired --buildFutu
       style-src 'self' 'unsafe-inline';
     '''
     Referrer-Policy = "same-origin"
-    Strict-Transport-Security = "max-age=60; includeSubDomains"
+    Strict-Transport-Security = "max-age=86400; includeSubDomains"
