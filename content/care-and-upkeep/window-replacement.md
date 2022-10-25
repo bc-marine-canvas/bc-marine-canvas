@@ -9,14 +9,14 @@ featuredImage:
 
 If you have damaged windows but don't want to replace your entire enclosure,
 consider window replacement instead. Often, we can cleanly swap out your old
-windows with new ones without making major changes to the rest of the panel.
+windows with new ones, while preserving your existing window panels.
 
 <!--more-->
 
-This type of repair comes with some benefits and some drawbacks. Window
-replacement repairs can be done very quickly, and because the panel isn't
+Compared to an entirely new enclosure, a window
+replacement repair can be done very quickly. And, because the panel isn't
 altered, there's little chance of issues with fit or finish.
 
-On the other hand, repairs of this nature can be expensive, depending on the
-quantity of glass. In addition, although we achieve a clean result, sometimes
-it's not possible to avoid a raw edge.
+On the other hand, window replacement is inevitably a temporary solution. If
+you're looking to get a few more years out of your enclosure, get in touch with
+us to see if a window replacement is right for your enclosure.

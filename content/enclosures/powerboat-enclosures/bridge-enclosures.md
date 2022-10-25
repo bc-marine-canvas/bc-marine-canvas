@@ -8,6 +8,5 @@ featuredImage:
 ---
 
 Given how much time is spent in the fly bridge, a bridge enclosure is essential
-for many boaters. A bridge enclosure is a bimini enclosure that surrounds a fly
-bridge.
-
+for many boaters. A bridge enclosure is a bimini enclosure that surrounds the
+fly bridge.

@@ -7,7 +7,7 @@ featuredImage:
   alt: Quilted white seating around dining table
 ---
 
-Salon seating can transform your salon into the focal point of your entire boat.
-If your cushions are old and worn, then it's time for something new. We can
-replicate your existing design, or we can work with you to develop a new look.
-Let your personality shine through.
+Salon seating can transform your salon into the focal point of your entire
+boat. If your cushions and seats are tired, it's time for something new. We can
+replicate your existing design, or we can work with you to develop a new look
+that lets your personality shine through.

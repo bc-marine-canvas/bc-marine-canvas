@@ -12,17 +12,14 @@ breadcrumbsInSchema: true
 listHeading: We've got you covered
 ---
 
-A boat cover is one of the most basic and essential canvas accessories there is.
-Just about every boat has at least one cover, usually more.
-
-Covers are the primary means of adding protection from the environment. They
-range in size, with the largest covering the entire vessel (think a winter
-cover), down to small covers and bags (think a winch cover or sheet bag), and
-anywhere in between.
+Covers are great way to protect your boat from the environment. They range in
+size, with the largest covering the entire vessel (think a winter cover), down
+to small covers and bags (think a winch cover or sheet bag), and anywhere in
+between.
 
 <!--more-->
 
 A well-constructed, correctly fitting cover provides effective protection from
-the elements, but what makes canvas a uniquely well-suited cover material is its
-breathability. Canvas covers won't trap moisture, which helps to prevent the
-growth of mold and mildew.
+the elements. Canvas a uniquely well-suited material for this application, due
+to its breathability. Canvas covers won't trap moisture, which helps to prevent
+the growth of mold and mildew.

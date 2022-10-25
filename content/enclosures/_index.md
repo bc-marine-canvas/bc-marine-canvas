@@ -12,18 +12,15 @@ breadcrumbsInSchema: true
 listHeading: Make the most of your time outdoors
 ---
 
-A boat enclosure will make your days on the water more enjoyable, protect you
-from the wind, rain, and spray, and extend the length of your boating season.
-
-<!--more-->
-
 A boat enclosure is a group of connected canvas panels that attach to a bimini
 or overhead structure, which completely or partially enclose a section of a
 boat. A typical enclosure panel has a large window made from soft or semi-rigid
 plastic, which can often be removed or rolled up.
 
+<!--more-->
+
 All of our enclosures are custom-built, using premium materials that resist
-corrosion from salt and UV light.
+corrosion from salt, and damage from UV light.
 
 ## More than just marine
 
