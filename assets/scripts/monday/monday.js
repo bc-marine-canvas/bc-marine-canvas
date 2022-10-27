@@ -2,8 +2,6 @@ import { params } from "../utils/params"
 
 export class Monday {
   static boardID = params("mondayBoardID", true);
-  static token = params("mondayToken");
-  static apiURL = params("mondayURL");
 
   static createFormSubmission(formData) {
     const monday = new this(formData);
@@ -67,10 +65,6 @@ export class Monday {
   request() {
     return {
       method: "post",
-      headers: {
-        "Content-Type": "application/json",
-        "Authorization": Monday.token,
-      },
       body: JSON.stringify({
         "query": this.query,
         "variables": this.variables,

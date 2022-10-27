@@ -1,6 +1,6 @@
 {
   "name": "bc-marine-canvas",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "BC Marine Canvas website",
   "repository": {
     "type": "git",
@@ -12,8 +12,10 @@
     "lint": "npm run lint:scripts && npm run lint:styles",
     "lint:scripts": "eslint assets/scripts --ext .js",
     "lint:styles": "stylelint assets/styles/**/*.scss",
-    "start": "npm run lint && DEV=true bin/dev",
-    "build:prod": "npm run lint && bin/prod"
+    "start": "npm run start:bind",
+    "start:bind": "HUGO_BIND_TO_IP=true bin/dev",
+    "start:serverless": "HUGO_SERVERLESS=true bin/dev",
+    "deploy": "npm run lint && bin/prod"
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^5.0.0",
@@ -29,6 +31,7 @@
   "dependencies": {
     "@popperjs/core": "^2.11.5",
     "bootstrap": "^5.2.2",
+    "node-fetch": "^3.2.10",
     "sanitize-html": "^2.7.2"
   }
 }

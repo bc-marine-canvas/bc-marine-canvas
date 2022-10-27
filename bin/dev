@@ -1,25 +1,51 @@
 #!/bin/bash
 
-if [ -z $DEV ]; then
-  echo >&2 "☞ Not starting the Hugo server because \$DEV is not set"
+if [ "$HUGO_BIND_TO_IP" == "true" ] && [ "$HUGO_SERVERLESS" == "true" ]; then
+  echo >&2 "☞ Not starting the Hugo server because \$HUGO_BIND_TO_IP and" \
+    "\$HUGO_SERVERLESS are both set (can't do both simultaneously)"
   exit 1
 fi
 
-root="$(git rev-parse --show-toplevel)"
-dotenv="$root/.env"
+if [ -n "$HUGO_BIND_TO_IP" ]; then
+  bindToIP="$( \
+    networksetup -getinfo Wi-Fi \
+    | grep "IP address: 1" \
+    | cut -d' ' -f3 \
+  )"
 
-export $(cat "$dotenv" | xargs)
+  hugo server \
+    --disableFastRender \
+    --noHTTPCache \
+    --printMemoryUsage \
+    --printPathWarnings \
+    --printUnusedTemplates \
+    --templateMetrics \
+    --templateMetricsHints \
+    --verbose \
+    --bind "$bindToIP" \
+    --baseURL "http://${bindToIP}"
+elif [ -n $HUGO_SERVERLESS ]; then
+  serverless_command="hugo server
+    --disableFastRender
+    --noHTTPCache
+    --printMemoryUsage
+    --printPathWarnings
+    --printUnusedTemplates
+    --templateMetrics
+    --templateMetricsHints
+    --verbose"
 
-bindToIP="$(networksetup -getinfo Wi-Fi | grep "IP address: 1" | cut -d' ' -f3)"
-
-hugo server \
-  --disableFastRender \
-  --noHTTPCache \
-  --printMemoryUsage \
-  --printPathWarnings \
-  --printUnusedTemplates \
-  --templateMetrics \
-  --templateMetricsHints \
-  --verbose \
-  --bind "$bindToIP" \
-  --baseURL "http://${bindToIP}"
+  netlify dev \
+    --targetPort 1313 \
+    --command "$(echo $serverless_command)"
+else
+  hugo server \
+    --disableFastRender \
+    --noHTTPCache \
+    --printMemoryUsage \
+    --printPathWarnings \
+    --printUnusedTemplates \
+    --templateMetrics \
+    --templateMetricsHints \
+    --verbose
+fi

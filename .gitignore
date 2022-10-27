@@ -12,3 +12,4 @@ hugo_stats.json
 node_modules/
 public/
 resources/
+.netlify/
