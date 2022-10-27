@@ -18,6 +18,8 @@ export class Monday {
     this.phone = formData.phone;
     this.message = formData.message;
     this.specialRequest = formData.specialRequest;
+
+    this.date = new Date();
   }
 
   get fullName() {
@@ -26,6 +28,16 @@ export class Monday {
 
   get submissionName() {
     return this.fullName;
+  }
+
+  get submissionDate() {
+    return this.date.toISOString().split("T").first();
+  }
+
+  get submissionTime() {
+    return this.date.toISOString()
+      .split("T").last()
+      .split(".").first();
   }
 
   get query() {
@@ -39,6 +51,10 @@ export class Monday {
       "submissionName": this.submissionName,
       "boardID": Monday.boardID,
       "columnValues": `{
+        "date4": {
+          "date": "${this.submissionDate}",
+          "time": "${this.submissionTime}"
+        },
         "text": "${this.firstName}",
         "text6": "${this.lastName}",
         "text3": "${this.email}",

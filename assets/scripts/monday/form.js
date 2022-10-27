@@ -40,8 +40,12 @@ export class Form {
           return ({ ...props, [key]: cleanValue })
         }, {});
 
+      Form.successMessage.classList.add("d-none");
+      Form.failureMessage.classList.add("d-none");
+
       if (!data.specialRequest && form.checkValidity()) {
         Form.spinner.classList.remove("d-none");
+        Form.submitButton.disabled = true;
         Form.submitButtonLabel.textContent = "Underway...";
 
         const request = Monday.createFormSubmission(data);
@@ -51,6 +55,7 @@ export class Form {
           .then(response => {
             if (response.data.create_item.id) {
               Form.spinner.classList.add("d-none");
+              Form.submitButton.disabled = false;
               Form.submitButtonLabel.textContent = "Submit";
               Form.successMessage.classList.remove("d-none");
 
@@ -58,6 +63,7 @@ export class Form {
               form.reset();
             } else {
               Form.spinner.classList.add("d-none");
+              Form.submitButton.disabled = false;
               Form.submitButtonLabel.textContent = "Submit";
               Form.failureMessage.classList.remove("d-none");
 
@@ -66,6 +72,7 @@ export class Form {
           })
           .catch(() => {
             Form.spinner.classList.add("d-none");
+            Form.submitButton.disabled = false;
             Form.submitButtonLabel.textContent = "Submit";
             Form.failureMessage.classList.remove("d-none");
 
