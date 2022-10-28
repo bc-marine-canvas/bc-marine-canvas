@@ -7,17 +7,12 @@ featuredImage:
   alt: A sail cover around a mainsail
 ---
 
-Sail covers are pretty self-explanatory: to protect your mainsail from birds,
-UV light, and moisture, pack it away into a sail cover or stackpack when it's
-not in use.
+To protect your mainsail from birds, UV light, and moisture, pack it away into
+a sail cover or stackpack when it's not in use.
 
 <!--more-->
 
 Precise fit is critical feature of a mainsail cover or stackpack. Sail covers
 frequently occupy the space directly above a dodger or bimini, and clearance is
-often limited. Precise measurement and careful construction are essential to
-prevent excessive wear from friction.
-
-Adequate reinforcement is equally important. Sail covers are often susceptible
-to chafing from the topping lift; a correctly designed sail cover will account
-for this friction, and include reinforcement to resist wear.
+often limited. Our sail covers are exactly designed to fit your boat, and
+ruggedly reinforced to resist chafing and wear.

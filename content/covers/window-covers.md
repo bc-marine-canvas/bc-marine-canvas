@@ -12,11 +12,12 @@ convenience.
 
 <!--more-->
 
-Fixed windows have the obvious drawback of not being openable. You'll come
-across fixed windows in the form of portholes, as well as on boats with
-windshields that attach to a hardtop. On a hot and sunny day, these types of
-windows draw in heat and sunlight. Window and windshield covers are an effective
-way to control how much light enters your boat's interior.
+Portholes and windshields that attach to a hardtop are examples of fixed
+windows that are commonly found on boats. On a hot and sunny day, fixed
+windows, or windows that cannot be opened, draw in heat and sunlight. Since
+these windows don't open, the adjacent space can become uncomfortably hot.
+Instead of a cool breeze, a window or windshield cover or shade can keep you
+cool by limiting how much sunlight enters your boat's interior.
 
 For windows that do open, screens and mesh covers provide shade and privacy, as
 well as ventilation and airflow.

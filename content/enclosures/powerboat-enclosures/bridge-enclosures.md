@@ -1,5 +1,5 @@
 ---
-description: "Fly bridge enclosures."
+description: "Flying bridge enclosures."
 slug: bridge-enclosures
 title: Bridge enclosures
 featuredImage:
@@ -7,6 +7,7 @@ featuredImage:
   alt: Interior view of a bridge enclosure
 ---
 
-Given how much time is spent in the fly bridge, a bridge enclosure is essential
-for many boaters. A bridge enclosure is a bimini enclosure that surrounds the
-fly bridge.
+The fly bridge enclosure is one of the most common types of boat enclosures, for
+good reason. An enclosed flying bridge offers shade and comfort, as well as
+protection from the elements, for you and your equipment, so you can operate
+your boat in any conditions.

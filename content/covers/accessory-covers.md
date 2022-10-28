@@ -14,12 +14,14 @@ the shape.
 
 <!--more-->
 
-## Common accessory covers
+## Protection for your accessories
 
 - Console covers
 - Cushion covers
 - Custom accessory covers
+- Grill covers
 - Hatch covers
-- Helm covers
 - Seat covers
+- Table covers
+- TV covers
 - Winch covers

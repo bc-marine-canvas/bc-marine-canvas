@@ -1,11 +1,3 @@
-{{ define "template" }}
-  {{ $template := dict
-    "path" "layouts/_default/section.html"
-    "kind" .Kind
-    "type" .Type
-  }}
-  {{ partial "debug/template.html" $template }}
-{{ end }}
 {{ define "main" }}
   <section class="{{ .Type }}">
     <div class="page container py-5">
@@ -30,7 +22,7 @@
           {{ partial "image.html" $args }}
         </div>
       </div>
-      <div class="row py-6">
+      <div class="row mt-6 mb-5">
         <div class="col-md-10 offset-md-1 col-xl-8 offset-xl-2">
           <div class="w-100 d-flex flex-column align-items-center px-3">
             <h2 class="text-center mb-4 fs-1 mw-500">{{ .Params.listHeading }}</h2>

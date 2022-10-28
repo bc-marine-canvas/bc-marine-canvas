@@ -7,19 +7,17 @@ featuredImage:
   alt: A boat on the hard with a winter cover
 ---
 
-On the surface, shrink wrap might seem like the most cost effective way to
-protect your boat for the winter season. Shrink wrap seems less expensive until
-you start thinking about shrink wrap as an annual cost. Often, a canvas cover
-will pay for itself within five years, and last for many years to come.
+Winter covers are a cost-effective alternative to shrink wrap. Despite the
+initial cost, a canvas winter cover will pay for itself in about five years, and
+last for many years to come.
 
 <!--more-->
 
-## Benefits of a canvas winter cover
+## Benefits of a winter cover
 
-In addition to the potential cost savings, a canvas cover has other benefits
-that make it an attractive alternative to plastic shrink wrap:
+In addition to the cost savings, a canvas cover:
 
-- Canvas covers provide easier physical access than shrink wrap
-- You can put on and take off your winter cover by yourself
-- Canvas covers are reusable and don't generate waste each year
-- Canvas won't trap moisture and prevents mold and mildew
+- Provides easier physical access than shrink wrap
+- Can be put on and taken off by yourself
+- Is reusable and doesn't generate waste each year
+- Won't trap moisture and prevents mold and mildew

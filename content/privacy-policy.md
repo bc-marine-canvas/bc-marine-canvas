@@ -28,9 +28,11 @@ provide support and respond to inquiries.
 Our server software may store basic technical information, such as your IP
 address, in temporary memory or logs.
 
+### Hosting and service providers
+
 We use the following hosting and service providers, which also have access to
-basic technical information passing through their services and data stored using
-their resources:
+basic technical information passing through their services, and data stored
+using their resources:
 
 - [Netlify](https://www.netlify.com/) ([Privacy policy](https://www.netlify.com/privacy/))
 - [monday.com](https://monday.com/) ([Privacy policy](https://www.monday.com/privacy))
@@ -68,15 +70,11 @@ deletion of your information.
 We may delete your information at any time and for any reason, such as technical
 needs, legal concerns, data loss, or any other reason.
 
-## Third-party links and content
-
-We do not display third-party links or content.
-
-## Your Consent
+## Your consent
 
 By using our website, you consent to our privacy policy.
 
-## Contacting Us
+## Contacting us
 
 If you have questions regarding this privacy policy, you may email
 info@bcmarinecanvasri.com.

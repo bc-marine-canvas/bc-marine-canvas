@@ -1,11 +1,3 @@
-{{ define "template" }}
-  {{ $template := dict
-    "path" "layouts/_default/single.html"
-    "kind" .Kind
-    "type" .Type
-  }}
-  {{ partial "debug/template.html" $template }}
-{{ end }}
 {{ define "main" }}
   <section class="{{ .Type }}">
     <div class="page container py-5">
@@ -14,7 +6,7 @@
           {{ partial "page-heading.html" . }}
         </div>
       </div>
-      <div class="row g-xl-0 align-items-start">
+      <div class="row g-xl-0 align-items-start mb-5">
         <div class="col-lg-6 col-xl-5 offset-xl-1 col-xxl-4 offset-xxl-2">
           <div class="my-5 my-md-0 mb-md-5">
             <div class="page-content mb-5 mw-575 pe-xl-5">
@@ -27,7 +19,7 @@
           {{ $args := dict
             "path" (.Params.featuredImage.path | default .Site.Params.defaults.featuredImage.defaults.path)
             "alt" .Params.featuredImage.alt
-            "class" "img-supporting mt-3 mt-lg-0"
+            "class" "img-supporting mt-3 mt-lg-0 border border-2 border-light"
             "linkToOriginal" (.Params.featuredImage.linkToOriginal | default .Site.Params.defaults.featuredImage.linkToOriginal.single)
           }}
           {{ partial "image.html" $args }}

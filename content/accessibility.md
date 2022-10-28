@@ -14,20 +14,17 @@ BC Marine Canvas is committed to ensuring digital accessibility for people with
 disabilities. We do our best to continually improve the website and the user
 experience for everyone.
 
-### WCAG conformance
+## WCAG conformance
 
 The [Web Content Accessibility Guidelines (WCAG)] defines requirements for
 designers and developers to improve accessibility for people with disabilities.
 The BC Marine Canvas website has not been formally assessed at this time.
-However, we aim to comply with WCAG 2.1 at level A as completely as possible,
-and we are continually updating and improving the accessibility of this website.
+However, we aim to comply with WCAG 2.1 at level A as completely as possible.
 
 [Web Content Accessibility Guidelines (WCAG)]: https://www.w3.org/WAI/standards-guidelines/wcag/
 
-### Feedback
+## Feedback
 
 We welcome your feedback on the accessibility of the BC Marine Canvas website.
-Please [let us know] if you encounter accessibility barriers. We try to respond
-to feedback within 5 business days.
-
-[let us know]: /contact
+If you encounter accessibility barriers, please email
+info@bcmarinecanvasri.com.

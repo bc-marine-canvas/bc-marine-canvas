@@ -1,15 +1,7 @@
-{{ define "template" }}
-  {{ $template := dict
-    "path" "layouts/compliance/single.html"
-    "kind" .Kind
-    "type" .Type
-  }}
-  {{ partial "debug/template.html" $template }}
-{{ end }}
 {{ define "main" }}
   <section class="{{ .Type }}">
     <div class="page container py-5">
-      <div class="row justify-content-center mb-4">
+      <div class="row justify-content-center mb-5">
         <div class="col text-column">
           {{ partial "page-heading.html" . }}
           {{ .Content }}

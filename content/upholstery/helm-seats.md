@@ -7,7 +7,6 @@ featuredImage:
   alt: Two helm seats with upholstered cushions and armrests
 ---
 
-The most frequently occupied seat on the boat is the helm, which makes it a good
-candidate for an upholstery project. Is your helm old and worn? New cushions and
-armrests plus new vinyl fabric will transform your helm into a seat that
-supports you for the whole journey.
+No seat is more frequently occupied (or more important) than your helm. Is your
+helm old and worn? New cushions and armrests and new vinyl fabric will
+transform your helm into a seat that supports you for the whole journey.

@@ -1,5 +1,5 @@
 ---
-description: "Add functional comfort to your boat."
+description: "Add function and comfort to your boat."
 slug: coaming-pads
 title: Coaming pads
 featuredImage:

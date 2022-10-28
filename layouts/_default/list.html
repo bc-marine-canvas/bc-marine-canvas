@@ -14,48 +14,6 @@
           {{ partial "page-heading.html" . }}
         </div>
       </div>
-      <!-- <div class="row align-items-start justify-content-xl-center"> -->
-      <div class="row g-xl-0 align-items-start">
-        <!-- <div class="col-lg-5 col-xl-auto"> -->
-        <div class="col-lg-6 col-xl-5 offset-xl-1 col-xxl-4 offset-xxl-2">
-          <div class="mb-5 mw-575 pe-xl-5">
-            {{ .Content }}
-          </div>
-        </div>
-        <!-- <div class="col-lg-7 col-xl-auto d-flex justify-content-end"> -->
-        <!-- <div class="col-lg-7 col-xl-5 d-flex justify-content-center justify-content-lg-start"> -->
-        <div class="col-lg-6 col-xl-5 col-xxl-4 d-flex justify-content-center justify-content-lg-end">
-          {{ $args := dict
-            "path" (.Params.featuredImage | default .Site.Params.defaultFeaturedImage)
-            "alt" .Params.featuredImageAlt
-            "class" "img-supporting mt-3 mt-lg-0"
-          }}
-          {{ partial "image.html" $args }}
-        </div>
-      </div>
-      <div class="row py-6 mt-4">
-        <div class="col-12 col-md-10 offset-md-1 col-xl-8 offset-xl-2">
-          <h3 class="text-center mb-4">{{ .Params.listHeading }}</h3>
-          <div class="list-group">
-            {{ range .Paginator.Pages }}
-              <a href="{{ .Permalink }}" class="list-group-item list-group-item-action d-flex justify-content-between align-items-center">
-                <div class="ps-0 ps-md-4 pe-2 me-auto w-100">
-                  <h4 class="my-2">{{ .Title }} <span class="text-primary">→</span></h5>
-                  <p class="mb-2">{{ .Description }}</p>
-                </div>
-                <div class="ps-lg-5 pt-lg-0">
-                  {{ $featuredImage := dict
-                    "path" (.Params.featuredImage | default .Site.Params.defaultFeaturedImage)
-                    "alt" .Params.featuredImageAlt
-                    "class" "list-group-img rounded-circle border border-2 border-light"
-                  }}
-                  {{ partial "image.html" $featuredImage }}
-                </div>
-              </a>
-            {{ end }}
-          </div>
-        </div>
-      </div>
     </div>
   </section>
 {{ end }}

@@ -1,5 +1,5 @@
 ---
-description: "Keep water, leaves, dirt, and sun out of your boat."
+description: "Keep your boat and your equipment protected."
 menu:
   left:
     weight: 3
@@ -12,14 +12,12 @@ breadcrumbsInSchema: true
 listHeading: We've got you covered
 ---
 
-Covers are great way to protect your boat from the environment. They range in
-size, with the largest covering the entire vessel (think a winter cover), down
-to small covers and bags (think a winch cover or sheet bag), and anywhere in
-between.
+Covers protect your boat (and things on your boat) from the environment. They
+vary widely in size, with the largest covering the entire vessel, down to small
+covers and bags, and anywhere in between.
 
 <!--more-->
 
-A well-constructed, correctly fitting cover provides effective protection from
-the elements. Canvas a uniquely well-suited material for this application, due
-to its breathability. Canvas covers won't trap moisture, which helps to prevent
-the growth of mold and mildew.
+Canvas is a uniquely well-suited material for protecting your boat and equipment
+from moisture due to its breathability. Canvas covers won't trap moisture, which
+helps to prevent the growth of mold and mildew.

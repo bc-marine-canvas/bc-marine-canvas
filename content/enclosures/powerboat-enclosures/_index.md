@@ -5,16 +5,15 @@ title: Powerboat enclosures
 featuredImage:
   path: enclosures/powerboat-enclosure.jpg
   alt: An example of a powerboat enclosure
-listHeading: Enclosures for powerboats
+listHeading: Realize your boat's full potential
 ---
 
-A powerboat enclosure has two key responsibilities: to keep your dashboard dry,
-and to protect your upholstery.
+Powerboat enclosures are essential for many boaters. Not only do they keep you
+out of the elements, they protect your equipment and upholstery from the wind,
+rain, and sun. They can even extend your boating season.
 
 <!--more-->
 
-But like all enclosures, powerboat enclosures provide protection from the sun,
-rain, and wind. A variety of common configurations exist, but the core design
-is the same: a bimini or canvas top, supported by a frame or connected to a
-fixed overhead surface, attached to a series of canvas window panels, creating
-an enclosure.
+Keep your dashboard dry and protect your upholstery with an enclosure for your
+powerboat. We design custom enclosures to fit your specific boat and your
+specific needs, from frame to fasteners.
