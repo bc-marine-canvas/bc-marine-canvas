@@ -1,5 +1,8 @@
 ---
-description: Custom marine canvas and upholstery
+description: |
+  A full-service marine canvas and upholstery shop. Enclosures, dodgers,
+  biminis, covers, cushions, canvas, and upholstery. Distinctive quality and
+  style.
 cta:
   path: winter.html
   text: default
