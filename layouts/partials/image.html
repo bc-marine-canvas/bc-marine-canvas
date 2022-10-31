@@ -1,3 +1,6 @@
+{{/* Generate responsive images from an image asset. */}}
+
+{{/* Image asset and related attributes */}}
 {{ $image := resources.Get (printf "images/%s" .path) }}
 {{ $id := .id }}
 {{ $class := .class }}
@@ -5,12 +8,68 @@
 {{ $includeDimensions := .includeDimensions | default true }}
 {{ $linkToOriginal := .linkToOriginal | default false }}
 
+{{/*
+  Define the available breakpoints. An image may be created for each in the
+  breakpoints slice—so, the more breakpoints, the more images.
+*/}}
+{{ $breakpoints := slice "768" "992" "1200" }}
+
+{{/*
+  Loop through the breakpoints slice, and compare each size to the width of the
+  original image. It only makes sense to create a responsive (i.e. smaller)
+  version of the original image, so any breakpoints larger than the original
+  width are discarded.
+*/}}
+{{ $imageBreakpoints := slice }}
+
+{{ range $breakpoint := $breakpoints }}
+  {{ if lt $breakpoint $image.Width }}
+    {{ $imageBreakpoints = $imageBreakpoints | append $breakpoint }}
+  {{ end }}
+{{ end }}
+
+{{/*
+  Loop through the breakpoints applicable to the current image, and generate a
+  resized image for each. Also create a media constraint from the breakpoint.
+  The media query is used to force the browser to choose a source in the way I
+  want it to.
+*/}}
+{{ $sources := slice }}
+
+{{ range $breakpoint := $imageBreakpoints }}
+  {{ if lt $breakpoint $image.Width }}
+    {{ $resizedImage := $image.Resize (printf "%sx" $breakpoint) }}
+    {{ $source := dict
+      "src" $resizedImage.RelPermalink
+      "media" (printf "(max-width: %spx)" $breakpoint)
+      "height" $resizedImage.Height
+      "width" $resizedImage.Width
+    }}
+
+    {{ $sources = $sources | append $source }}
+  {{ end }}
+{{ end }}
+
 {{- with $image -}}
   {{ if $linkToOriginal }}
-    <a href="{{ .RelPermalink }}" target="_blank" title="Open original image">
-      <img {{ with $id }} id="{{ $id }}" {{ end }} {{ with $class }} class="{{ $class }}" {{ end }} src="{{ .RelPermalink }}" {{ with $alt }} alt="{{ $alt }}" {{ end }} {{ if $includeDimensions }} width="{{ .Width }}" height="{{ .Height }}" {{ end }}>
+    <a href="{{ .RelPermalink }}" title="Open original image">
+      <picture>
+        {{ range $source := $sources }}
+          {{ with $source }}
+            <source srcset="{{ .src }}" media="{{ .media }}" height="{{ .height }}" width="{{ .width }}">
+          {{ end }}
+        {{ end }}
+        <img {{ with $id }} id="{{ $id }}" {{ end }} {{ with $class }} class="{{ $class }}" {{ end }} src="{{ .RelPermalink }}" {{ with $alt }} alt="{{ $alt }}" {{ end }} {{ if $includeDimensions }} width="{{ .Width }}" height="{{ .Height }}" {{ end }}>
+      </picture>
     </a>
   {{ else }}
-    <img {{ with $id }} id="{{ $id }}" {{ end }} {{ with $class }} class="{{ $class }}" {{ end }} src="{{ .RelPermalink }}" {{ with $alt }} alt="{{ $alt }}" {{ end }} {{ if $includeDimensions }} width="{{ .Width }}" height="{{ .Height }}" {{ end }}>
+    <picture>
+      {{ range $source := $sources }}
+        {{ with $source }}
+          <source srcset="{{ .src }}" media="{{ .media }}" height="{{ .height }}" width="{{ .width }}">
+        {{ end }}
+      {{ end }}
+      <img {{ with $id }} id="{{ $id }}" {{ end }} {{ with $class }} class="{{ $class }}" {{ end }} src="{{ .RelPermalink }}" {{ with $alt }} alt="{{ $alt }}" {{ end }} {{ if $includeDimensions }} width="{{ .Width }}" height="{{ .Height }}" {{ end }}>
+    </picture>
   {{ end }}
 {{ end }}

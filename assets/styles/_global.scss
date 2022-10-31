@@ -88,8 +88,8 @@ p {
 .img-supporting {
   object-fit: contain;
   max-height: 433px;
-  height: 100%;
-  width: auto;
+  height: auto;
+  width: 100%;
   overflow: hidden;
 
   @media (max-height: 800px) and (hover: none) {

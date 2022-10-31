@@ -17,7 +17,7 @@
         </div>
         <div class="col-lg-6 col-xl-5 d-flex justify-content-center justify-content-lg-end">
           {{ $args := dict
-            "path" (.Params.featuredImage.path | default .Site.Params.defaults.featuredImage.defaults.path)
+            "path" (.Params.featuredImage.path | default .Site.Params.defaults.featuredImage.default.path)
             "alt" .Params.featuredImage.alt
             "class" "img-supporting mt-3 mt-lg-0 border border-2 border-light"
             "linkToOriginal" (.Params.featuredImage.linkToOriginal | default .Site.Params.defaults.featuredImage.linkToOriginal.single)

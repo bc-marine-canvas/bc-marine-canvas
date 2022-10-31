@@ -8,6 +8,11 @@ disableKinds:
   - term
 enableEmoji: true
 enableRobotsTXT: true
+imaging:
+  exif:
+    disableDate: true
+    disableLatLong: true
+  quality: 85
 languageCode: en-us
 paginate: 20
 params:
