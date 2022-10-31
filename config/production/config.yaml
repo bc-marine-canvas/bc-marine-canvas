@@ -3,4 +3,3 @@ title: BC Marine Canvas
 
 build:
   useResourceCacheWhen: fallback
-  writeStats: true
