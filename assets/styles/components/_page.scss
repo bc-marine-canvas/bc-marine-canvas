@@ -4,6 +4,11 @@
       @extend .mt-5;
     }
 
+    ul {
+      padding-left: 0.5rem;
+      list-style-type: "▸";
+    }
+
     li {
       @extend .lh-sm;
 
