@@ -2,12 +2,12 @@
   <section class="{{ .Type }}">
     <div class="page container py-5">
       <div class="row g-xl-0">
-        <div class="col col-xl-10 offset-xl-1 col-xxl-8 offset-xxl-2">
+        <div class="col col-xl-10 offset-xl-1">
           {{ partial "page-heading.html" . }}
         </div>
       </div>
       <div class="row g-xl-0 align-items-start mb-5">
-        <div class="col-lg-6 col-xl-5 offset-xl-1 col-xxl-4 offset-xxl-2">
+        <div class="col-lg-6 col-xl-5 offset-xl-1">
           <div class="my-5 my-md-0 mb-md-5">
             <div class="page-content mb-5 mw-575 pe-xl-5">
               {{ .Content }}
@@ -15,7 +15,7 @@
             {{ partial "contact-card.html" . }}
           </div>
         </div>
-        <div class="col-lg-6 col-xl-5 col-xxl-4 d-flex justify-content-center justify-content-lg-end">
+        <div class="col-lg-6 col-xl-5 d-flex justify-content-center justify-content-lg-end">
           {{ $args := dict
             "path" (.Params.featuredImage.path | default .Site.Params.defaults.featuredImage.defaults.path)
             "alt" .Params.featuredImage.alt
