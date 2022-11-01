@@ -13,7 +13,17 @@ if [ -n "$HUGO_BIND_TO_IP" ]; then
     | cut -d' ' -f3 \
   )"
 
-  hugo server \
+  if ! grep -q "$bindToIP" /etc/hosts; then
+    echo "Missing entries in /etc/hosts:"
+    echo
+    echo "$bindToIP bcmarinecanvasri.local"
+    echo "$bindToIP www.bcmarinecanvasri.local"
+    echo
+
+    exit
+  fi
+
+  sudo hugo server \
     --disableFastRender \
     --noHTTPCache \
     --printMemoryUsage \
@@ -23,7 +33,9 @@ if [ -n "$HUGO_BIND_TO_IP" ]; then
     --templateMetricsHints \
     --verbose \
     --bind "$bindToIP" \
-    --baseURL "http://${bindToIP}"
+    --port 80 \
+    --appendPort "false" \
+    --baseURL "http://www.bcmarinecanvasri.local"
 elif [ -n $HUGO_SERVERLESS ]; then
   serverless_command="hugo server
     --disableFastRender
