@@ -10,6 +10,7 @@ featuredImage:
   path: care-and-upkeep/inspection.jpg
   alt: Inspecting a dodger for issues
 listHeading: Keep your boat looking like new
+breadcrumbsInSchema: true
 ---
 
 The marine environment is harsh, and no matter how much effort you put into

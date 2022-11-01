@@ -8,8 +8,8 @@ title: Upholstery
 featuredImage:
   path: upholstery/quilted-cushion.jpg
   alt: Seat with quilted back and knee riser
-breadcrumbsInSchema: true
 listHeading: Relax in comfort and style
+breadcrumbsInSchema: true
 ---
 
 Is your boat ready for guests? If not, it's time to give your cushions and

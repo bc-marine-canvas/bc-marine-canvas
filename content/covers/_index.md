@@ -8,8 +8,8 @@ title: Covers
 featuredImage:
   path: covers/charcoal-windshield-cover.jpg
   alt: A boat with windshield cover
-breadcrumbsInSchema: true
 listHeading: We've got you covered
+breadcrumbsInSchema: true
 ---
 
 Covers protect your boat (and things on your boat) from the environment. They

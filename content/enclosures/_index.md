@@ -8,8 +8,8 @@ title: Enclosures
 featuredImage:
   path: enclosures/stamoid-bridge-enclosure-interior.jpg
   alt: Interior view of a bridge enclosure
-breadcrumbsInSchema: true
 listHeading: Make the most of your time outdoors
+breadcrumbsInSchema: true
 ---
 
 A boat enclosure is a group of connected canvas panels that attach to a bimini
