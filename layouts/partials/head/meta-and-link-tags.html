@@ -1,13 +1,13 @@
 {{ $title := partial "page-title.html" . | safeHTML }}
 {{ $featuredImage := partial "featured-image-url.html" . }}
-{{ $description := .Description | safeHTML }}
+{{ $description := (chomp .Description) | safeHTML }}
 
 <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover, shrink-to-fit=no">
 
 {{ if $description }}
-  <meta name="description" content="{{ chomp $description }}">
+  <meta name="description" content="{{ $description }}">
 {{ end }}
 
 <meta property="og:type" content="{{ or .Params.ogType "website" }}">

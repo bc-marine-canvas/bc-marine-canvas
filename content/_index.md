@@ -1,5 +1,5 @@
 ---
-description: |
+description: >
   A full-service marine canvas and upholstery shop. Enclosures, dodgers,
   biminis, covers, cushions, canvas, and upholstery. Distinctive quality and
   style.

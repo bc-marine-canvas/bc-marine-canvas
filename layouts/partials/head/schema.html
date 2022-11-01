@@ -19,7 +19,7 @@
       "@type": "WebSite",
       "name": "{{ .Site.Title }}",
       "url": {{ .Site.BaseURL }},
-      "description": "{{ .Params.description }}",
+      "description": "{{ chomp .Params.description }}",
       "thumbnailUrl": {{ partial "logo-url.html" . }}
     }
   </script>
