@@ -1,7 +1,9 @@
 #!/bin/bash
 
+set -eo pipefail
+
 if [ "$HUGO_BIND_TO_IP" == "true" ] && [ "$HUGO_SERVERLESS" == "true" ]; then
-  echo >&2 "☞ Not starting the Hugo server because \$HUGO_BIND_TO_IP and" \
+  echo >&2 "☞ Not starting the Hugo server because \$HUGO_BIND_TO_IP and " \
     "\$HUGO_SERVERLESS are both set (can't do both simultaneously)"
   exit 1
 fi
@@ -23,21 +25,37 @@ if [ -n "$HUGO_BIND_TO_IP" ]; then
     exit
   fi
 
+  # Ensure correct ownership after running `hugo server` with `sudo`
+  # (explained in the commit message, blame this line)
+  trap sudo_hugo_server_cleanup INT
+
+  function sudo_hugo_server_cleanup() {
+    sudo chown -R "$(stat -c "%U:%G" .)" .
+  }
+
   sudo hugo server \
+    --appendPort "false" \
+    --baseURL "http://www.bcmarinecanvasri.local" \
+    --bind "$bindToIP" \
+    --buildDrafts \
+    --buildExpired \
+    --buildFuture \
+    --cleanDestinationDir \
     --disableFastRender \
     --noHTTPCache \
+    --port 80 \
     --printMemoryUsage \
     --printPathWarnings \
     --printUnusedTemplates \
     --templateMetrics \
     --templateMetricsHints \
-    --verbose \
-    --bind "$bindToIP" \
-    --port 80 \
-    --appendPort "false" \
-    --baseURL "http://www.bcmarinecanvasri.local"
-elif [ -n $HUGO_SERVERLESS ]; then
+    --verbose
+elif [ -n "$HUGO_SERVERLESS" ]; then
   serverless_command="hugo server
+    --buildDrafts
+    --buildExpired
+    --buildFuture
+    --cleanDestinationDir
     --disableFastRender
     --noHTTPCache
     --printMemoryUsage
@@ -48,10 +66,14 @@ elif [ -n $HUGO_SERVERLESS ]; then
     --verbose"
 
   netlify dev \
-    --targetPort 1313 \
-    --command "$(echo $serverless_command)"
+    --command "$(echo $serverless_command)" \
+    --targetPort 1313
 else
   hugo server \
+    --buildDrafts \
+    --buildExpired \
+    --buildFuture \
+    --cleanDestinationDir \
     --disableFastRender \
     --noHTTPCache \
     --printMemoryUsage \
