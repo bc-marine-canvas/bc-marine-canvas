@@ -1,7 +1,7 @@
 {{ $display := .Site.Data.company.phone.display }}
 {{ $plain := .Site.Data.company.phone.plain }}
 
-{{ $href := printf "tel:%s" $plain }}
+{{ $href := (printf "tel:%s" $plain) | safeURL }}
 
 {{ return dict
   "display" $display

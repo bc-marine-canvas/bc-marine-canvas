@@ -1,0 +1,24 @@
+// stylelint-disable
+
+$fixed-max-width-values: ();
+
+@for $i from $fixed-max-width-min through $fixed-max-width-max {
+  @if $i % $fixed-max-width-step == 0 {
+    $fixed-max-width-values: map-merge(
+      $fixed-max-width-values,
+      (#{$i}: #{$i}px)
+    )
+  }
+}
+
+$utilities: map-merge(
+  $utilities,
+  (
+    "fixed-max-width": (
+      property: max-width,
+      class: fmw,
+      responsive: true,
+      values: $fixed-max-width-values,
+    )
+  )
+);

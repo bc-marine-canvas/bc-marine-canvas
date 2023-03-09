@@ -1,15 +1,4 @@
 .hero {
-  // .overlay {
-  //   font-family: Marcellus, sans-serif;
-  //   font-size: 2rem;
-  //   position: absolute;
-  //   color: $secondary;
-
-  //   @include media-breakpoint-up(xl) {
-  //     font-size: 2.75rem;
-  //   }
-  // }
-
   .overlay {
     font-family: Marcellus, sans-serif;
     font-size: 1rem;
@@ -30,28 +19,6 @@
       filter: grayscale(0);
     }
   }
-
-  // .left .img-link .overlay {
-  //   top: 43%;
-  //   left: 50%;
-  //   transform: translate(-50%, -50%);
-
-  //   @include media-breakpoint-up(lg) {
-  //     top: 50%;
-  //     left: 45%;
-  //   }
-  // }
-
-  // .right .img-link .overlay {
-  //   top: 57%;
-  //   left: 50%;
-  //   transform: translate(-50%, -50%);
-
-  //   @include media-breakpoint-up(lg) {
-  //     top: 50%;
-  //     left: 55%;
-  //   }
-  // }
 
   .left .overlay {
     top: 43%;

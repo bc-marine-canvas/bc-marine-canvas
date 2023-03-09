@@ -1,16 +1,6 @@
 <div class="container hero">
   <div class="row position-relative">
     <div class="col-lg-6 left position-relative">
-      {{/*
-      {{ $leftImage := dict
-        "path" .Params.hero.left.image.path
-        "alt" .Params.hero.left.image.alt
-      }}
-      <a class="d-block h-100 p-0 img-link overflow-hidden touchable" href="{{ .Params.hero.left.link }}">
-        {{ partial "image.html" $leftImage }}
-      </a>
-      <h2 class="overlay text-light text-shadow text-nowrap mb-0">{{ .Params.hero.left.text }}</h2>
-      */}}
       {{ $leftImage := dict
         "path" .Params.hero.left.image.path
         "alt" .Params.hero.left.image.alt
@@ -21,16 +11,6 @@
       </a>
     </div>
     <div class="col-lg-6 right position-relative">
-      {{/*
-      {{ $rightImage := dict
-        "path" .Params.hero.right.image.path
-        "alt" .Params.hero.right.image.alt
-      }}
-      <a class="d-block h-100 p-0 img-link overflow-hidden touchable" href="{{ .Params.hero.right.link }}">
-        {{ partial "image.html" $rightImage }}
-      </a>
-      <h2 class="overlay text-shadow text-nowrap mb-0">{{ .Params.hero.right.text }}</h2>
-      */}}
       {{ $rightImage := dict
         "path" .Params.hero.right.image.path
         "alt" .Params.hero.right.image.alt

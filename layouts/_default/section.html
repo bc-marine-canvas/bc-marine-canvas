@@ -8,7 +8,7 @@
       </div>
       <div class="row g-xl-0 align-items-start">
         <div class="col-lg-6 col-xl-5 offset-xl-1">
-          <div class="page-content mb-5 mw-575 pe-xl-5">
+          <div class="page-content mb-5 fmw-lg-575 pe-xl-5">
             {{ .Content }}
           </div>
         </div>
@@ -25,7 +25,7 @@
       <div class="row mt-6 mb-5">
         <div class="col-md-10 offset-md-1 col-xl-8 offset-xl-2">
           <div class="w-100 d-flex flex-column align-items-center px-3">
-            <h2 class="text-center mb-4 fs-1 mw-500">{{ .Params.listHeading }}</h2>
+            <h2 class="text-center mb-4 fs-1 fmw-500">{{ .Params.listHeading }}</h2>
           </div>
           <div class="list-group">
             {{ $pages := (append .Pages .Sections) | uniq }}

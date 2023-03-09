@@ -1,0 +1,12 @@
+// stylelint-disable
+$utilities: map-merge(
+  $utilities,
+  (
+    "z-index": (
+      property: z-index,
+      class: zi,
+      responsive: true,
+      values: 1 2 3 4 5,
+    )
+  )
+);
