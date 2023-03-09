@@ -1,11 +1,11 @@
 ---
 description: "Enclosures offer protection, convenience, and comfort."
-slug: powerboat-enclosures
-title: Powerboat enclosures
+slug: "powerboat-enclosures"
+title: "Powerboat enclosures"
 featuredImage:
-  path: enclosures/powerboat-enclosure.jpg
-  alt: An example of a powerboat enclosure
-listHeading: Realize your boat's full potential
+  path: "enclosures/powerboat-enclosure.jpg"
+  alt: "An example of a powerboat enclosure"
+listHeading: "Realize your boat's full potential"
 ---
 
 Powerboat enclosures are essential for many boaters. Not only do they keep you

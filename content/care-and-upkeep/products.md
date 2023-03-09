@@ -1,10 +1,10 @@
 ---
 description: "Products available in our shop."
-slug: products
-title: Products
+slug: "products"
+title: "Products"
 featuredImage:
-  path: care-and-upkeep/imar-strataglass-cleaner-301.jpg
-  alt: A bottle of IMAR Strataglass cleaner
+  path: "care-and-upkeep/imar-strataglass-cleaner-301.jpg"
+  alt: "A bottle of IMAR Strataglass cleaner"
 ---
 
 We offer a few products that help keep your window panels free of smudges and

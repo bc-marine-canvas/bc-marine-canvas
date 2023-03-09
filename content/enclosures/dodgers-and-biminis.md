@@ -1,10 +1,10 @@
 ---
 description: "Defend your cockpit from wind and waves."
-slug: dodgers-and-biminis
-title: Dodgers and biminis
+slug: "dodgers-and-biminis"
+title: "Dodgers and biminis"
 featuredImage:
-  path: dodgers/traditional-dodger.jpg
-  alt: A dodger in the traditional style
+  path: "dodgers/traditional-dodger.jpg"
+  alt: "A dodger in the traditional style"
 ---
 
 A dodger (also called a "spray hood") is a partial enclosure found on a

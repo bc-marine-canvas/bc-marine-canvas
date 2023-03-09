@@ -1,10 +1,10 @@
-name: BC Marine Canvas
+name: "BC Marine Canvas"
 address:
-  street: 100 Folly Landing
-  city: Warwick
-  state: RI
+  street: "100 Folly Landing"
+  city: "Warwick"
+  state: "RI"
   zip: "02886"
 phone:
-  display: +1 (401) 595-7936
+  display: "+1 (401) 595-7936"
   plain: "+14015957936"
-email: info@bcmarinecanvasri.com
+email: "info@bcmarinecanvasri.com"

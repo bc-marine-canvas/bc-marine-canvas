@@ -3,9 +3,9 @@ build:
   writeStats: true
 copyright: 2022
 disableKinds:
-  - RSS
-  - taxonomy
-  - term
+  - "RSS"
+  - "taxonomy"
+  - "term"
 enableEmoji: true
 enableRobotsTXT: true
 imaging:
@@ -13,29 +13,34 @@ imaging:
     disableDate: true
     disableLatLong: true
   quality: 85
-languageCode: en-us
+languageCode: "en-us"
 paginate: 20
 params:
-  logo: logo.svg
-  slogan: Custom marine canvas and upholstery
+  logo: "logo.svg"
+  slogan: "Custom marine canvas and upholstery"
   defaults:
     ctas:
       default:
-        path: simple.html
+        path: "simple.html"
       simple:
-        text: Get in touch to start a project!
+        text: "Get in touch to start a project!"
         subText:
-        label: Contact
-        link: /contact
+        label: "Contact"
+        link: "/contact"
       winter:
-        text: Booking winter projects!
+        text: "Booking winter projects!"
         subText:
-        label: Reserve
-        link: /contact
+        label: "Reserve"
+        link: "/contact"
         snowflakeCount: 250
+      splashDay:
+        text: "Is your boat ready for splash day?"
+        subText:
+        label: "Contact"
+        link: "/contact"
     featuredImage:
       default:
-        path: default-featured-image.png
+        path: "default-featured-image.png"
       linkToOriginal:
         list: true
         section: true
@@ -43,5 +48,5 @@ params:
 pluralizeListTitles: true
 relativeURLs: true
 sitemap:
-  changefreq: weekly
-timeZone: America/New_York
+  changefreq: "weekly"
+timeZone: "America/New_York"

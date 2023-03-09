@@ -4,12 +4,12 @@ menu:
   right:
     weight: 4
     name: "Care & upkeep"
-slug: care-and-upkeep
+slug: "care-and-upkeep"
 title: "Care and upkeep"
 featuredImage:
-  path: care-and-upkeep/inspection.jpg
-  alt: Inspecting a dodger for issues
-listHeading: Keep your boat looking like new
+  path: "care-and-upkeep/inspection.jpg"
+  alt: "Inspecting a dodger for issues"
+listHeading: "Keep your boat looking like new"
 breadcrumbsInSchema: true
 ---
 

@@ -1,10 +1,10 @@
 ---
 description: "Flying bridge enclosures."
-slug: bridge-enclosures
-title: Bridge enclosures
+slug: "bridge-enclosures"
+title: "Bridge enclosures"
 featuredImage:
-  path: enclosures/stamoid-bridge-enclosure-interior.jpg
-  alt: Interior view of a bridge enclosure
+  path: "enclosures/stamoid-bridge-enclosure-interior.jpg"
+  alt: "Interior view of a bridge enclosure"
 ---
 
 The fly bridge enclosure is one of the most common types of boat enclosures, for

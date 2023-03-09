@@ -1,10 +1,10 @@
 ---
 description: "Cushions and mattresses for V-berths."
-slug: v-berth-cushions
-title: V-berth cushions
+slug: "v-berth-cushions"
+title: "V-berth cushions"
 featuredImage:
-  path: upholstery/v-berth-cushions.jpg
-  alt: Set of three V-berth cushions
+  path: "upholstery/v-berth-cushions.jpg"
+  alt: "Set of three V-berth cushions"
 ---
 
 V-berth cushions and mattress have the dual responsibility of being comfortable

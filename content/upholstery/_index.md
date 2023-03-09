@@ -3,12 +3,12 @@ description: "Cushions, seating, and marine upholstery."
 menu:
   left:
     weight: 2
-slug: upholstery
-title: Upholstery
+slug: "upholstery"
+title: "Upholstery"
 featuredImage:
-  path: upholstery/quilted-cushion.jpg
-  alt: Seat with quilted back and knee riser
-listHeading: Relax in comfort and style
+  path: "upholstery/quilted-cushion.jpg"
+  alt: "Seat with quilted back and knee riser"
+listHeading: "Relax in comfort and style"
 breadcrumbsInSchema: true
 ---
 

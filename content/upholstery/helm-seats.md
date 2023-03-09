@@ -1,10 +1,10 @@
 ---
 description: "Helm seat cushions, armrests, and more."
-slug: helm-seats
-title: Helm seats
+slug: "helm-seats"
+title: "Helm seats"
 featuredImage:
-  path: upholstery/white-helm-seats.jpg
-  alt: Two helm seats with upholstered cushions and armrests
+  path: "upholstery/white-helm-seats.jpg"
+  alt: "Two helm seats with upholstered cushions and armrests"
 ---
 
 No seat is more frequently occupied (or more important) than your helm. Is your

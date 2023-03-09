@@ -1,10 +1,10 @@
 ---
 description: "Interior salon and dining cushions and seating."
-slug: salon-seating
-title: Salon seating
+slug: "salon-seating"
+title: "Salon seating"
 featuredImage:
-  path: upholstery/quilted-salon-cushion.jpg
-  alt: Quilted white seating around dining table
+  path: "upholstery/quilted-salon-cushion.jpg"
+  alt: "Quilted white seating around dining table"
 ---
 
 Salon seating can transform your salon into the focal point of your entire

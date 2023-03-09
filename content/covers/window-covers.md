@@ -1,10 +1,10 @@
 ---
 description: "Screens and shades for windows and windshields."
-slug: window-covers
-title: Window covers
+slug: "window-covers"
+title: "Window covers"
 featuredImage:
-  path: covers/charcoal-windshield-cover.jpg
-  alt: A boat with a windshield cover
+  path: "covers/charcoal-windshield-cover.jpg"
+  alt: "A boat with a windshield cover"
 ---
 
 Window and windshield covers offer comfort, privacy, protection, and

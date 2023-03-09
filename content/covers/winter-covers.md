@@ -1,10 +1,10 @@
 ---
 description: "A superior alternative to shrink wrap."
-slug: winter-covers
-title: Winter covers
+slug: "winter-covers"
+title: "Winter covers"
 featuredImage:
-  path: covers/winter-cover.jpg
-  alt: A boat on the hard with a winter cover
+  path: "covers/winter-cover.jpg"
+  alt: "A boat on the hard with a winter cover"
 ---
 
 Winter covers are a cost-effective alternative to shrink wrap. Despite the

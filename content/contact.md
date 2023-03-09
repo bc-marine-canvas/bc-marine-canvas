@@ -5,10 +5,10 @@ menu:
     weight: 6
   footer:
     weight: 4
-slug: contact
-title: Contact
-type: contact
-layout: contact/single.html
+slug: "contact"
+title: "Contact"
+type: "contact"
+layout: "contact/single.html"
 hideCTA: true
 ---
 

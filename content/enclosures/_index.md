@@ -3,12 +3,12 @@ description: "Canvas enclosures that keep you warm and dry."
 menu:
   left:
     weight: 1
-slug: enclosures
-title: Enclosures
+slug: "enclosures"
+title: "Enclosures"
 featuredImage:
-  path: enclosures/stamoid-bridge-enclosure-interior.jpg
-  alt: Interior view of a bridge enclosure
-listHeading: Make the most of your time outdoors
+  path: "enclosures/stamoid-bridge-enclosure-interior.jpg"
+  alt: "Interior view of a bridge enclosure"
+listHeading: "Make the most of your time outdoors"
 breadcrumbsInSchema: true
 ---
 

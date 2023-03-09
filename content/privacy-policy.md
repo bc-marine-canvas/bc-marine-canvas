@@ -3,10 +3,10 @@ description: "The BC Marine Canvas website privacy policy."
 menu:
   footer:
     weight: 3
-slug: privacy-policy
-title: Privacy policy
-type: compliance
-layout: compliance/single.html
+slug: "privacy-policy"
+title: "Privacy policy"
+type: "compliance"
+layout: "compliance/single.html"
 hideCTA: true
 ---
 

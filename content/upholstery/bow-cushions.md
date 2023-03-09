@@ -1,10 +1,10 @@
 ---
 description: "Relax, recline, and soak up the sun."
-slug: bow-cushions
-title: Bow cushions
+slug: "bow-cushions"
+title: "Bow cushions"
 featuredImage:
-  path: upholstery/diamond-stitched-bow-cushions.jpg
-  alt: Bow cushions with custom diamond stitching
+  path: "upholstery/diamond-stitched-bow-cushions.jpg"
+  alt: "Bow cushions with custom diamond stitching"
 ---
 
 There are few better places to relax than on the bow of your boat. Bow cushions

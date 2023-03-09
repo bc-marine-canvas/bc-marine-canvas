@@ -1,10 +1,10 @@
 ---
 description: "Cockpit, full, and partial enclosures for sailboats."
-slug: sailboat-enclosures
-title: Sailboat enclosures
+slug: "sailboat-enclosures"
+title: "Sailboat enclosures"
 featuredImage:
-  path: enclosures/catamaran-enclosure.jpg
-  alt: A catamaran with multiple enclosures
+  path: "enclosures/catamaran-enclosure.jpg"
+  alt: "A catamaran with multiple enclosures"
 ---
 
 We think of a sailboat enclosure as a dodger and connected bimini, with the

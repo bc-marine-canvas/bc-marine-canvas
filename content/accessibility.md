@@ -3,10 +3,10 @@ description: "An accessibility statement from BC Marine Canvas."
 menu:
   footer:
     weight: 2
-slug: accessibility
-title: Accessibility
-type: compliance
-layout: compliance/single.html
+slug: "accessibility"
+title: "Accessibility"
+type: "compliance"
+layout: "compliance/single.html"
 hideCTA: true
 ---
 

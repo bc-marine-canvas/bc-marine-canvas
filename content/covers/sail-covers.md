@@ -1,10 +1,10 @@
 ---
 description: "Save your sail from exposure to the elements."
-slug: sail-covers
-title: Sail covers
+slug: "sail-covers"
+title: "Sail covers"
 featuredImage:
-  path: covers/navy-sail-cover.jpg
-  alt: A sail cover around a mainsail
+  path: "covers/navy-sail-cover.jpg"
+  alt: "A sail cover around a mainsail"
 ---
 
 To protect your mainsail from birds, UV light, and moisture, pack it away into

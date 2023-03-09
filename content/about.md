@@ -5,16 +5,13 @@ menu:
     weight: 5
   footer:
     weight: 1
-slug: about
-title: About us
-type: about
+slug: "about"
+title: "About us"
+type: "about"
 featuredImage:
-  path: about/family.jpg
-  alt: The BC Marine Canvas family sitting together on a boat
+  path: "about/family.jpg"
+  alt: "The BC Marine Canvas family sitting together on a boat"
   linkToOriginal: false
-cta:
-  text: Curious to learn more about us?
-  label: Get in touch
 ---
 
 We love our life on the water, and we know you do too. We're a family business
