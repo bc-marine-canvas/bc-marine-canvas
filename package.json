@@ -1,6 +1,6 @@
 {
   "name": "bc-marine-canvas",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "BC Marine Canvas website",
   "repository": {
     "type": "git",
@@ -12,7 +12,7 @@
     "lint": "npm run lint:scripts && npm run lint:styles",
     "lint:scripts": "eslint assets/scripts --ext .js",
     "lint:styles": "stylelint assets/styles/**/*.scss",
-    "start": "npm run start:bind",
+    "start": "bin/dev",
     "start:bind": "HUGO_BIND_TO_IP=true bin/dev",
     "start:serverless": "HUGO_SERVERLESS=true bin/dev",
     "deploy": "npm run lint && bin/prod"
