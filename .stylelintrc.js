@@ -28,9 +28,7 @@ module.exports = {
         ],
       },
     ],
-    "max-line-length": 80,
     "no-empty-source": null,
     "scss/at-extend-no-missing-placeholder": null,
-    "string-quotes": "double",
   },
 };

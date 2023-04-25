@@ -15,11 +15,11 @@ export class Extensions {
       const notEmpty = !!this.length;
 
       return isArray && notEmpty;
-    }
+    };
 
     Array.prototype.empty = function() {
       return !(this.any());
-    }
+    };
 
     Array.prototype.first = function() {
       let firstElement = null;
@@ -29,7 +29,7 @@ export class Extensions {
       }
 
       return firstElement;
-    }
+    };
 
     Array.prototype.last = function() {
       let lastElement = null;
@@ -39,6 +39,6 @@ export class Extensions {
       }
 
       return lastElement;
-    }
+    };
   }
 }

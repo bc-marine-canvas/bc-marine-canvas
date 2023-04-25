@@ -72,7 +72,8 @@ module.exports = {
         "allowTemplateLiterals": true,
       },
     ],
+    "semi": ["error", "always"],
     "space-in-parens": "error",
     "spaced-comment": "error",
   },
-}
+};

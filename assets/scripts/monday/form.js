@@ -37,7 +37,7 @@ export class Form {
         .reduce((props, [key, value]) => {
           const cleanValue = sanitizeHtml(value, Form.sanitizerOptions);
 
-          return ({ ...props, [key]: cleanValue })
+          return ({ ...props, [key]: cleanValue });
         }, {});
 
       Form.clearSubmissionResultMessage();

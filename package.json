@@ -1,6 +1,6 @@
 {
   "name": "bc-marine-canvas",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "BC Marine Canvas website",
   "repository": {
     "type": "git",
@@ -19,19 +19,19 @@
   },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "5.0.0",
-    "autoprefixer": "10.4.13",
-    "eslint": "8.26.0",
-    "postcss": "8.4.18",
-    "postcss-cli": "10.0.0",
-    "sass": "1.55.0",
-    "stylelint": "14.14.0",
-    "stylelint-config-standard-scss": "6.0.0",
-    "stylelint-scss": "4.3.0"
+    "autoprefixer": "10.4.14",
+    "eslint": "8.39.0",
+    "postcss": "8.4.23",
+    "postcss-cli": "10.1.0",
+    "sass": "1.62.0",
+    "stylelint": "15.6.0",
+    "stylelint-config-standard-scss": "9.0.0",
+    "stylelint-scss": "4.6.0"
   },
   "dependencies": {
-    "@popperjs/core": "2.11.6",
-    "bootstrap": "5.2.2",
-    "node-fetch": "3.2.10",
-    "sanitize-html": "2.7.3"
+    "@popperjs/core": "2.11.7",
+    "bootstrap": "5.2.3",
+    "node-fetch": "3.3.1",
+    "sanitize-html": "2.10.0"
   }
 }

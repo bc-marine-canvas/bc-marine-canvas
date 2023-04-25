@@ -1,4 +1,4 @@
-import { params } from "../utils/params"
+import { params } from "../utils/params";
 
 export class Monday {
   static boardID = params("mondayBoardID", true);
