@@ -25,7 +25,7 @@ export class Monday {
   }
 
   get submissionName() {
-    return [this.LastName, this.firstName].join(", ").trim();
+    return [this.firstName, this.lastName].join(" ").trim();
   }
 
   get submissionDate() {
