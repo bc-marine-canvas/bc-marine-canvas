@@ -3,7 +3,7 @@ description: "The BC Marine Canvas website privacy policy."
 menu:
   footer:
     weight: 3
-slug: "privacy-policy"
+slug: "privacy"
 title: "Privacy policy"
 type: "compliance"
 layout: "compliance/single.html"
@@ -15,13 +15,10 @@ Canvas website.
 
 ## Information we collect
 
-Web form submissions require that you provide a first name and email address.
-You may optionally provide your last name and phone number. Your name, email
-address, and phone number are only used respond to inquiries that you initiate.
-We don't send promotional emails.
+We collect personal information you provide to us.
 
-We store the information you provided when you submitted the contact form to
-provide support and respond to inquiries.
+Web form submissions require that you provide a first name, email address, and
+message; you may optionally provide your last name and phone number.
 
 ### Technical basics
 
@@ -43,7 +40,8 @@ We don't collect any data for advertising or analytics.
 
 ## Information usage
 
-We use the information we collect to communicate with you, and to provide our
+We use the information we collect to communicate with you, provide our
+services, and deliver promotional communications about our products and
 services. We do not share personal information with outside parties except to
 the extent necessary to provide our services.
 
@@ -57,18 +55,13 @@ In the future, we may sell to, buy, merge with, or partner with other
 businesses. In such transactions, user information may be among the transferred
 assets.
 
-## Security
-
-We implement a variety of security measures to help keep your information
-secure. For instance, all communication with the website requires HTTPS.
-
 ## Accessing, changing, or deleting information
 
 You may email info@bcmarinecanvasri.com to request access to, changes to, or
 deletion of your information.
 
 We may delete your information at any time and for any reason, such as technical
-needs, legal concerns, data loss, or any other reason.
+needs, legal concerns, or data loss.
 
 ## Your consent
 
