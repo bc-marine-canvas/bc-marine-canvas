@@ -1,15 +1,11 @@
 ---
 description: "Keep your boat and your equipment protected."
-menu:
-  left:
-    weight: 3
 slug: "covers"
 title: "Covers"
 featuredImage:
   path: "covers/charcoal-windshield-cover.jpg"
   alt: "A boat with windshield cover"
 listHeading: "We've got you covered"
-breadcrumbsInSchema: true
 ---
 
 Covers protect your boat (and things on your boat) from the environment. They

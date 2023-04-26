@@ -1,10 +1,12 @@
 ---
-description: "Canvas enclosures that keep you warm and dry."
+description: >
+  "Enclosures, covers, and shades that keep you and your boat warm, dry, and
+  protected."
 menu:
   left:
     weight: 1
-slug: "enclosures"
-title: "Enclosures"
+slug: "canvas"
+title: "Canvas"
 featuredImage:
   path: "enclosures/stamoid-bridge-enclosure-interior.jpg"
   alt: "Interior view of a bridge enclosure"

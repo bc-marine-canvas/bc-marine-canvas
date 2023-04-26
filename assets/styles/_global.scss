@@ -15,6 +15,16 @@ p {
   }
 }
 
+svg {
+  .blue {
+    fill: $blue;
+  }
+
+  .orange {
+    fill: $orange;
+  }
+}
+
 .btn {
   text-transform: uppercase;
   letter-spacing: -0.2px;
