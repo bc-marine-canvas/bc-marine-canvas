@@ -9,11 +9,23 @@ if [ "$HUGO_BIND_TO_IP" == "true" ] && [ "$HUGO_SERVERLESS" == "true" ]; then
 fi
 
 if [ -n "$HUGO_BIND_TO_IP" ]; then
-  bindToIP="$( \
-    networksetup -getinfo Wi-Fi \
-    | grep "IP address: 1" \
-    | cut -d' ' -f3 \
-  )"
+  bindToIP=""
+  services="$(networksetup -listallnetworkservices | grep -v "*")"
+
+  while read -r service; do
+    ip="$( \
+      networksetup -getinfo "$service" \
+      | grep "IP address: 1" \
+      | cut -d" " -f3 \
+    )"
+
+    [ -n "$ip" ] && bindToIP="$ip" && break
+  done <<< "$services"
+
+  if [ -z "$bindToIP" ]; then
+    echo -e >&2 "No network services are available"
+    exit 1
+  fi
 
   if ! grep -q "$bindToIP" /etc/hosts; then
     echo "Missing entries in /etc/hosts:"
