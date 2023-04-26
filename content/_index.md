@@ -1,22 +1,22 @@
 ---
 description: >
-  "A full-service marine canvas and upholstery shop. Enclosures, dodgers,
-  biminis, covers, cushions, canvas, and upholstery. Distinctive quality and
-  style."
+  "Outfit your boat with canvas, cushions, upholstery, covers, canvas repair,
+  or foam flooring from BC Marine Canvas, and elevate your boating experience
+  to new heights."
 cta:
   path: "splash-day.html"
   text: "default"
 hero:
   left:
     image:
-      path: "enclosures/powerboat-enclosure.jpg"
-      alt: "A powerboat enclosure"
-    link: "/enclosures"
-    text: "Enclosures"
+      path: "aquatraction/aquatraction-ranger.jpg"
+      alt: "AquaTraction foam decking on a Ranger bay boat"
+    link: "/aquatraction"
+    text: "AquaTraction"
   right:
     image:
-      path: "upholstery/quilted-cushion.jpg"
-      alt: "Seat with quilted back and knee riser"
-    link: "/upholstery"
-    text: "Upholstery"
+      path: "enclosures/stamoid-bridge-enclosure-interior.jpg"
+      alt: "Looking out from the enclosed flybridge of a motor yacht"
+    link: "/canvas"
+    text: "Canvas"
 ---

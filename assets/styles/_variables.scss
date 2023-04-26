@@ -124,10 +124,12 @@ $small-font-size:             0.875em;
 
 // Buttons
 $input-btn-padding-y:         0.4rem;
-$input-btn-font-family:       Marcellus, sans-serif;
+$input-btn-font-family:       "Red Hat Display", sans-serif;
 
 $input-btn-padding-y-sm:      0.4rem;
 $input-btn-padding-x-sm:      0.75rem;
+
+$btn-font-weight:             bold;
 
 $btn-transition:              color 0.1s ease-in-out, background-color 0.1s ease-in-out, border-color 0.1s ease-in-out, box-shadow 0.1s ease-in-out;
 

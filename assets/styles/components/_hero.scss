@@ -1,9 +1,12 @@
 .hero {
+  .btn {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
+  }
+
   .overlay {
-    font-family: Marcellus, sans-serif;
     font-size: 1rem;
     position: absolute;
-    text-transform: none;
 
     @include media-breakpoint-up(xl) {
       font-size: 1.25rem;
@@ -47,7 +50,7 @@
     object-fit: cover;
     width: 100%;
     padding: 0.5rem 0;
-    opacity: 0.73;
+    opacity: 0.9;
 
     @include media-breakpoint-up(md) {
       max-height: 350px;
