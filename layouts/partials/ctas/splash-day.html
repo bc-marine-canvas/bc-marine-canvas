@@ -18,6 +18,17 @@
 <div class="container-fluid bg-primary text-white">
   <div class="row py-5 position-relative overflow-hidden">
     <div class="col d-flex flex-column align-items-center">
+      <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+        <defs>
+          <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+        </defs>
+        <g class="parallax">
+          <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(142, 186, 222, 0.9)"/>
+          <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(142, 186, 222, 0.8)" />
+          <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(142, 186, 222, 0.7)" />
+          <use xlink:href="#gentle-wave" x="48" y="7" fill="rgba(142, 186, 222, 1)" />
+        </g>
+      </svg>
       {{ if $subText }}
         <div class="d-block d-sm-none zi-1">
           <h3 class="mb-2 fs-3 fs-sm-2">{{ $text }}</h3>
