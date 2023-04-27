@@ -50,3 +50,11 @@ command = "yarn deploy && hugo --gc --buildDrafts --buildExpired --buildFuture -
 [[redirects]]
   from = "/privacy-policy"
   to = "/privacy"
+
+[[redirects]]
+  from = "/covers/*"
+  to = "/canvas/covers/:splat"
+
+[[redirects]]
+  from = "/enclosures/*"
+  to = "/canvas/:splat"

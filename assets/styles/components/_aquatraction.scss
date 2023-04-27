@@ -1,10 +1,14 @@
 .aquatraction {
   svg {
-    height: 3.75rem;
+    height: 3rem;
     display: block;
 
     @include media-breakpoint-up(md) {
-      height: 5rem;
+      height: 4.5rem;
+    }
+
+    @include media-breakpoint-up(lg) {
+      height: 4rem;
     }
   }
 }
