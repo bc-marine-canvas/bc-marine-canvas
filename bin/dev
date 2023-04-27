@@ -16,7 +16,7 @@ if [ -n "$HUGO_BIND_TO_IP" ]; then
     ip="$( \
       networksetup -getinfo "$service" \
       | grep "IP address: 1" \
-      | cut -d" " -f3 \
+      | cut -d" " -f3 || true \
     )"
 
     [ -n "$ip" ] && bindToIP="$ip" && break
