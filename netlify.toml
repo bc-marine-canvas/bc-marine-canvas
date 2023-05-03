@@ -40,21 +40,3 @@ command = "yarn deploy && hugo --gc --buildDrafts --buildExpired --buildFuture -
     '''
     Referrer-Policy = "same-origin"
     Strict-Transport-Security = "max-age=86400; includeSubDomains"
-
-[[redirects]]
-  from = "/materials"
-  to = "https://docs.google.com/spreadsheets/d/1y_KAVcMWXBKejP_8aKb5p0ePx0O4NBl-YDa3nwOT6rg/edit?resourcekey=null#gid=960232423"
-  status = 200
-  force = true
-
-[[redirects]]
-  from = "/privacy-policy"
-  to = "/privacy"
-
-[[redirects]]
-  from = "/covers/*"
-  to = "/canvas/covers/:splat"
-
-[[redirects]]
-  from = "/enclosures/*"
-  to = "/canvas/:splat"

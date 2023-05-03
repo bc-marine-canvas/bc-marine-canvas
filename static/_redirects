@@ -1,12 +1,12 @@
-/canvas/biminis  /enclosures
-/canvas/covers  /covers
-/canvas/enclosures  /enclosures
-/canvas/*  /enclosures
-/canvas  /enclosures
+/materials https://docs.google.com/spreadsheets/d/1y_KAVcMWXBKejP_8aKb5p0ePx0O4NBl-YDa3nwOT6rg/edit?resourcekey=null#gid=960232423 200!
+/canvas/biminis  /canvas/enclosures
+/covers/*  /canvas/covers/:splat
+/enclosures/*  /canvas/:splat
 /gallery/*  /
 /gallery  /
 /masks/*  /
 /masks  /
+/privacy-policy  /privacy
 /product/*  /care-and-upkeep/products
 /product  /
 /upholstery/coaming-pads  /upholsters/bolsters
