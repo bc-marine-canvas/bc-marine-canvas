@@ -12,3 +12,19 @@
     }
   }
 }
+
+.aquatraction-logo {
+  max-width: 140px;
+
+  @include media-breakpoint-up(md) {
+    max-width: 200px;
+  }
+
+  .wave {
+    fill: #006bad;
+  }
+
+  .text {
+    fill: #00202d;
+  }
+}
