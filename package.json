@@ -24,9 +24,9 @@
     "postcss": "8.4.23",
     "postcss-cli": "10.1.0",
     "sass": "1.62.1",
-    "stylelint": "15.6.0",
+    "stylelint": "15.6.1",
     "stylelint-config-standard-scss": "9.0.0",
-    "stylelint-scss": "4.6.0"
+    "stylelint-scss": "5.0.0"
   },
   "dependencies": {
     "@popperjs/core": "2.11.7",
