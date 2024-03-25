@@ -32,6 +32,6 @@
     "@popperjs/core": "2.11.7",
     "bootstrap": "5.2.3",
     "node-fetch": "3.3.1",
-    "sanitize-html": "2.10.0"
+    "sanitize-html": "2.13.0"
   }
 }
