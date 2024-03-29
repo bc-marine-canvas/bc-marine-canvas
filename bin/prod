@@ -9,60 +9,62 @@ echo "  ☞ Running bin/prod..."
 echo "────────────────────────────────────────────────────────────────"
 echo
 
-echo "☞ Installing dart-sass-embedded..."
+echo "☞ Installing Dart Sass..."
 
 BIN_DIR=/opt/build/repo/node_modules/.bin
-DARTSASS_VERSION=1.55.0
-DARTSASS_TARBALL="sass_embedded-${DARTSASS_VERSION}-linux-x64.tar.gz"
-DARTSASS_RELEASE_URL="https://github.com/sass/dart-sass-embedded/releases/download/${DARTSASS_VERSION}/${DARTSASS_TARBALL}";
+DARTSASS_VERSION=1.72.0
+DARTSASS_URL_BASE="https://github.com/sass/dart-sass/releases/download"
+DARTSASS_RELEASE_URL="${DARTSASS_URL_BASE}/${DARTSASS_VERSION}"
+DARTSASS_BINARY_TARBALL="dart-sass-${DARTSASS_VERSION}-linux-x64.tar.gz"
+DARTSASS_BINARY_URL="${DARTSASS_RELEASE_URL}/${DARTSASS_BINARY_TARBALL}";
 
 echo
 echo "  ☞ BIN_DIR: $BIN_DIR"
 echo "  ☞ DARTSASS_VERSION: $DARTSASS_VERSION"
 echo
 
-if command -v dart-sass-embedded; then
+if command -v sass; then
   installed_version="$( \
-    dart-sass-embedded --version \
+    sass --embedded --version \
     | grep implementationVersion \
     | cut -d'"' -f4 \
   )";
 
   if [ "$installed_version" == "$DARTSASS_VERSION" ]; then
-    echo "☞ Current version of dart-sass-embedded already installed..."
+    echo "☞ Current version of Dart Sass already installed..."
   else
     echo "☞ Creating bin directory..."
     mkdir -p "$BIN_DIR"
 
-    echo "☞ Downloading dart-sass-embedded..."
-    curl -LJO "$DARTSASS_RELEASE_URL"
+    echo "☞ Downloading Dart Sass..."
+    curl -LJO "$DARTSASS_BINARY_URL"
 
-    echo "☞ Uncompressing dart-sass-embedded..."
-    tar -xvf "$DARTSASS_TARBALL"
+    echo "☞ Uncompressing Dart Sass..."
+    tar -xvf "$DARTSASS_BINARY_TARBALL"
 
-    echo "☞ Moving dart-sass-embedded into bin directory..."
-    mv sass_embedded/dart-sass-embedded "$BIN_DIR"
-    rm -rf sass_embedded*;
+    echo "☞ Moving Dart Sass into bin directory..."
+    cp -r dart-sass/* "$BIN_DIR"
+    rm -rf dart-sass*;
   fi
 else
   echo "☞ Creating bin directory..."
   mkdir -p "$BIN_DIR"
 
-  echo "☞ Downloading dart-sass-embedded..."
-  curl -LJO "$DARTSASS_RELEASE_URL"
+  echo "☞ Downloading Dart Sass..."
+  curl -LJO "$DARTSASS_BINARY_URL"
 
-  echo "☞ Uncompressing dart-sass-embedded..."
-  tar -xvf "$DARTSASS_TARBALL"
+  echo "☞ Uncompressing Dart Sass..."
+  tar -xvf "$DARTSASS_BINARY_TARBALL"
 
-  echo "☞ Moving dart-sass-embedded into bin directory..."
-  mv sass_embedded/dart-sass-embedded "$BIN_DIR"
-  rm -rf sass_embedded*;
+  echo "☞ Moving Dart Sass into bin directory..."
+  cp -r dart-sass/* "$BIN_DIR"
+  rm -rf dart-sass*;
 fi
 
-echo "☞ Verifying dart-sass-embedded exists and is callable..."
+echo "☞ Verifying Dart Sass exists and is callable..."
 installed_version="$( \
-  dart-sass-embedded --version \
+  sass --embedded --version \
   | grep implementationVersion \
   | cut -d'"' -f4 \
 )";
-echo "☞ dart-sass-embedded --version: $installed_version"
+echo "☞ sass --embedded --version: $installed_version"

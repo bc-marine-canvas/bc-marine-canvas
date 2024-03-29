@@ -61,7 +61,7 @@ if [ -n "$HUGO_BIND_TO_IP" ]; then
     --printUnusedTemplates \
     --templateMetrics \
     --templateMetricsHints \
-    --verbose
+    --logLevel info
 elif [ -n "$HUGO_SERVERLESS" ]; then
   serverless_command="hugo server
     --buildDrafts
@@ -75,7 +75,7 @@ elif [ -n "$HUGO_SERVERLESS" ]; then
     --printUnusedTemplates
     --templateMetrics
     --templateMetricsHints
-    --verbose"
+    --logLevel info"
 
   netlify dev \
     --command "$(echo $serverless_command)" \
@@ -93,5 +93,5 @@ else
     --printUnusedTemplates \
     --templateMetrics \
     --templateMetricsHints \
-    --verbose
+    --logLevel info
 fi
