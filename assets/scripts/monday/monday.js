@@ -40,26 +40,31 @@ export class Monday {
 
   get query() {
     return "mutation ($submissionName: String!, $columnValues: JSON!, " +
-      "$boardID: Int!) { create_item (board_id:$boardID, " +
-      "item_name:$submissionName, column_values: $columnValues) { id } }";
+      "$boardID: ID!) { create_item (board_id: $boardID, " +
+      "item_name: $submissionName, column_values: $columnValues) { id } }";
+  }
+
+  get columnValues() {
+    return JSON.stringify({
+      date4: {
+        date: `${this.submissionDate}`,
+        time: `${this.submissionTime}`,
+      },
+      text: `${this.firstName}`,
+      text6: `${this.lastName}`,
+      text3: `${this.email}`,
+      text2: `${this.phone}`,
+      // eslint-disable-next-line camelcase
+      long_text: `${this.message}`,
+    });
   }
 
   get variables() {
-    return JSON.stringify({
+    return {
       "submissionName": this.submissionName,
       "boardID": Monday.boardID,
-      "columnValues": `{
-        "date4": {
-          "date": "${this.submissionDate}",
-          "time": "${this.submissionTime}"
-        },
-        "text": "${this.firstName}",
-        "text6": "${this.lastName}",
-        "text3": "${this.email}",
-        "text2": "${this.phone}",
-        "long_text": "${this.message}"
-      }`,
-    });
+      "columnValues": this.columnValues,
+    };
   }
 
   request() {
