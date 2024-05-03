@@ -4,6 +4,7 @@ exports.handler = (event, context, callback) => {
   const headers = {
     "Content-Type": "application/json",
     "Authorization": process.env.HUGO_MONDAY_ACCESS_TOKEN,
+    "API-Version": process.env.HUGO_MONDAY_API_VERSION,
   }
   const formSubmissionData = event.body;
   const request = {
