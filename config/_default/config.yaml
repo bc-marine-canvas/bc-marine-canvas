@@ -1,6 +1,7 @@
 build:
   noJSConfigInAssets: true
-  writeStats: true
+  buildStats:
+    enable: true
 copyright: 2022
 disableKinds:
   - "RSS"

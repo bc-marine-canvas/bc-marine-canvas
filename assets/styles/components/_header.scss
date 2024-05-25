@@ -1,20 +1,6 @@
 header {
   font-family: Marcellus, sans-serif;
 
-  .nav-link {
-    font-size: 1.5rem;
-
-    &.active {
-      &:hover {
-        color: tint-color($navbar-light-active-color, 30%);
-      }
-    }
-
-    @include media-breakpoint-up(lg) {
-      font-size: 1rem;
-    }
-  }
-
   .navbar-brand {
     svg {
       fill: $white;
@@ -34,6 +20,20 @@ header {
           fill: tint-color($orange, 20%);
         }
       }
+    }
+  }
+
+  .nav-link {
+    font-size: 1.5rem;
+
+    &.active {
+      &:hover {
+        color: tint-color($navbar-light-active-color, 30%);
+      }
+    }
+
+    @include media-breakpoint-up(lg) {
+      font-size: 1rem;
     }
   }
 
