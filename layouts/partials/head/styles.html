@@ -6,8 +6,8 @@
 
 {{ $style :=
   resources.Get "styles/main.scss"
-  | resources.ToCSS $options
-  | resources.PostCSS
+  | toCSS $options
+  | postCSS
 }}
 
 {{ if hugo.IsProduction }}

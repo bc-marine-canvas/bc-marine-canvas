@@ -12,7 +12,7 @@ echo
 echo "☞ Installing Dart Sass..."
 
 BIN_DIR=/opt/build/repo/node_modules/.bin
-DARTSASS_VERSION=1.72.0
+DARTSASS_VERSION=1.77.8
 DARTSASS_URL_BASE="https://github.com/sass/dart-sass/releases/download"
 DARTSASS_RELEASE_URL="${DARTSASS_URL_BASE}/${DARTSASS_VERSION}"
 DARTSASS_BINARY_TARBALL="dart-sass-${DARTSASS_VERSION}-linux-x64.tar.gz"
