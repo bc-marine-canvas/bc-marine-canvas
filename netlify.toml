@@ -32,7 +32,8 @@ command = "yarn deploy && hugo --gc --buildDrafts --buildExpired --buildFuture -
       base-uri 'self';
       connect-src 'self' https://api.monday.com;
       font-src 'self';
-      frame-ancestors 'none';
+      frame-src 'self' https://forms.monday.com;
+      frame-ancestors 'self' https://forms.monday.com;
       img-src 'self' data:;
       manifest-src 'self';
       script-src 'self' 'unsafe-inline';
