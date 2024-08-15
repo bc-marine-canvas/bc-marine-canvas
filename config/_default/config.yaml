@@ -22,7 +22,7 @@ params:
   defaults:
     ctas:
       default:
-        path: "simple.html"
+        path: "splash-day.html"
       simple:
         text: "Get in touch to start a project!"
         subText:
@@ -35,7 +35,7 @@ params:
         link: "/contact"
         snowflakeCount: 250
       splashDay:
-        text: "Is your boat ready for splash day?"
+        text: "Get in touch to start a project!"
         subText:
         label: "Contact"
         link: "/contact"
