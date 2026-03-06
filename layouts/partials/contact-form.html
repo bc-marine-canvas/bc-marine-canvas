@@ -1,1 +1,18 @@
-<iframe src="https://bcmc-estimator.vercel.app/intake" width="100%" height="900" frameborder="0" scrolling="no"></iframe>
+<iframe
+  id="bcmc-contact-form"
+  src="https://bcmc-estimator.vercel.app/intake"
+  width="100%"
+  height="1200"
+  frameborder="0"
+  style="border: none; overflow: hidden;"
+></iframe>
+<script>
+  window.addEventListener('message', function(e) {
+    if (e.data && e.data.type === 'bcmc-iframe-height') {
+      var iframe = document.getElementById('bcmc-contact-form');
+      if (iframe) {
+        iframe.style.height = (e.data.height + 32) + 'px';
+      }
+    }
+  });
+</script>
