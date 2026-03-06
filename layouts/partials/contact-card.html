@@ -15,7 +15,7 @@
       {{ $phone := partial "phone.html" . }}
       <dd><a class="text-decoration-none" href="{{ $phone.href }}">{{ $phone.display }}</a></dd>
       <dt>Email:</dt>
-      {{ $email := .Site.Data.company.email }}
+      {{ $email := hugo.Data.company.email }}
       <dd><a class="text-decoration-none" href="mailto:{{ $email }}">{{ $email }}</a></dd>
     </dl>
   </div>

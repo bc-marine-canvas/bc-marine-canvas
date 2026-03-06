@@ -1,5 +1,5 @@
-{{ $display := .Site.Data.company.phone.display }}
-{{ $plain := .Site.Data.company.phone.plain }}
+{{ $display := hugo.Data.company.phone.display }}
+{{ $plain := hugo.Data.company.phone.plain }}
 
 {{ $href := (printf "tel:%s" $plain) | safeURL }}
 

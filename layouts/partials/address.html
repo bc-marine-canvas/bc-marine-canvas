@@ -1,7 +1,7 @@
-{{ $street := .Site.Data.company.address.street }}
-{{ $city := .Site.Data.company.address.city }}
-{{ $state := .Site.Data.company.address.state }}
-{{ $zip := .Site.Data.company.address.zip }}
+{{ $street := hugo.Data.company.address.street }}
+{{ $city := hugo.Data.company.address.city }}
+{{ $state := hugo.Data.company.address.state }}
+{{ $zip := hugo.Data.company.address.zip }}
 
 {{ $full := printf `%s, %s, %s %s` $street $city $state $zip }}
 {{ $query := querify (slice "api" "1" "destination" $full) }}

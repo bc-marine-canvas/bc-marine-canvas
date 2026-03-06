@@ -15,7 +15,8 @@ imaging:
     disableLatLong: true
   quality: 85
 languageCode: "en-us"
-paginate: 20
+pagination:
+  pagerSize: 20
 params:
   logo: "logo.svg"
   slogan: "Custom marine canvas, upholstery, and flooring"

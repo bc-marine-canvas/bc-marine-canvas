@@ -1,6 +1,6 @@
 <nav class="social-media mb-3" style="--bs-breadcrumb-divider: '・';">
   <ol class="breadcrumb justify-content-center mb-0">
-    {{ range .Site.Data.socialMedia }}
+    {{ range hugo.Data.socialMedia }}
       {{ $icon := partial "svg.html" (printf `icons/%s` .type) }}
       <li class="breadcrumb-item">
         <a href="{{ .url }}" target="_blank">{{ $icon }}</a>
