@@ -27,12 +27,14 @@
 
   .swatch-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(95px, 1fr));
     gap: 1rem;
     margin: 1rem 0 1.5rem;
 
+    // Desktop/tablet: fixed 4-up to match the AquaTraction site
+    // (patterns 4x2, colors in rows of 4). Phones stay auto-fit (~3-up).
     @include media-breakpoint-up(md) {
-      grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+      grid-template-columns: repeat(4, 1fr);
     }
   }
 
