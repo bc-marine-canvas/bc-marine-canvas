@@ -1,5 +1,6 @@
 ---
-description: "Foam decking that offers comfort, style, and safety."
+description: "Custom boat foam flooring in Rhode Island — AquaTraction marine decking installed by BC Marine Canvas in Warwick, RI. Serving Greenwich Bay, Narragansett Bay & RI marinas."
+metaTitle: "Boat Foam Flooring in Rhode Island (AquaTraction)"
 menu:
   left:
     weight: 3
@@ -13,22 +14,27 @@ breadcrumbsInSchema: true
 layout: "aquatraction/single.html"
 ---
 
-Foam decking is a popular option for boat owners who want a durable and
-long-lasting deck surface. Foam flooring is typically made of closed-cell foam
-that is coated with a textured top layer to provide a non-slip surface.
-This type of decking is lightweight, rugged, and provides excellent shock
-absorption.
+Foam decking is a popular, low-maintenance alternative to carpet, vinyl, and
+non-skid gelcoat. AquaTraction is closed-cell EVA foam with a textured,
+non-slip top layer — lightweight, UV-stable, and easy on bare feet and knees.
+It stays cooler in the sun, absorbs shock and noise, and wipes clean in seconds.
 
 <!--more-->
 
-AquaTraction is highly customizable and available a variety of colors and
-textures to suit all preferences. Your new flooring can even include custom
-laser-engraved text and graphics, making your boat truly one-of-a-kind.
+AquaTraction is fully customizable, with a wide range of colors and textures
+plus optional laser-engraved text, logos, and graphics that make your boat
+truly one-of-a-kind. We template, cut, and install foam flooring for cockpits,
+helm pads, swim platforms, casting decks, steps, and gunwales.
 
-## AquaTraction of Southern New England
+## Boat Foam Flooring in Rhode Island
 
-AquaTraction is one of the best-known [foam decking systems] around. We think
-it's easy to see why. Transform your boat with AquaTraction, expertly designed
-and installed by BC Marine Canvas.
+BC Marine Canvas designs and installs [AquaTraction] foam decking from our shop
+in Warwick, RI. We work with boat owners across Greenwich Bay and Narragansett
+Bay — including East Greenwich, Apponaug, Cranston, Barrington, Bristol,
+Portsmouth, Wickford, Jamestown, and Newport — and marinas throughout Rhode
+Island and southern New England.
 
-[foam decking systems]: https://www.aquatraction.com/Home/Product
+Ready to upgrade your deck? [Get in touch for a free quote](/contact) — send a
+few photos of your boat and we'll help you pick colors and a pattern.
+
+[AquaTraction]: https://www.aquatraction.com/Home/Product

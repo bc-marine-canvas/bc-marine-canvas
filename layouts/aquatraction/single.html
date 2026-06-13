@@ -28,9 +28,64 @@
       </div>
       <div class="row g-xl-0">
         <div class="col col-xl-10 offset-xl-1">
+          <div class="aquatraction-installs mb-5">
+            <h2>Recent AquaTraction installations</h2>
+            <p class="lead-tagline">A few of the boats we've outfitted with custom foam decking around Greenwich Bay, Narragansett Bay, and Rhode Island.</p>
+            <div class="row g-3">
+              {{ range $img := slice
+                  (dict "src" "images/aquatraction/installs/aquatraction-foam-flooring-center-console-cockpit.jpg" "alt" "Tan teak-look AquaTraction foam flooring covering a center console cockpit deck")
+                  (dict "src" "images/aquatraction/installs/aquatraction-custom-laser-engraved-fish-on-logo.jpg" "alt" "Custom black and blue AquaTraction foam decking with a laser-engraved Fish-On logo")
+                  (dict "src" "images/aquatraction/installs/aquatraction-foam-decking-hatch-detail.jpg" "alt" "AquaTraction foam decking templated precisely around deck hatches and hardware")
+                  (dict "src" "images/aquatraction/installs/aquatraction-gray-foam-decking-bow-marina.jpg" "alt" "Gray AquaTraction foam decking on a center console bow at a Rhode Island marina")
+                  (dict "src" "images/aquatraction/installs/aquatraction-custom-wood-grain-pattern-flooring.jpg" "alt" "Custom wood-grain pattern AquaTraction foam flooring in a boat cabin")
+              }}
+                <div class="col-6 col-lg-4">
+                  {{ with resources.Get $img.src }}
+                    <img src="{{ .RelPermalink }}" alt="{{ $img.alt }}" width="{{ .Width }}" height="{{ .Height }}" class="img-fluid border border-2 border-light" loading="lazy">
+                  {{ end }}
+                </div>
+              {{ end }}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row g-xl-0">
+        <div class="col col-xl-10 offset-xl-1">
           {{ partial "aquatraction/swatches.html" . }}
         </div>
       </div>
     </div>
   </section>
+
+  {{ with site.Data.company }}
+    {{ $cities := slice }}
+    {{ range (slice "Warwick" "East Greenwich" "Cranston" "Barrington" "Bristol" "Portsmouth" "North Kingstown" "Jamestown" "Newport") }}
+      {{ $cities = $cities | append (dict "@type" "City" "name" (printf "%s, RI" .)) }}
+    {{ end }}
+    {{ $schema := dict
+      "@context" "https://schema.org"
+      "@type" "Service"
+      "serviceType" "Boat foam flooring installation"
+      "name" "AquaTraction marine foam decking"
+      "url" $.Permalink
+      "areaServed" $cities
+      "provider" (dict
+        "@type" "LocalBusiness"
+        "name" .name
+        "image" (partial "logo-url.html" $)
+        "telephone" .phone.display
+        "email" .email
+        "url" $.Site.BaseURL
+        "address" (dict
+          "@type" "PostalAddress"
+          "streetAddress" .address.street
+          "addressLocality" .address.city
+          "addressRegion" .address.state
+          "postalCode" .address.zip
+          "addressCountry" "US"))
+    }}
+    <script type="application/ld+json">
+    {{ $schema | jsonify (dict "indent" "  ") | safeJS }}
+    </script>
+  {{ end }}
 {{ end }}

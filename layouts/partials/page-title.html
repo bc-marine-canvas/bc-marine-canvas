@@ -5,7 +5,7 @@
 {{ else if (eq .RelPermalink "/404.html") }}
   {{ $title = print "404" }}
 {{ else }}
-  {{ $title = print .Title }}
+  {{ $title = print (.Params.metaTitle | default .Title) }}
 {{ end }}
 
 {{ return $title }}
