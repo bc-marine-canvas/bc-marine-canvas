@@ -1,0 +1,36 @@
+{{ with site.Data.aquatraction }}
+  <div class="patterns-colors mt-2 mt-lg-4">
+    <h2>Patterns &amp; Colors</h2>
+    <p class="lead-tagline">With our vast color selection and endless customization of patterns, there is nothing we can't create.</p>
+
+    <h3>Patterns</h3>
+    <div class="swatch-grid">
+      {{ range .patterns }}
+        {{ $name := .name }}
+        {{ $img := resources.Get (printf "images/aquatraction/patterns/%s" .image) }}
+        <figure class="swatch">
+          {{ with $img }}<img src="{{ .RelPermalink }}" alt="AquaTraction {{ $name }} pattern" loading="lazy">{{ end }}
+          <figcaption>{{ $name }}</figcaption>
+        </figure>
+      {{ end }}
+    </div>
+
+    <h3>Colors</h3>
+    {{ range .colorGroups }}
+      {{ $thickness := .thickness }}
+      <h4 class="swatch-group-title">{{ $thickness }}</h4>
+      <div class="swatch-grid">
+        {{ range .colors }}
+          {{ $name := .name }}
+          {{ $img := resources.Get (printf "images/aquatraction/colors/%s" .image) }}
+          <figure class="swatch">
+            {{ with $img }}<img src="{{ .RelPermalink }}" alt="AquaTraction {{ $thickness }} marine flooring in {{ $name }}" loading="lazy">{{ end }}
+            <figcaption>{{ $name }}</figcaption>
+          </figure>
+        {{ end }}
+      </div>
+    {{ end }}
+
+    <p class="mt-4 mb-0">Custom laser-engraved text and graphics are available on request. <a href="{{ "contact/" | relURL }}">Get in touch</a> to design yours.</p>
+  </div>
+{{ end }}

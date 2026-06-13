@@ -1,0 +1,322 @@
+{
+  "patterns": [
+    {
+      "name": "Border Line",
+      "image": "aquatraction-pattern-border-line.webp"
+    },
+    {
+      "name": "Teak",
+      "image": "aquatraction-pattern-teak.webp"
+    },
+    {
+      "name": "Diamond",
+      "image": "aquatraction-pattern-diamond.webp"
+    },
+    {
+      "name": "Topographic",
+      "image": "aquatraction-pattern-topographic.webp"
+    },
+    {
+      "name": "Fish Scale",
+      "image": "aquatraction-pattern-fish-scale.webp"
+    },
+    {
+      "name": "Wood Plank",
+      "image": "aquatraction-pattern-wood-plank.webp"
+    },
+    {
+      "name": "Hexagon",
+      "image": "aquatraction-pattern-hexagon.webp"
+    },
+    {
+      "name": "Gator Scale",
+      "image": "aquatraction-pattern-gator-scale.webp"
+    }
+  ],
+  "colorGroups": [
+    {
+      "thickness": "6mm",
+      "colors": [
+        {
+          "name": "Black / Olive",
+          "image": "black-olive.webp"
+        },
+        {
+          "name": "Olive / Black",
+          "image": "olive-black.webp"
+        },
+        {
+          "name": "Black / White",
+          "image": "black-white.webp"
+        },
+        {
+          "name": "White / Black",
+          "image": "white-black.webp"
+        },
+        {
+          "name": "Navy Blue / Dark Grey",
+          "image": "navy-darkgrey.webp"
+        },
+        {
+          "name": "Dark Grey / Navy Blue",
+          "image": "darkgrey-navy.webp"
+        },
+        {
+          "name": "Charcoal / Black",
+          "image": "charcoal-black.webp"
+        },
+        {
+          "name": "Black / Charcoal",
+          "image": "black-charcoal.webp"
+        },
+        {
+          "name": "Charcoal / Dark Grey",
+          "image": "charcoal-darkgrey.webp"
+        },
+        {
+          "name": "Dark Grey / Charcoal",
+          "image": "darkgrey-charcoal.webp"
+        },
+        {
+          "name": "Charcoal / Lime Green",
+          "image": "charcoal-limegreen.webp"
+        },
+        {
+          "name": "Lime Green / Charcoal",
+          "image": "limegreen-charcoal.webp"
+        },
+        {
+          "name": "Charcoal / Orange",
+          "image": "charcoal-orange.webp"
+        },
+        {
+          "name": "Orange / Charcoal",
+          "image": "orange-charcoal.webp"
+        },
+        {
+          "name": "Charcoal / Red",
+          "image": "charcoal-red.webp"
+        },
+        {
+          "name": "Red / Charcoal",
+          "image": "red-charcoal.webp"
+        },
+        {
+          "name": "Charcoal / Royal Blue",
+          "image": "charcoal-royalblue.webp"
+        },
+        {
+          "name": "Royal Blue / Charcoal",
+          "image": "royalblue-charcoal.webp"
+        },
+        {
+          "name": "Snow Camo / Dark Grey",
+          "image": "snowcamo-darkgrey.webp"
+        },
+        {
+          "name": "Dark Grey / Snow Camo",
+          "image": "darkgrey-snowcamo.webp"
+        },
+        {
+          "name": "Snow Camo / Light Grey",
+          "image": "snowcamo-lightgrey.webp"
+        },
+        {
+          "name": "Light Grey / Snow Camo",
+          "image": "lightgrey-snowcamo.webp"
+        },
+        {
+          "name": "Light Oak / Driftwood",
+          "image": "lightoak-driftwood.webp"
+        },
+        {
+          "name": "Driftwood / Light Oak",
+          "image": "driftwood-lightoak.webp"
+        },
+        {
+          "name": "Light Oak / Beach Sand",
+          "image": "lightoak-beachsand.webp"
+        },
+        {
+          "name": "Beach Sand / Light Oak",
+          "image": "beachsand-lightoak.webp"
+        },
+        {
+          "name": "Light Oak / Black",
+          "image": "lightoak-black.webp"
+        },
+        {
+          "name": "Black / Light Oak",
+          "image": "black-lightoak.webp"
+        },
+        {
+          "name": "Digital Camo / Black",
+          "image": "digicamo-black.webp"
+        },
+        {
+          "name": "Black / Digital Camo",
+          "image": "black-digicamo.webp"
+        },
+        {
+          "name": "Dark Grey / Black",
+          "image": "darkgrey-black.webp"
+        },
+        {
+          "name": "Black / Dark Grey",
+          "image": "black-darkgrey.webp"
+        },
+        {
+          "name": "Dark Grey / Light Grey",
+          "image": "darkgrey-lightgrey.webp"
+        },
+        {
+          "name": "Light Grey / Dark Grey",
+          "image": "lightgrey-darkgrey.webp"
+        },
+        {
+          "name": "Dark Grey / Lime Green",
+          "image": "darkgrey-limegreen.webp"
+        },
+        {
+          "name": "Lime Green / Dark Grey",
+          "image": "limegreen-darkgrey.webp"
+        },
+        {
+          "name": "Driftwood / Black",
+          "image": "driftwood-black.webp"
+        },
+        {
+          "name": "Black / Driftwood",
+          "image": "black-driftwood.webp"
+        },
+        {
+          "name": "Brown / Light Grey",
+          "image": "brown-lightgrey.webp"
+        },
+        {
+          "name": "Light Grey / Brown",
+          "image": "lightgrey-brown.webp"
+        },
+        {
+          "name": "Brown / Black",
+          "image": "brown-black.webp"
+        },
+        {
+          "name": "Black / Brown",
+          "image": "black-brown.webp"
+        },
+        {
+          "name": "Brown / Cream",
+          "image": "brown-cream.webp"
+        },
+        {
+          "name": "Cream / Brown",
+          "image": "cream-brown.webp"
+        },
+        {
+          "name": "Seafoam Green / Light Grey",
+          "image": "seafoam-lightgrey.webp"
+        },
+        {
+          "name": "Light Grey / Seafoam Green",
+          "image": "lightgrey-seafoam.webp"
+        },
+        {
+          "name": "Seafoam Green / Dark Grey",
+          "image": "seafoam-darkgrey.webp"
+        },
+        {
+          "name": "Dark Grey / Seafoam Green",
+          "image": "darkgrey-seafoam.webp"
+        },
+        {
+          "name": "Bashful Blue / Dark Grey",
+          "image": "bashfulblue-darkgrey.webp"
+        },
+        {
+          "name": "Dark Grey / Bashful Blue",
+          "image": "darkgrey-bashfulblue.webp"
+        },
+        {
+          "name": "Bashful Blue / Light Grey",
+          "image": "bashfulblue-lightgrey.webp"
+        },
+        {
+          "name": "Light Grey / Bashful Blue",
+          "image": "lightgrey-bashfulblue.webp"
+        },
+        {
+          "name": "Light Grey / White",
+          "image": "lightgrey-white.webp"
+        },
+        {
+          "name": "White / Light Grey",
+          "image": "white-lightgrey.webp"
+        },
+        {
+          "name": "Light Grey / Black",
+          "image": "lightgrey-black.webp"
+        },
+        {
+          "name": "Black / Light Grey",
+          "image": "black-lightgrey.webp"
+        }
+      ]
+    },
+    {
+      "thickness": "12mm",
+      "colors": [
+        {
+          "name": "Charcoal",
+          "image": "charcoal_12mm.webp"
+        },
+        {
+          "name": "Dark Grey / Black",
+          "image": "darkgrey-black_12mm.webp"
+        },
+        {
+          "name": "Dark Grey",
+          "image": "darkgrey_12mm.webp"
+        },
+        {
+          "name": "Brown / Black",
+          "image": "brown-black_12mm.webp"
+        },
+        {
+          "name": "White",
+          "image": "white_12mm.webp"
+        }
+      ]
+    },
+    {
+      "thickness": "5mm",
+      "colors": [
+        {
+          "name": "Dark Grey",
+          "image": "darkgrey_aquadot.webp"
+        },
+        {
+          "name": "Light Grey",
+          "image": "lightgrey_aquadot.webp"
+        },
+        {
+          "name": "White",
+          "image": "white_aquadot.webp"
+        }
+      ]
+    },
+    {
+      "thickness": "3mm",
+      "colors": [
+        {
+          "name": "Black",
+          "image": "black_3mm.webp"
+        },
+        {
+          "name": "Dark Grey",
+          "image": "darkgrey_3mm.webp"
+        }
+      ]
+    }
+  ]
+}
