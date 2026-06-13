@@ -9,7 +9,7 @@
         {{ $name := .name }}
         {{ $img := resources.Get (printf "images/aquatraction/patterns/%s" .image) }}
         <figure class="swatch">
-          {{ with $img }}<img src="{{ .RelPermalink }}" alt="AquaTraction {{ $name }} pattern" loading="lazy">{{ end }}
+          {{ with $img }}{{ $fp := . | fingerprint "md5" }}<img src="{{ $fp.RelPermalink }}" alt="AquaTraction {{ $name }} pattern" loading="lazy">{{ end }}
           <figcaption>{{ $name }}</figcaption>
         </figure>
       {{ end }}
@@ -24,7 +24,7 @@
           {{ $name := .name }}
           {{ $img := resources.Get (printf "images/aquatraction/colors/%s" .image) }}
           <figure class="swatch">
-            {{ with $img }}<img src="{{ .RelPermalink }}" alt="AquaTraction {{ $thickness }} marine flooring in {{ $name }}" loading="lazy">{{ end }}
+            {{ with $img }}{{ $fp := . | fingerprint "md5" }}<img src="{{ $fp.RelPermalink }}" alt="AquaTraction {{ $thickness }} marine flooring in {{ $name }}" loading="lazy">{{ end }}
             <figcaption>{{ $name }}</figcaption>
           </figure>
         {{ end }}
