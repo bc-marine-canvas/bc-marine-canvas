@@ -9,8 +9,8 @@ cta:
 hero:
   left:
     image:
-      path: "aquatraction/aquatraction-ranger.jpg"
-      alt: "AquaTraction foam decking on a Ranger bay boat"
+      path: "aquatraction/aquatraction-tan-foam-decking-intrepid-center-console.jpg"
+      alt: "Tan teak-look AquaTraction foam decking covering the full deck of an Intrepid center console"
     link: "/aquatraction"
     text: "AquaTraction"
   right:
