@@ -45,7 +45,8 @@
               }}
                 <div class="col-6 col-lg-4">
                   {{ with resources.Get $img.src }}
-                    <img src="{{ .RelPermalink }}" alt="{{ $img.alt }}" width="{{ .Width }}" height="{{ .Height }}" class="img-fluid border border-2 border-light" loading="lazy">
+                    {{ $fp := . | fingerprint "md5" }}
+                    <img src="{{ $fp.RelPermalink }}" alt="{{ $img.alt }}" width="{{ .Width }}" height="{{ .Height }}" class="img-fluid border border-2 border-light" loading="lazy">
                   {{ end }}
                 </div>
               {{ end }}
