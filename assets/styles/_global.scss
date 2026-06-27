@@ -91,7 +91,7 @@ svg {
   width: 100%;
   overflow: hidden;
 
-  @media (max-height: 800px) and (hover: none) {
+  @media (height <= 800px) and (hover: none) {
     object-fit: cover;
     max-height: 90vh;
     width: 100%;
