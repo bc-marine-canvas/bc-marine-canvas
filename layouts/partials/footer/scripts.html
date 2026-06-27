@@ -13,3 +13,7 @@
 {{ $integrity := $script.Data.Integrity }}
 
 <script src="{{ $src }}" type="module" integrity="{{ $integrity }}" defer></script>
+
+{{/* Cloudflare Web Analytics (cookieless, privacy-friendly) */}}
+<script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon='{"token": "c30a19515ad941709953cfffdc5db923"}'></script>
+{{/* End Cloudflare Web Analytics */}}
